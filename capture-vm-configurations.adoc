@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: capture-vm-configurations.html 
+keywords: vm workloads, capture vm details 
+summary: Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。 
+---
+= 現在のVM構成のキャプチャ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。
+
+以前にローカルに保存した既存の導入計画に基づいて新しいシステムを導入する場合は、この手順を省略して既存の導入計画を選択できます。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["既存の計画を使用して新しい計画を作成する方法を確認する"]です。
+
+[role="tabbed-block"]
+====
+.Migration Advisor VMコレクタスクリプトを使用する
+--
+NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。
+
+[コードボックス]ウィンドウからMigration Advisor VMコレクタスクリプトをコピーするには、Migration Advisorを起動する必要があります。
+
+.開始する前に
+コレクタスクリプトを実行するシステムは、次の要件を満たしている必要があります。
+
+* Microsoft PowerShell 7.0以降がインストールされている必要があります。PowerShellをインストールする必要がある場合は、を参照してください https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4["Microsoft PowerShellのドキュメント"^] 。
+* VMware PowerCLIがインストールされている必要があります。PowerCLIをインストールする必要がある場合は、を参照してください https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html["VMware PowerCLIのドキュメント"^] 。
+* SSL証明書のチェックを無効にする必要があります。
+* PowerShellで、署名のないスクリプトの実行を許可する必要があります。
+
+
+VMから長期統計（日次統計）を取得する場合は、vSphere管理コンソール（VMware管理環境）で統計レベル3以上をアクティブ化しておく必要があります。
+
+.手順
+. Workload Factoryにログインします。
+. [VMware]タイルで、*[計画と導入]*を選択します。
++
+image:screenshot-choose-method.png["現在のVM構成情報の収集に使用できるさまざまな方法のスクリーンショット。"]
+
+. [Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。
++
+[VMware Cloud on AWSへの移行の準備]*ページが表示されます。
+
+. [コードボックス]ウィンドウで、Migration Advisor VMコレクタスクリプト（「list-VMs.ps1」という名前）をターゲットシステムに保存するか、スクリプトをコピーして適切なシステムに貼り付けるかを選択します image:button-download-codebox.png["ダウンロードボタン"] image:button-copy-codebox.png["コピーボタン"] 。
+. 現在のVMの構成をキャプチャするには、次の手順を実行します。
++
+.. PowerShellとPowerCLIがインストールされているデータコレクタをダウンロードしたシステムにログインします。
+.. 次のコマンドを実行して、VMware vCenterサーバに接続します。
++
+ Connect-VIServer -server <server_IP>
++
+<server_IP>をVMwareサーバのIPアドレスまたはホスト名に置き換えます。
+
+.. ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。
++
+ .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
++
+ここで、
+
++
+*** * true *過去24時間のIOPSとスループットのデータを5分間隔で収集します。
+*** * false *過去1時間のIOPSとスループットのデータを20秒間隔で収集します。
+
+
+
+
+
+
+.結果
+スクリプトは、現在の作業ディレクトリにという名前のCSVファイルを出力し `list-vms-yyyy-MM-dd-HH-mm-ss.csv` ます。CSVファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。
+
+--
+.RVToolsソフトウェアの使用
+--
+RVToolsは、vCenterおよびESXサーバ（5.x～8.0）と通信してVMware仮想環境に関する情報を取得するWindowsアプリケーションです。VM、CPU、メモリ、ディスク、クラスタ、 ESXホスト、データストアなど。この情報をxlsxファイルにエクスポートして、移行アドバイザで使用できます。
+
+https://www.robware.net/home["RVToolsの詳細"^]
+
+.手順
+. RVTools 4.4.2以降をダウンロードしてからインストールします。 https://www.robware.net/download["RVTools Webサイト"^]
+. RVToolsを起動し、ターゲットのvCenter Serverにログインします。
++
+これにより、指定したvCenter Serverに関する情報がキャプチャされます。
+
+. VMware情報をxlsxまたはxlsファイルにエクスポートします。
++
+詳細については、『』の「コマンドラインパラメータ」の章を参照してください https://resources.robware.net/resources/prod/RVTools.pdf["RVToolsのマニュアル"^] 。
+
+
+
+.結果
+結果を含むxlsxまたはxlsファイルが作業ディレクトリに保存されます。
+
+--
+====
+.次の手順
+link:launch-onboarding-advisor.html["移行アドバイザを使用して導入計画を作成"]です。

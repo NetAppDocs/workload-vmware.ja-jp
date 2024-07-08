@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: learn-about-vmware-workloads.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works 
+summary: Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWSにデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。 
+---
+= Workload Factory for VMwareの詳細
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWS（VMC）にデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。
+
+Amazon FSx for NetApp ONTAPは、ネットアップのONTAPファイルシステム上に構築された外部NFSデータストアで、VMware Cloud on AWS vSphereクラスタに接続できます。利用可能なストレージを増やすためにホストを追加する必要はありません。代わりに、FSx for ONTAPボリュームを外付けデータストアとして使用するだけで、vSANデータストアを補完できます。これにより、コンピューティングリソースとは別に拡張できる、柔軟性に優れたハイパフォーマンスな仮想ストレージインフラが実現します。
+
+image:diagram-vmware-fsx-overview.png["アーキテクチャを示す図。"]
+
+
+
+== VMware Migration Advisorの仕組み
+
+Migration Advisorは、VMwareがサポートしている任意のデータストアで実行されているオンプレミスの仮想マシン（VM）とそのデータを、FSx for ONTAPファイルシステム上の補完的なNFSデータストアを含むVMware Cloudデータストアに移行するのに役立ちます。
+
+image:diagram-vmware-fsx-old-new.png["古いアーキテクチャと移行後の新しいアーキテクチャの例を示す図。"]
+
+VMware Cloud on AWS上の単一のvSphereクラスタに最大4個のFSx for ONTAPボリュームを接続できます。
+
+
+
+== Migration Advisorでできること
+
+Migration Advisorには次の機能があります。
+
+* 現在のオンプレミスVM構成を分析
+* VMware Cloud on AWSに移行するVMを決定
+* FSx for ONTAPボリュームにVMの外部データストアとして使用するために必要なスペースを特定する
+* 作成されたレポートを確認して導入手順を理解する
+* 実際の導入の実行
+
+
+移行アドバイザは、単一のFSx for ONTAPファイルシステムに接続された単一のVMware Cloud on AWSクラスタの構成計画をサポートします。
+
+
+
+== Migration Advisorを使用するメリット
+
+Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラの一部をVMware Cloud on AWSに移行すると、次のようなメリットがあります。
+
+* ホストとストレージの分離と高度なデータ効率化によるコスト最適化
+* ホストインスタンスを追加購入することなく、必要に応じてストレージ容量を拡張可能
+* クラウドでのNetApp ONTAPデータ管理機能（スペース効率に優れたSnapshot、クローニング、圧縮、重複排除、コンパクションなど）
+* ハードウェア更新管理の削減
+* ボリュームのサイズの増減に加えて、データスループット、IOPS、ファイルシステムのサイズを変更可能
+* 複数のアベイラビリティゾーン（AZ）環境をサポートする高可用性
+* Transit Gatewayを使用せずにVPCピアリングを使用するシングルAZ構成によるコストとレイテンシの削減
+
+
+
+
+== コスト
+
+VMware Migration Advisorの使用にはコストはかかりません。
+
+移行アドバイザからの推奨事項に基づいて導入したAWSリソースには料金がかかります。
+
+
+
+== ライセンス
+
+移行アドバイザを使用するためにNetAppに特別なライセンスは必要ありません。

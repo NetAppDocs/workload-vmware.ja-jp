@@ -1,0 +1,48 @@
+---
+settings:
+  name: VMware workloads
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: VMwareワークロードのドキュメント
+    url: "/index.html"
+  - title: リリースノート
+    entries:
+    - title: 新機能
+      url: "/whats-new.html"
+  - title: はじめに
+    entries:
+    - title: Workload Factory for VMwareの詳細
+      url: "/learn-about-vmware-workloads.html"
+    - title: クイックスタート
+      url: "/quick-start.html"
+  - title: VMware Migration Advisorを使用する
+    entries:
+    - title: 現在のVM構成のキャプチャ
+      url: "/capture-vm-configurations.html"
+    - title: 移行アドバイザを使用して導入計画を作成
+      url: "/launch-onboarding-advisor.html"
+    - title: 推奨されるFSx for ONTAPファイルシステムを導入
+      url: "/deploy-fsx-file-system.html"
+    - title: FSx for ONTAPをVMware Cloud on AWSに接続
+      url: "/connect-sddc-to-fsx.html"
+    - title: 新しいインフラへのデータ移行
+      url: "/migrate-data.html"
+  - title: 知識とサポート
+    entries:
+    - title: サポートに登録します
+      url: "/support-registration.html"
+    - title: ヘルプを表示します
+      url: "/get-help.html"
+  - title: 法的通知
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。</block>
+  <block id="8e2550c26f1fc7187221c8126336a37a" category="doc">現在のVM構成のキャプチャ</block>
+  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">既存の計画を使用して新しい計画を作成する方法を確認する</block>
+  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">以前にローカルに保存した既存の導入計画に基づいて新しいシステムを導入する場合は、この手順を省略して既存の導入計画を選択できます。<block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>です。</block>
+  <block id="c423127be094663f098066c3efa8a37a" category="open-title">Migration Advisor VMコレクタスクリプトを使用する</block>
+  <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。</block>
+  <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">[コードボックス]ウィンドウからMigration Advisor VMコレクタスクリプトをコピーするには、Migration Advisorを起動する必要があります。</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始する前に</block>
+  <block id="e1d2996b93191c5688a74299834edf26" category="paragraph">コレクタスクリプトを実行するシステムは、次の要件を満たしている必要があります。</block>
+  <block id="0c4645754fcdfe7cca6f59f6d9404062" category="inline-link">Microsoft PowerShellのドキュメント</block>
+  <block id="c4b8ed9b28e6ddd2c9ef5d29cea79093" category="list-text">Microsoft PowerShell 7.0以降がインストールされている必要があります。PowerShellをインストールする必要がある場合は、を参照してください<block ref="3bcd12783e3a1f59d5d004057b3692c3" category="inline-link-rx"></block> 。</block>
+  <block id="0d5127f7ee302061e40242ba37db8061" category="inline-link">VMware PowerCLIのドキュメント</block>
+  <block id="2a90e2cfe9bf4b6ecdc1218b5e9e89ce" category="list-text">VMware PowerCLIがインストールされている必要があります。PowerCLIをインストールする必要がある場合は、を参照してください<block ref="ff5166a0861cd610082cc0f8476803ff" category="inline-link-rx"></block> 。</block>
+  <block id="e6137ecdf6ebd5bc847812c9dbb3684e" category="list-text">SSL証明書のチェックを無効にする必要があります。</block>
+  <block id="d334c68ce1d93dc967147b543a0f7eb5" category="list-text">PowerShellで、署名のないスクリプトの実行を許可する必要があります。</block>
+  <block id="3650e2eb7f7794332db7036831f768dd" category="paragraph">VMから長期統計（日次統計）を取得する場合は、vSphere管理コンソール（VMware管理環境）で統計レベル3以上をアクティブ化しておく必要があります。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
+  <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Workload Factoryにログインします。</block>
+  <block id="e89045fcaeea0596351f980d8876a90a" category="list-text">[VMware]タイルで、*[計画と導入]*を選択します。</block>
+  <block id="56dbec4488b5001a29504a3a766a4f86" category="inline-image-macro">現在のVM構成情報の収集に使用できるさまざまな方法のスクリーンショット。</block>
+  <block id="ab42a9ea30ee72a49c9dd83c04a1fa74" category="paragraph"><block ref="ab42a9ea30ee72a49c9dd83c04a1fa74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7733cfea4c10d8edbae71f745c8adcc4" category="list-text">[Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。</block>
+  <block id="7797697bf5f4b38c4de3f12c9a5194ac" category="paragraph">[VMware Cloud on AWSへの移行の準備]*ページが表示されます。</block>
+  <block id="f383f073a6edf7564d29459bef094282" category="inline-image-macro">ダウンロードボタン</block>
+  <block id="a064715cfe4e3e4a214bc84cf0551160" category="inline-image-macro">コピーボタン</block>
+  <block id="219834f22347449944becd8d5c8939be" category="list-text">[コードボックス]ウィンドウで、Migration Advisor VMコレクタスクリプト（「list-VMs.ps1」という名前）をターゲットシステムに保存するか、スクリプトをコピーして適切なシステムに貼り付けるかを選択します <block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block> <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> 。</block>
+  <block id="05e3a2cbedde64e89634c5de47649970" category="list-text">現在のVMの構成をキャプチャするには、次の手順を実行します。</block>
+  <block id="35fc8aad1c96a506870619b99b225bd3" category="list-text">PowerShellとPowerCLIがインストールされているデータコレクタをダウンロードしたシステムにログインします。</block>
+  <block id="ea290aa0b4fc7a1e5e3a3d4108b40f29" category="list-text">次のコマンドを実行して、VMware vCenterサーバに接続します。</block>
+  <block id="8283e4c9758f438b06e1efdea761629b" category="paragraph">&lt;server_IP&gt;をVMwareサーバのIPアドレスまたはホスト名に置き換えます。</block>
+  <block id="b882080acef378635311a1d56cbfd3e5" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。</block>
+  <block id="5976be1a3647c1d1d6df4ce77cd4c6de" category="paragraph">ここで、</block>
+  <block id="f463cab33838fd5d10abccaf72330f35" category="list-text">* true *過去24時間のIOPSとスループットのデータを5分間隔で収集します。</block>
+  <block id="14b13715e39f4ef8d6e21c37afc154b7" category="list-text">* false *過去1時間のIOPSとスループットのデータを20秒間隔で収集します。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="1638657861eed27566f94f3aac3cd641" category="paragraph">スクリプトは、現在の作業ディレクトリにという名前のCSVファイルを出力し<block ref="d79e984209d9daa189a55436e4ddcc1c" prefix=" " category="inline-code"></block> ます。CSVファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。</block>
+  <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">RVToolsソフトウェアの使用</block>
+  <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVToolsは、vCenterおよびESXサーバ（5.x～8.0）と通信してVMware仮想環境に関する情報を取得するWindowsアプリケーションです。VM、CPU、メモリ、ディスク、クラスタ、 ESXホスト、データストアなど。この情報をxlsxファイルにエクスポートして、移行アドバイザで使用できます。</block>
+  <block id="344899ab535d99090285d73527e8b852" category="inline-link">RVToolsの詳細</block>
+  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
+  <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools Webサイト</block>
+  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">RVTools 4.4.2以降をダウンロードしてからインストールします。<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
+  <block id="93768280696f91c787d919221b25e927" category="list-text">RVToolsを起動し、ターゲットのvCenter Serverにログインします。</block>
+  <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">これにより、指定したvCenter Serverに関する情報がキャプチャされます。</block>
+  <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">VMware情報をxlsxまたはxlsファイルにエクスポートします。</block>
+  <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">RVToolsのマニュアル</block>
+  <block id="7d2cf15a702542e944716ce9fffaed68" category="paragraph">詳細については、『』の「コマンドラインパラメータ」の章を参照してください<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> 。</block>
+  <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">結果を含むxlsxまたはxlsファイルが作業ディレクトリに保存されます。</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
+  <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="inline-link-macro">移行アドバイザを使用して導入計画を作成</block>
+  <block id="ed04dfca3ba99cc02a56786b8fee09d3" category="paragraph"><block ref="b33ad552760aea505851a4e799b84f84" category="inline-link-macro-rx"></block>です。</block>
+  <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。SDDCには、VPCピアリング機能を使用してFSx for ONTAPファイルシステムに接続し、外部NFSストレージボリュームへのネットワーク接続を拡張するためのネットワークオプションが用意されています。</block>
+  <block id="07413029412abf4b07d59a7418a48d98" category="doc">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
+  <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。Software-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。</block>
+  <block id="36789903991e7a805b64dce62ee3cb41" category="inline-link">詳細については、Amazon VPCピアリングドキュメントを参照</block>
+  <block id="3f44cc30db3785a317875ea3b608f92d" category="paragraph"><block ref="3f44cc30db3785a317875ea3b608f92d" category="inline-link-rx"></block></block>
+  <block id="35e4dc1372c9892d7d45c118016255bf" category="paragraph">次の図は、VPCピアリングを使用して、単一のアベイラビリティゾーン（AZ）SDDCクラスタをFSx for ONTAPシングルAZ環境に接続する方法を示しています。</block>
+  <block id="40c5156ee08f8bf4b4ba3c18de0844d9" category="inline-image-macro">VPCピアリングを使用して、シングルAZ SDDCクラスタをFSx for ONTAPシングルAZ環境に接続する方法を示す図。</block>
+  <block id="9d06593ee15f520ce9a945a1bbad4daf" category="paragraph"><block ref="9d06593ee15f520ce9a945a1bbad4daf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c450ceba09f988891c5496ca97845c53" category="summary">推奨されるFSx for ONTAPファイルシステム（場合によってはファイルシステム）がお客様の要件を正確に満たしていることを確認したら、Workload Factoryを使用してAWS環境にシステムを導入できます。</block>
+  <block id="6dab83facb5fd4298e37906481e1055b" category="doc">推奨されるFSx for ONTAPファイルシステムを導入</block>
+  <block id="5619c23907d6c8e136428b1ffb2d7cbd" category="paragraph">推奨されるFSx for ONTAPファイルシステム（場合によっては複数のファイルシステム）が正確な要件を満たしていることを確認したら、Workload Factoryを使用してAWS環境にシステムを導入できます。</block>
+  <block id="d1ffdff1dd8d60417d05a9a8abdd7372" category="paragraph">Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factory（自動モードを使用）を使用してFSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合(読み取りモード)、または権限がない場合(基本モード)は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">要件</block>
+  <block id="7e1f47394f042a5680b207362e9dbb16" category="list-text">FSx for ONTAPファイルシステムを導入するには、VMware Cloud on AWS Software-Defined Data Center（SDDC）バージョン1.20以降を使用している必要があります。</block>
+  <block id="3cc79e4bc7d6bf8c61765b69d71a1967" category="list-text">FSx for ONTAPファイルシステムは、SDDCの導入時に使用したVPCに導入しないでください。VMware Cloud on AWSとAmazon FSx for NetApp ONTAPを統合するには、所有する新しいAmazon VPCに導入する必要があります。</block>
+  <block id="4c140f9dee411d36eaecae373e42714d" category="list-text">FSx for ONTAPファイルシステムは、SDDCと同じAWSリージョン内に導入する必要があります。</block>
+  <block id="83485d5de9840078428e4e90581100d8" category="list-text">[Review plan]ページの下部にある[Deploy]*を選択すると、[FSx for ONTAPファイルシステムの作成]ページが表示されます。</block>
+  <block id="c62464e42e0351f87df4c1af5e9e9eae" category="paragraph">FSx for ONTAPファイルシステムを定義するフィールドのほとんどは、入力した情報に基づいて入力されますが、このページで入力する必要があるフィールドがいくつかあります。</block>
+  <block id="132fcccbd763cde9c55e108cdadfd0fd" category="inline-link">この2つのオプションの詳細を見る</block>
+  <block id="fd2398aa4da3ccd407e0f45bfe6e2c78" category="paragraph">[クイック作成]または[詳細作成]オプションを使用できます。高度な作成には、カスタマイズ可能ないくつかの追加のストレージパラメータが用意されています。<block ref="58902a26384717a6f0eddfec6bc4cb67" category="inline-link-rx"></block>です。</block>
+  <block id="3122fdd8e760049dec2c43dc4e3b6338" category="list-text">* AWSクレデンシャル*：FSx for ONTAPファイルシステムを直接作成するために必要な権限をWorkload Factoryに付与するクレデンシャルを選択または追加します。また、CodeboxからCloudFormationコードを選択し、AWSでFSx for ONTAPファイルシステムを自分でデプロイすることもできます。</block>
+  <block id="6067baf4cdc27f6050d51b12f15fc3e1" category="list-text">*ファイルシステム名*：このFSx for ONTAPファイルシステムに使用する名前を入力します。</block>
+  <block id="359e1e6f7c29e9b4dac5878404beab8e" category="list-text">*タグ*:オプションでタグを追加して、このFSx for ONTAPファイルシステムを分類できます。</block>
+  <block id="f6da2acef7db3c4a718d343f3dfe3c4c" category="list-text">[Network &amp; security]セクションで、次の情報を入力します。</block>
+  <block id="7d41d89314fd1a2df6210e91f6da55a7" category="list-text">*リージョンとVPC *：FSx for ONTAPファイルシステムを導入するリージョンとVPCを選択します。</block>
+  <block id="875cc5528c7347167f10ab54d3e80c6b" category="paragraph">VMware Cloud on AWSが導入されているVPCとは別のVPCに導入する必要があります。</block>
+  <block id="d7b999322a22682588eba6652df7e969" category="list-text">*セキュリティグループ*：*詳細作成*オプションを使用する場合、すべてのトラフィックがFSx for ONTAPファイルシステムにアクセスできるように、FSx for ONTAP VPCのデフォルトのセキュリティグループを選択できます。</block>
+  <block id="955565afef9175d40dc796c8c08484e8" category="paragraph">他のAWSサービスがFSx for ONTAPファイルシステムにアクセスできるように制限するインバウンドルールを追加できます。これにより、開いているサービスの量がブロックされます。最小ポートとプロトコルは次のとおりです。</block>
+  <block id="9985b4390c40137573e6da05caf85874" category="cell">プロトコル</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">ポート</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="c9767dc9dfe4c81c0ae4626b21acfc43" category="cell">TCP、UDP</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">一一一</block>
+  <block id="14c91204084503a0837bfc6026505f24" category="cell">portmapper（NFS要求で使用されるポートをネゴシエートするために使用）</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="28aac0c74eeebdce14ab7aaa4c92bc47" category="cell">nfs mountd（NFSマウントヨウキュウノジュシン）</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="2f29fc667dc3fa4319c22fdf48b5f753" category="cell">NFSネットワークトラフィック</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="fefb6f2f5d7131cf5e8b738af973a786" category="cell">Network Lock Manager（NLM、lockd）-ロック要求を処理します。</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="9d9e7ba9dfdb9531592447525b1f1fc8" category="cell">Network Status Monitor（NSM、statd）-ロック管理のためにサーバがリブートされたことをNFSクライアントに通知します。</block>
+  <block id="77fbffa5b3d67799f982e68e437e610d" category="list-text">*アベイラビリティゾーン*：アベイラビリティゾーンとサブネットを選択します。</block>
+  <block id="efb5e91db292426d0c09add167e46888" category="paragraph">AZ間トラフィックの課金を回避するには、VMware SDDCが導入されている場所と同じアベイラビリティゾーンを選択する必要があります。</block>
+  <block id="fb26b856306fb38ef6265197eb53ecb2" category="list-text">*暗号化*：*高度な作成*オプションを使用する場合は、ドロップダウンからAWS暗号化キー名を選択できます。</block>
+  <block id="edc4d6e9343c85d6c3cd73aa547319dc" category="list-text">*データストアアクセス制御*：*[詳細作成]*オプションを使用して、すべてのホストがデータストアにアクセスできるかどうか、または特定のサブネット上の特定のvSphereクラスタノードのみがデータストアにアクセスできるかどうかを選択できます。</block>
+  <block id="8692762c0d29157bc5211825fc73a10b" category="list-text">[File system details]セクションで、次の情報を入力します。</block>
+  <block id="b457a49b2162fbe7cc5f769e85b880b9" category="list-text">* ONTAPクレデンシャル*：ONTAPパスワードを入力して確認します。</block>
+  <block id="b976bad24e9b592d64259244c102d9fd" category="list-text">* Storage VMクレデンシャル*（アドバンスト作成のみ）：Storage VMのパスワードを入力し、確認のためにもう一度入力します。このファイルシステムに固有のパスワードを指定することも、ONTAPクレデンシャルに入力したパスワードと同じパスワードを使用することもできます。</block>
+  <block id="08e34c2ea7e908b280b051fe362e2321" category="list-text">[まとめ]セクションでは、VMware Migration Advisorがお客様の情報に基づいて設計したFSx for ONTAPファイルシステムとデータストアの構成を確認できます。</block>
+  <block id="4a35c02d3fb3149532246a286cc9491f" category="list-text">FSx for ONTAPファイルシステムを導入するには、[作成]*を選択します。このプロセスには最大2時間かかることがあります。</block>
+  <block id="3ee808c6bed6c3cca6d6a6643ba08c89" category="paragraph">必要に応じて、Codeboxウィンドウで* Redirect to CloudFormation *を選択して、CloudFormationスタックを使用してファイルシステムを作成できます。</block>
+  <block id="8a17abf71adea43d22ac172f424f4140" category="paragraph">どちらの場合も、CloudFormationで作成の進行状況を監視できます。</block>
+  <block id="af48fc2e1e9f5e62213f21a797f40b49" category="paragraph">FSx for ONTAPファイルシステムが導入されます。</block>
+  <block id="243f4102d24e538f61072e19e53b373f" category="summary">NetAppは、さまざまな方法でワークロードファクトリをサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetAppは、Workload Factoryとそのクラウドサービスをさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
+  <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">FSx for ONTAPのサポートを利用する</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">FSx for ONTAP、そのインフラ、またはサービスを使用するソリューションに関連するテクニカルサポートについては、その製品のワークロードファクトリドキュメントの「困ったときは」を参照してください。</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSx for ONTAP</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Workload Factoryおよびそのストレージソリューションおよびサービスに固有のテクニカルサポートを受けるには、以下に説明するサポートオプションを使用してください。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">セルフサポートオプションを使用します</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">現在表示しているWorkload Factoryのドキュメント。</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
+  <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Workload Factoryナレッジベースを検索すると、問題のトラブルシューティングに役立つ記事が見つかります。</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Workload Factoryコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">ネットアップサポートと一緒にケースを作成します</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">始める前に</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">サポートに登録する方法について説明します</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">ケースの作成*機能を使用するには、まずサポートに登録する必要があります。 NetAppサポートサイトのクレデンシャルをワークロードファクトリログインに関連付けます。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>です。</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Workload Factoryコンソールの右上で、*[ヘルプ]&gt;[サポート]*を選択します。</block>
+  <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">このオプションを選択すると、BlueXPコンソールの新しいブラウザタブが開き、サポートダッシュボードがロードされます。</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">[*Resources*]ページで、[Technical Support]で次のいずれかのオプションを選択します。</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">電話で誰かと話をしたい場合は、*[電話]*を選択します。netapp.comのページに移動し、電話番号が表示されます。</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">[ケースの作成]*を選択して、NetAppサポートスペシャリストとのチケットをオープンします。</block>
+  <block id="d7d0da18fbb8f8f85c1364883fbdf4c7" category="list-text">* Service *：* Workload Factory *を選択します。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*ケース優先度*：ケースの優先度を選択します。優先度は、[低]、[中]、[高]、[クリティカル]のいずれかになります。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">これらの優先度の詳細を確認するには、フィールド名の横にある情報アイコンの上にマウスポインタを合わせます。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*事象の説明 *：実行したエラーメッセージやトラブルシューティング手順など、問題の詳細な概要 を入力します。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*その他のメールアドレス*：この問題 を他のユーザーに知らせる場合は、追加のメールアドレスを入力します。</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">ネットアップサポートでケースを作成できるケースの作成フォームのスクリーンショット。</block>
+  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">終了後</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">ポップアップにサポートケース番号が表示されます。ネットアップのサポート担当者がケースを確認し、すぐに対応させていただきます。</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">サポートケースの履歴を確認するには、*[設定]&gt;[タイムライン]*を選択し、「サポートケースの作成」というアクションを検索します。右端のボタンをクリックすると、アクションを展開して詳細を表示できます。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">ケースを作成しようとすると、次のエラーメッセージが表示される場合があります。</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"選択したサービスに対してケースを作成する権限がありません"</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、BlueXPアカウントのシリアル番号(例960xxxx）または動作環境のシリアル番号。次のいずれかのオプションを使用して、サポートを受けることができます。</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースを<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">サポートケースの管理（プレビュー）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">ケース管理はプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">ページ上部のケース管理ダッシュボードには、次の2つのビューがあります。</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側のビューには、指定したユーザNSSアカウントによって過去3カ月間にオープンされたケースの総数が表示されます。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側のビューには、ユーザのNSSアカウントに基づいて、過去3カ月間にオープンしたケースの総数が会社レベルで表示されます。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">テーブルの結果には、選択したビューに関連するケースが反映されます。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">目的の列を追加または削除したり、[優先度]や[ステータス]などの列の内容をフィルタリングしたりできます。他の列には、並べ替え機能だけがあります。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">詳細については、以下の手順を参照してください。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">ケースごとに、ケースノートを更新したり、ステータスが「Closed」または「Pending Closed」でないケースをクローズしたりすることができます。</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">[ケース管理]*を選択し、プロンプトが表示されたらNSSアカウントをBlueXPに追加します。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">ケース管理*ページには、BlueXPユーザアカウントに関連付けられたNSSアカウントに関連するオープンケースが表示されます。これは、* NSS管理*ページの上部に表示されるNSSアカウントと同じです。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">必要に応じて、テーブルに表示される情報を変更します。</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">[Organization's Cases]*で[View]*を選択すると、会社に関連付けられているすべてのケースが表示されます。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。</block>
+  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">列の内容をフィルタリングします。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。</block>
+  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">テーブルに表示されるプラスアイコン</block>
+  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">テーブルに表示される列を変更するには、を選択し <block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block> 、表示する列を選択します。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">表に表示できる列を示すスクリーンショット。</block>
+  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">テーブルの最後の列に表示される3つの点を持つアイコン</block>
+  <block id="000a1376035909240f559b8ab724030c" category="list-text">使用可能なオプションのいずれかを選択して、既存のケースを管理し <block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block> ます。</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースの表示*:特定のケースの詳細を表示します。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*を選択します。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
+  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2559e4d6b9e2e602a91b8df995b458c8" category="summary">NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。</block>
+  <block id="31f8985acb8af1ba9c63a40c3a7ceeee" category="paragraph">Migration Advisorを使用して、次のシナリオの導入計画を作成できます。</block>
+  <block id="c2fc31ef454cc8e0f7af0db95923a688" category="inline-xref">をクリックして、現在のオンプレミスのvSphere環境をクラウドに移行します。</block>
+  <block id="e8fd05295638b6180f44a5f4c0d57bf4" category="list-text"><block ref="5a7eb2b4bf76f0222b9bec2f2e8b4fa9" category="inline-xref-macro-rx"></block></block>
+  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。</block>
+  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">ここをクリック</block>
+  <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Workload Factoryにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>。</block>
+  <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">オンプレミスのvSphere環境を基に導入計画を作成</block>
+  <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">オンプレミスのvSphere環境で現在の仮想マシン構成をVMware Cloud on AWSの仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
+  <block id="56a6fbe00ab3546c5044f6b0c6eca438" category="list-text">Migration Advisor VMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
+  <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Workload Factoryにログインするシステムのインベントリファイルにアクセスできる必要があります。</block>
+  <block id="2627024352d67ddaed97566f9597199d" category="list-text">[VMware Workloads]タイルで*[Plan and deploy]*を選択すると、VMware Migration Advisorのメインページが表示されます。</block>
+  <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">現在のVM構成情報をロードするために使用できるさまざまな方法のスクリーンショット。</block>
+  <block id="be546eb7700a271b12e087db71616a76" category="paragraph"><block ref="be546eb7700a271b12e087db71616a76" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e805dde1d276b6165ec64309a45ea71e" category="list-text">[新しい導入計画を作成する]*を選択します。</block>
+  <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">現在のVM構成をWorkload Factoryに入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。</block>
+  <block id="e7864d4b66ace757c2a108b5b0e4db3e" category="list-text">VMwareデータコレクタを使用して作成した.csvファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。</block>
+  <block id="df5b6541eb8d439f6dc76a16fe960915" category="list-text">RVToolsを使用して作成した.xlsxファイルを使用するには、*[Use RVTools]*を選択します。</block>
+  <block id="587a30d8155d9c5303442e11e5e9efd7" category="paragraph">[Prepare for VMware Cloud onboarding]ページが表示されます。</block>
+  <block id="d762f74fe1a7fc0e27c55a560adb618a" category="inline-image-macro">アップロードボタン</block>
+  <block id="743535db86e8f679fc605a77ecbf0ca2" category="list-text">[_Upload VM configuration_]セクションで、使用するファイルを選択し <block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block> ます。</block>
+  <block id="f1199435711bc45d8683750f770d5c15" category="list-text">Migration Advisor VMコレクタを使用する場合は、.csvファイルを選択します。</block>
+  <block id="27251bcadd79e3fd1a18ec89ac447679" category="list-text">RVToolsを使用する場合は、.xlsxファイルを選択します。</block>
+  <block id="2e2ed307f4257994c4b8559cf9d7b08d" category="paragraph">インベントリファイルから[VMs]の概要セクションに、VMの数と合計ストレージ容量が入力されます。</block>
+  <block id="3d8f99409368ebf501d582ae12ca2f27" category="list-text">[_VMインベントリの考慮事項_]セクションで、移行するVMのリストをフィルタリングするオプションを選択します。</block>
+  <block id="06d3c6072e68b5d0d41062b66737b7e6" category="list-text">*仮想マシンを考慮*：動作電力の状態に基づいて.csvファイルから抽出される仮想マシンを指定します。すべてのVMを取り込むことも、オン、オフ、または一時停止中のVMのみを取り込むこともできます。</block>
+  <block id="edbd0792b525368441c58f7092b26053" category="list-text">*考慮するVMストレージ*：オンボードされた各VM用に作成されたデータストアのサイズを、現在使用されているサイズ（推奨）またはプロビジョニングされたサイズのどちらに基づいて設定するかを選択します。</block>
+  <block id="5137ca074fe20694559457d4589ea3cb" category="paragraph">外部データストアは、Amazon FSx for NetApp ONTAPファイルシステムボリュームを使用して実装されます。</block>
+  <block id="27fb8be12e3cea936186504383e63a1d" category="list-text">*考慮するVMメモリ*：オンボードVMごとに割り当てられたメモリのサイズを、現在使用されているサイズ（推奨）またはプロビジョニングされたサイズに基づいて設定するかを選択します。</block>
+  <block id="e269405b2917ada078ab1e21aea949ab" category="list-text">[_VMware Cloud on AWS deployment configuration_]セクションで、必要なVMware Cloud on AWSの設定に関する詳細を入力します。</block>
+  <block id="4db1f12ab10efa83baa889c794b5d44f" category="list-text">*リージョン*：VMとAmazon FSx for NetApp ONTAPファイルシステムが導入されるリージョンを選択します。</block>
+  <block id="56d2a3933360986a83fe1eebbddbbe4d" category="paragraph">パフォーマンスとコスト効率を最適化するには、通常は既存のVMware Cloud on AWS SDDCが導入されているリージョンと同じリージョンを使用します。</block>
+  <block id="6b8da9378d031990b64af03c75893aa3" category="list-text">* VMの推定パフォーマンス要件*：このオプションは、RVToolsを使用している場合にのみ使用できます。Migration Advisor VMコレクタは、環境からこの情報を取得します。導入する新しいVMに適用する仮想マシンごとの平均パフォーマンスパラメータを指定します。</block>
+  <block id="ed14429e797a847f497a533ac4d3ae54" category="list-text">*仮想マシンあたりの平均IOPS *：ファイルシステムに必要なIOPSの数を入力します。不明な場合は、Amazon FSx for ONTAPファイルシステムでSSDストレージのGiBあたり3 IOPSのデフォルトの設定を使用できます。たとえば、2、000GiBの容量を導入した場合、これは6、000IOPSに変換されます。最初は小さいIOPS設定から始めることを推奨します。ワークロードの移行または導入時にファイルシステムを作成したあとに、プロビジョニングされたSSDのIOPSを増やすことができます。</block>
+  <block id="35c06a302c6771923f1bf0ae87021382" category="list-text">*平均I/Oブロックサイズ*：読み取りまたは書き込み処理を含む各ブロックのサイズ。デフォルトのサイズは4KBです。ブロックサイズを大きくした方が、ラージシーケンシャルリード/ライトワークロードに適している場合があります。スパースファイルまたは大容量ファイルへの小規模なランダム書き込みを実行するワークロードでは、ブロックサイズを小さくするとパフォーマンスが向上します。</block>
+  <block id="671f570e3ea106a7c662d27393517d77" category="list-text">*平均書き込み比率*：ワークロードの書き込み処理の割合。デフォルトの比率は、書き込みが30%、読み取りが70%です。</block>
+  <block id="8cee69b8c05f31ed2796e76723e0346d" category="list-text">[_VM storage capacity considerations]セクションで、ストレージオプションをいくつか選択します。</block>
+  <block id="6f46f8eb6a78042e25d606c158b4f91b" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減選択値から選択します。[1：1-No reduction]、[1：1.25-20% reduction]、または[1：1.5-33% reduction]を選択します。</block>
+  <block id="0c47db7e17a6772593257a96d46f5cef" category="list-text">*ヘッドルームパーセンテージ*：FSx for ONTAPファイルシステムの容量に追加される容量増加率を入力します。</block>
+  <block id="aebce73a3f5f4b5eb62667bc03380901" category="paragraph">20%未満の値を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成できなくなります。</block>
+  <block id="b861243dc465efb48d26f7b08e8092dd" category="list-text">[次へ]*を選択すると、[VMware cloud on AWS node configuration]ページが表示されます。</block>
+  <block id="eb45b66ef322066cb931c800b0ff5a5d" category="paragraph">このページでは、予想される削減量の分析と推奨されるノードタイプを使用して、VMware Cloud on AWSクラスタの構成を定義できます。次の項目を設定できます。</block>
+  <block id="c89e6e0aa2bb09c1d7b8e38b112b33e1" category="list-text">* VSANアーキテクチャ*：VSAN Express Storage Architecture（ESA）とVSAN Original Storage Architecture（OSA）のどちらのアーキテクチャを使用するかを選択します。</block>
+  <block id="43a0e9cbfc582c1e66e7982369aae32e" category="list-text">* VSAN Fault Tolerance *：VMに必要なフォールトトレランスのレベルを選択します。推奨される「自動」を選択するか、さまざまなRAIDレベルから選択できます。</block>
+  <block id="74ea3f5cdcbfe5071a021f2bcbcf8f1d" category="list-text">RAID-1（FTT 1）：2つ以上のディスク上にある一連のデータの完全なコピー（ミラー）で構成されます。</block>
+  <block id="afd103de82421fcd40e3a247053edca8" category="list-text">RAID-5（FTT 1）：ブロックレベルのストライピングと分散パリティ情報で構成され、3つ以上のドライブに分散されます。1つのディスクで障害が発生しても運用を継続できます。</block>
+  <block id="540c7a94a98b70d6ef1eca9ecb05237b" category="list-text">RAID-5（FTT 2）：ブロックレベルのストライピングと分散パリティ情報で構成され、4つ以上のドライブに分散されます。2つのディスクで同時に障害が発生しても、データは保護されます。</block>
+  <block id="83079c9ee0e50366d1ef680d4e22dedc" category="list-text">RAID-6（FTT 2）：RAID 5を拡張して別のパリティブロックを追加します。したがって、2つのパリティブロックがすべてのメンバーディスクに分散されたブロックレベルのストライピングを使用します。4本以上のドライブが必要で、同時に2本のディスクで障害が発生しても運用を継続できます。</block>
+  <block id="9478ea6583d20a9061cef8506db5c270" category="list-text">*ノード構成選択リスト*：ノードのEC2インスタンスタイプを選択します。</block>
+  <block id="d24303e7898eb257f4fb345a8f95e80c" category="list-text">[次へ]*を選択すると、[仮想マシンの選択]ページに前のページで指定した条件に一致するVMが表示されます。</block>
+  <block id="2098e007a671f07e900cc010817a5ea8" category="list-text">[_Selection criteria]セクションで、導入するVMの条件を選択します。</block>
+  <block id="b03b66d464724edfe090b5d9de614232" category="list-text">コストとパフォーマンスの最適化に基づく</block>
+  <block id="48ab4f2784ee12638e45fef2dcf8b049" category="list-text">リカバリシナリオのためにローカルSnapshotを使用してデータを簡単にリストアできる機能に基づく</block>
+  <block id="20d354f50e7d95fe0e5bfc8eb9580f5b" category="list-text">両方の基準に基づいています。低コストでありながら、優れたリカバリオプションを提供します。</block>
+  <block id="ae3c7f6c7bd398f47e39119c3850d2c9" category="list-text">[_Virtual Machines_]セクションで、前のページで指定した条件に一致するVMが選択されます（オン）。このページでオンボード/移行するVMの数を減らす場合は、VMを選択または選択解除します。</block>
+  <block id="79f53a3b1e201c92e599dda08347cd47" category="paragraph">変更を加えると、*推奨される展開*セクションが更新されます。見出し行のチェックボックスをオンにすると、このページのすべてのVMを選択できます。</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">「 * 次へ * 」を選択します。</block>
+  <block id="d688779efac4d2bffd0b9dff31e1e59a" category="list-text">[データストア導入計画]ページで、移行に推奨されたVMとデータストアの総数を確認します。</block>
+  <block id="fb803e9043bd24aadbf134718fc937f4" category="list-text">ページの上部に表示された各データストアを選択して、データストアとVMのプロビジョニング方法を確認します。</block>
+  <block id="4345e81606df5dc45287de1f6571b7e8" category="paragraph">ページの下部には、この新しいVMとデータストアをプロビジョニングするソースVM（または複数のVM）が表示されます。</block>
+  <block id="370536ffe24c99675c2d3115f877ecb6" category="list-text">データストアの導入方法を確認したら、*[次へ]*を選択します。</block>
+  <block id="365938d07c3056cb5ddd57ae13a34718" category="list-text">[Review deployment plan（導入計画の確認）]ページで、移行するすべてのVMの予測月次コストを確認します。</block>
+  <block id="6337ff3f1523ba47c97a795e4b5bbc20" category="paragraph">ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コストの内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。</block>
+  <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">移行計画に満足したら、次のような選択肢があります。</block>
+  <block id="0afb54dff7a72cd0654a60ad3ddcbeca" category="inline-link-macro">FSx for ONTAPファイルシステムの導入方法をご確認ください</block>
+  <block id="97d5613878abc66cd0377bc72293e1c7" category="list-text">VMをサポートするためにFSx for ONTAPファイルシステムを導入するには、* Deploy *を選択します。<block ref="6d03875f1725fb0475157a3f38b365e6" category="inline-link-macro-rx"></block>です。</block>
+  <block id="2c0e666cc5cdf75376ac7d0a2c199cbd" category="list-text">[Download plan]&gt;[VM deployment]*を選択して、.csv形式で移行計画をダウンロードし、クラウドベースの新しいインテリジェントデータインフラを作成します。</block>
+  <block id="89fa06462cff9e0b4ce0010f48295b35" category="list-text">[計画のダウンロード]&gt;[計画レポート]*を選択して、レビュー用に計画を配布できるように、移行計画を.pdf形式でダウンロードします。</block>
+  <block id="a8e3f2e23f07d3e3b894748c162a207a" category="list-text">移行計画を.json形式のテンプレートとして保存するには、*[計画のエクスポート]*を選択します。後で計画をインポートして、同様の要件のシステムを導入する際にテンプレートとして使用できます。</block>
+  <block id="eb0382b6d1486520f7db805842e3cb39" category="section-title">既存の計画に基づいて導入計画を作成する</block>
+  <block id="8c7f50d238649f9f07e3c2778bd32944" category="paragraph">以前に使用した既存の導入計画に似た新しい導入を計画している場合は、その計画をインポートして編集し、新しい導入計画として保存できます。</block>
+  <block id="2ba4d56c67bf769878bdd42cd7cca655" category="paragraph">Workload Factoryにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。</block>
+  <block id="8e6d200b693c56bf0c412dc1466869ca" category="paragraph"><block ref="8e6d200b693c56bf0c412dc1466869ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0cf508bfdfca6645623887a9bbdf21a6" category="list-text">[Import an existing deployment plan]を選択します。</block>
+  <block id="5f729e0cf80af6c0509f40c4e10b8e21" category="list-text"><block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>Migration Advisorにインポートする既存の計画ファイルを選択します。</block>
+  <block id="8909739edfc984376de0bcbd81aa6b66" category="list-text">[次へ]*を選択すると、[計画のレビュー]ページが表示されます。</block>
+  <block id="d4c61bc1e71803429948c212b58c3dfe" category="list-text">前のセクションで説明したように、* Previous *を選択して_Prepare for VMware Cloud onboarding_pageと_Select VMs_pageにアクセスし、プランの設定を変更できます。</block>
+  <block id="ad004cea2e3efcaa61893ef5d25d7633" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、FSx for ONTAPファイルシステム上のデータストアの導入プロセスを開始できます。</block>
+  <block id="44e948f72707f7630f611b68923bfc83" category="summary">Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWSにデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。</block>
+  <block id="be5711eda7e0bf4f780900d61a066a0c" category="doc">Workload Factory for VMwareの詳細</block>
+  <block id="9a65636d5ca5b878904a6057dac83843" category="paragraph">Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWS（VMC）にデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。</block>
+  <block id="95b939b0f0e220091a7ff9d176a3097b" category="paragraph">Amazon FSx for NetApp ONTAPは、ネットアップのONTAPファイルシステム上に構築された外部NFSデータストアで、VMware Cloud on AWS vSphereクラスタに接続できます。利用可能なストレージを増やすためにホストを追加する必要はありません。代わりに、FSx for ONTAPボリュームを外付けデータストアとして使用するだけで、vSANデータストアを補完できます。これにより、コンピューティングリソースとは別に拡張できる、柔軟性に優れたハイパフォーマンスな仮想ストレージインフラが実現します。</block>
+  <block id="30141ccedd6bc04bfcb3e98195efc3cb" category="inline-image-macro">アーキテクチャを示す図。</block>
+  <block id="b3bddd6280dd2182432a9d3160f06da2" category="paragraph"><block ref="b3bddd6280dd2182432a9d3160f06da2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccaa90f171b926c0ccd9ee1bae9f5282" category="section-title">VMware Migration Advisorの仕組み</block>
+  <block id="7d197b845beffcefcc2b7624db4536bc" category="paragraph">Migration Advisorは、VMwareがサポートしている任意のデータストアで実行されているオンプレミスの仮想マシン（VM）とそのデータを、FSx for ONTAPファイルシステム上の補完的なNFSデータストアを含むVMware Cloudデータストアに移行するのに役立ちます。</block>
+  <block id="3104e285f52d2373db8e64fa25908a0a" category="inline-image-macro">古いアーキテクチャと移行後の新しいアーキテクチャの例を示す図。</block>
+  <block id="793538922c4536c046db4d0b15151ec1" category="paragraph"><block ref="793538922c4536c046db4d0b15151ec1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">VMware Cloud on AWS上の単一のvSphereクラスタに最大4個のFSx for ONTAPボリュームを接続できます。</block>
+  <block id="389a4416c476e7624728b96c49b3cce2" category="section-title">Migration Advisorでできること</block>
+  <block id="a5f8a88b580feb03d498f8605e413984" category="paragraph">Migration Advisorには次の機能があります。</block>
+  <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">現在のオンプレミスVM構成を分析</block>
+  <block id="c25aec1fd0ebfaedc74c756cad69abd2" category="list-text">VMware Cloud on AWSに移行するVMを決定</block>
+  <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">FSx for ONTAPボリュームにVMの外部データストアとして使用するために必要なスペースを特定する</block>
+  <block id="feb18d16cfa710c71684233bc628e803" category="list-text">作成されたレポートを確認して導入手順を理解する</block>
+  <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">実際の導入の実行</block>
+  <block id="404d1cf9d1cf2f009727efa79f365ed0" category="paragraph">移行アドバイザは、単一のFSx for ONTAPファイルシステムに接続された単一のVMware Cloud on AWSクラスタの構成計画をサポートします。</block>
+  <block id="59a64ee2ba08e22b44728c86d8f75c1b" category="section-title">Migration Advisorを使用するメリット</block>
+  <block id="68b045681603b3999a47a329a1c2f2f2" category="paragraph">Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラの一部をVMware Cloud on AWSに移行すると、次のようなメリットがあります。</block>
+  <block id="633d759efd4c2199d984faea480082ad" category="list-text">ホストとストレージの分離と高度なデータ効率化によるコスト最適化</block>
+  <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">ホストインスタンスを追加購入することなく、必要に応じてストレージ容量を拡張可能</block>
+  <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">クラウドでのNetApp ONTAPデータ管理機能（スペース効率に優れたSnapshot、クローニング、圧縮、重複排除、コンパクションなど）</block>
+  <block id="d668b75d63a6a78b8ce267ca999a6f00" category="list-text">ハードウェア更新管理の削減</block>
+  <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">ボリュームのサイズの増減に加えて、データスループット、IOPS、ファイルシステムのサイズを変更可能</block>
+  <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">複数のアベイラビリティゾーン（AZ）環境をサポートする高可用性</block>
+  <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Transit Gatewayを使用せずにVPCピアリングを使用するシングルAZ構成によるコストとレイテンシの削減</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
+  <block id="cf8aeb0c4f237de02bcdaf88a3c66dc8" category="paragraph">VMware Migration Advisorの使用にはコストはかかりません。</block>
+  <block id="82836395e9110a209081b396c82b2a38" category="paragraph">移行アドバイザからの推奨事項に基づいて導入したAWSリソースには料金がかかります。</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">ライセンス</block>
+  <block id="2d9265a10aaf645fb97ed7b493dc9c5c" category="paragraph">移行アドバイザを使用するためにNetAppに特別なライセンスは必要ありません。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法的通知では、著作権に関する声明、商標、特許などにアクセスできます。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp、NetAppのロゴ、およびNetAppの商標ページに記載されているマークは、NetApp、Inc.の商標です。 その他の会社名および製品名は、それを所有する各社の商標である場合があります。</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetAppが所有する特許の最新リストは、次のサイトで参照できます。</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
+  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">ワークロードファクトリ</block>
+  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
+  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">データベース用ワークロードファクトリ</block>
+  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
+  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI向けワークロードファクトリー</block>
+  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
+  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMwareのワークロードファクトリー</block>
+  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
+  <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">VMware Hybrid Cloud Extensionなどのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXコア機能を使用すると、オンプレミスのデータセンターからSDDCにワークロードを透過的に移行できます。</block>
+  <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">新しいインフラへのデータ移行</block>
+  <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">VMware Hybrid Cloud Extension（HCX）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXのコア機能を使用すると、オンプレミスのデータセンターからSoftware-Defined Data Center（SDDC）にワークロードを透過的に移行できます。</block>
+  <block id="81296b60bd3fac67fc4c879b35c21ce7" category="inline-link">詳細については、VMware HCXのドキュメントを参照してください。</block>
+  <block id="38b89112e54a0592b6516a64ce8ab7cd" category="paragraph"><block ref="38b89112e54a0592b6516a64ce8ab7cd" category="inline-link-rx"></block></block>
+  <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">VMware Cloud on AWSとAmazon FSx for NetApp ONTAPの外部データストアにデータを移行したので、FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、データを常に利用できるようにすることができます。</block>
+  <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Amazon FSX for NetApp ONTAP のドキュメント</block>
+  <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">FSx for ONTAPファイルシステムの管理については、で<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> 使用できるバックアップ機能と保護機能を確認してください。</block>
+  <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。</block>
+  <block id="4a715abf409664eac4dbee272a84b726" category="doc">VMware Migration Advisorのクイックスタートガイド</block>
+  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">動作モード</block>
+  <block id="02d45e6950dba7745c9b6afe3c8338ca" category="paragraph">開始する前に、次のことを理解しておく必要があります。<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block></block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
+  <block id="fff1fc3457dd9a218bca11799687e08e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Workload Factoryにサインアップしてアカウントを作成する</block>
+  <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link">Workload Factoryコンソール</block>
+  <block id="14f89f5bf7b25f9807c89a283db37504" category="inline-link">アカウントの作成に関する詳細情報</block>
+  <block id="7cca958997b643dcdd24be8d260e2aba" category="paragraph">に移動<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block> してサインアップします。<block ref="f1d16e6a74984f9cd23c9d8db5e9c155" category="inline-link-rx"></block>です。</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2つ</block>
+  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> AWSのクレデンシャルと権限をアカウントに追加する</block>
+  <block id="b6d510f8e10407a559355b654de7d04f" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、Workload Factoryを_Basic_modeで使用できます。AWSクレデンシャルを_Read_or_automate_modeでWorkload Factoryに追加すると、FSx for ONTAPファイルシステムの作成と管理、およびVMware Cloud内でのワークロードの導入と管理に必要な権限がWorkload Factoryアカウントに付与されます。</block>
+  <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">クレデンシャルと権限を追加する方法</block>
+  <block id="d162e97fcdf643050da77419fb18d12e" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block></block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
+  <block id="1f76f27677ef01d1ad1565c7410f1780" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> vSphere環境の現在のVM構成の把握</block>
+  <block id="db8e3fd16ddc3075e85969124d04abeb" category="paragraph">Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して現在のVM構成をキャプチャし、導入計画を作成できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。</block>
+  <block id="d9cec56bc6d84406c70fa2a7a03dd8ce" category="inline-link-macro">現在のVM構成を取得する方法</block>
+  <block id="ec7087d8e162b675d744c90559820893" category="paragraph"><block ref="79606d920ed0f6e57d9f492e8fd606e3" category="inline-link-macro-rx"></block>です。</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4つ</block>
+  <block id="f47ef0c0240caa246ed6aae746117014" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> VMware Migration Advisorを使用して導入計画を作成</block>
+  <block id="14f4f353ef5e3c4a3673476c525c538d" category="paragraph">VMware Migration Advisorを起動し、Amazon FSx for ONTAPファイルシステムを外部NFSデータストアとして使用して、新しいVMware Cloud on AWSインフラに移行するVMを選択します。計画を保存する前に、いくつかの変更を行うことができます。</block>
+  <block id="a0df7f574896aa929c819bd3a817625c" category="inline-link-macro">VMware Migration Advisorを使用して導入計画を作成する方法</block>
+  <block id="8d7795534dfe29f84396c92c8d0a4dcd" category="paragraph"><block ref="a837f3781560502a9640d7db10536ff7" category="inline-link-macro-rx"></block>です。</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">5 つ</block>
+  <block id="d4ae0fc6e06774e5a7be305be578b336" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 推奨されるFSx for ONTAPファイルシステムを導入</block>
+  <block id="f52c9ba96cd69f0216a683d029eb830e" category="paragraph">VMware Cloud on AWSインフラ内のVMにデータストアを提供する新しいFSx for ONTAPファイルシステムを導入します。</block>
+  <block id="2c3ed559463775a8e752bd5354347b70" category="inline-link-macro">新しいFSx for ONTAPファイルシステムの導入方法をご確認ください</block>
+  <block id="5e3387eb970620f47e529a8dc0cc62b6" category="paragraph"><block ref="b515969da0a0d29c570c51f868d340c0" category="inline-link-macro-rx"></block>です。</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6</block>
+  <block id="c572af7f3132380b2d88a9d4aa80dad6" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
+  <block id="88cf79670ce663257099330f2ebe608f" category="paragraph">ご使用のSoftware-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。</block>
+  <block id="03f4cd7af088de0b86d1c9f3c79648d1" category="inline-link-macro">データ移行の詳細はこちら</block>
+  <block id="41b04f79071185e9f18797de9d32abe2" category="paragraph"><block ref="051cfa5c6aadf2a5b5551470e9f0e33e" category="inline-link-macro-rx"></block>です。</block>
+  <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">7</block>
+  <block id="a4712ad015228f6fd465cbe507723fae" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 古いシステムから新しいFSx for ONTAPファイルシステムにデータを移行</block>
+  <block id="3638e2726e921646915ead3523420694" category="paragraph">VMware HCX（Hybrid Cloud Extension）などの外部ツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動します。</block>
+  <block id="ed2864ba6212a6975c8039c89029a916" category="paragraph"><block ref="19e3683b716b5e111f0f1f9ccf094dd2" category="inline-link-macro-rx"></block>です。</block>
+  <block id="b334128403ed60ff931947907046e1f0" category="summary">NetAppテクニカルサポートでサポートケースをオープンするには、NetAppサポートサイトのアカウントをWorkload Factoryに追加してから、サポートに登録する必要があります。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
+  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">Workload Factoryおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、サポート登録が必要です。BlueXPコンソールからサポートに登録する必要があります。BlueXPコンソールはWorkload Factoryとは別のWebベースのコンソールです。</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">サポートに登録しても、クラウドプロバイダのファイルサービスでNetAppのサポートは有効になりません。クラウドプロバイダのファイルサービス、そのインフラ、またはサービスを使用するソリューションに関連するテクニカルサポートについては、その製品のWorkload Factoryドキュメントの「Getting help」を参照してください。</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
+  <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">アカウントIDサポートサブスクリプション（BlueXPの[Support Resources]ページに記載されている20桁の960xxxxxxxxxシリアル番号）を登録すると、単一のサポートサブスクリプションIDとして機能します。各BlueXPアカウントレベルのサポート契約が登録されている必要があります。</block>
+  <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">登録すると、サポートチケットのオープンやケースの自動生成などの機能が有効になります。登録を完了するには、以下の手順でNetApp Support Site（NSS）アカウントをBlueXPに追加してください。</block>
+  <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">NetAppサポートのアカウントを登録する</block>
+  <block id="2d6573b6ae4c51dc24e58109473f2490" category="paragraph">サポートに登録してサポート利用資格をアクティブ化するには、アカウントの1人のユーザがNetAppサポートサイトのアカウントをBlueXPログインに関連付ける必要があります。ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存のお客様</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSSアカウントをお持ちのネットアップのお客様は、BlueXPからサポートに登録するだけで済みます。</block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">BlueXPコンソールの右上で、[設定]アイコンを選択し、*[クレデンシャル]*を選択します。</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">[ユーザクレデンシャル]*を選択します。</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">[NSSクレデンシャルの追加]*を選択し、NetApp Support Site（NSS）認証プロンプトに従います。</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">登録プロセスが正常に完了したことを確認するには、[ヘルプ]アイコンを選択し、*[サポート]*を選択します。</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">[リソース]ページに、アカウントがサポートに登録されていることが表示されます。</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">アカウントのシリアル番号、緑のチェックボックス、サポート登録済みのテキストを示すスクリーンショット。</block>
+  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">他のBlueXPユーザにNetApp Support Siteアカウントが関連付けられていない場合、このサポート登録ステータスは表示されません。ただし、BlueXPアカウントがサポートに登録されていないわけではありません。アカウント内の1人のユーザーがこれらの手順を実行している限り、アカウントは登録されています。</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">NSSアカウントを持たない既存のお客様</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">NetAppの既存のお客様で、ライセンスとシリアル番号は_NO_NSSアカウントしかお持ちでない場合は、NSSアカウントを作成してBlueXPログインに関連付ける必要があります。</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site ユーザー登録フォーム</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">NetAppサポートサイトのアカウントを作成するには、<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">必ず、上記のシリアル番号フィールドに使用されているBlueXPアカウントのシリアル番号(960xxxx)をコピーしてください。これにより、アカウント処理が高速化されます。</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">の手順を実行して、新しいNSSアカウントをBlueXPログインに関連付けます <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">ネットアップのソリューションを初めて導入する場合は</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。</block>
+  <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">[Support Resources]ページでアカウントIDのシリアル番号を確認します。</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
+  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">ネットアップサポート登録サイト</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">[I am not a registered NetApp Customer]に移動して<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 選択します。</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールドに入力します（赤いアスタリスクのフィールド）。</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Eメールからアクションを確認します。</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセスについては、ネットアップからご連絡ください。これは、新規ユーザ向けの1回限りのオンボーディング演習です。</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetAppサポートサイトのアカウントを取得したら、の手順を実行してアカウントをBlueXPログインに関連付けます。 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block></block>
+  <block id="ced82174541d112041637e3fe596dc75" category="summary">Workload FactoryのVMware Migration Advisorコンポーネントの新機能について説明します。</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">新機能</block>
+  <block id="ff51979e6ce0617443f1ee7e3e8969ea" category="paragraph">Workload FactoryのVMware Cloud Migration Advisorコンポーネントの新機能について説明します。</block>
+  <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024年7月7日</block>
+  <block id="e34fc91d682ebcf23e9732294872ca80" category="section-title">Workload Factory for VMwareの初版リリース</block>
+  <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">初期リリースには、VMware Migration Advisorを使用してオンプレミスのvSphere環境で現在の仮想マシン構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWSに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成する機能が含まれています。</block>
+  <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">オンプレミスのvSphere環境からVMware Cloud on AWSへの移行を合理化し、カスタマイズしたFSx for ONTAPファイルシステムを外部データストアとして実装します。</block>
+  <block id="73f5c244b09686e8501c3a915df34d30" category="sidebar">Workload Factory for VMwareドキュメント</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイックスタート</block>
+  <block id="9faf81d72d2e94d2a3b1079129468863" category="sidebar">VMware Migration Advisorを使用する</block>
+  <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
+  <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">VMwareワークロードのドキュメント</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
+  <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">FSx for ONTAPをVMware Cloud on AWSに接続</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+</blocks>

@@ -1,0 +1,54 @@
+---
+permalink: legal-notices.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 法的通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+法的通知では、著作権に関する声明、商標、特許などにアクセスできます。
+
+
+
+== 著作権
+
+link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
+
+
+
+== 商標
+
+NetApp、NetAppのロゴ、およびNetAppの商標ページに記載されているマークは、NetApp、Inc.の商標です。 その他の会社名および製品名は、それを所有する各社の商標である場合があります。
+
+link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/company/legal/trademarks/"^]
+
+
+
+== 特許
+
+NetAppが所有する特許の最新リストは、次のサイトで参照できます。
+
+link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf"^]
+
+
+
+== プライバシーポリシー
+
+link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
+
+
+
+== オープンソース
+
+通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。
+
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["ワークロードファクトリ"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["データベース用ワークロードファクトリ"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["GenAI向けワークロードファクトリー"^]
+* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["VMwareのワークロードファクトリー"^]
+

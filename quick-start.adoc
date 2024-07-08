@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: quick-start.html 
+keywords: quick start 
+summary: VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。 
+---
+= VMware Migration Advisorのクイックスタートガイド
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。
+
+開始する前に、次のことを理解しておく必要があります。 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] Workload Factoryにサインアップしてアカウントを作成する
+[role="quick-margin-para"]
+に移動 https://console.workloads.netapp.com["Workload Factoryコンソール"^] してサインアップします。 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["アカウントの作成に関する詳細情報"]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する
+[role="quick-margin-para"]
+AWSアカウントにアクセスするためのクレデンシャルを追加することなく、Workload Factoryを_Basic_modeで使用できます。AWSクレデンシャルを_Read_or_automate_modeでWorkload Factoryに追加すると、FSx for ONTAPファイルシステムの作成と管理、およびVMware Cloud内でのワークロードの導入と管理に必要な権限がWorkload Factoryアカウントに付与されます。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] vSphere環境の現在のVM構成の把握
+[role="quick-margin-para"]
+Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して現在のVM構成をキャプチャし、導入計画を作成できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。
+
+[role="quick-margin-para"]
+link:capture-vm-configurations.html["現在のVM構成を取得する方法"]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"] VMware Migration Advisorを使用して導入計画を作成
+[role="quick-margin-para"]
+VMware Migration Advisorを起動し、Amazon FSx for ONTAPファイルシステムを外部NFSデータストアとして使用して、新しいVMware Cloud on AWSインフラに移行するVMを選択します。計画を保存する前に、いくつかの変更を行うことができます。
+
+[role="quick-margin-para"]
+link:launch-onboarding-advisor.html["VMware Migration Advisorを使用して導入計画を作成する方法"]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] 推奨されるFSx for ONTAPファイルシステムを導入
+[role="quick-margin-para"]
+VMware Cloud on AWSインフラ内のVMにデータストアを提供する新しいFSx for ONTAPファイルシステムを導入します。
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system.html["新しいFSx for ONTAPファイルシステムの導入方法をご確認ください"]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続
+[role="quick-margin-para"]
+ご使用のSoftware-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。
+
+[role="quick-margin-para"]
+link:connect-sddc-to-fsx.html["データ移行の詳細はこちら"]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"] 古いシステムから新しいFSx for ONTAPファイルシステムにデータを移行
+[role="quick-margin-para"]
+VMware HCX（Hybrid Cloud Extension）などの外部ツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動します。
+
+[role="quick-margin-para"]
+link:migrate-data.html["データ移行の詳細はこちら"]です。

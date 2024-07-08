@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: deploy-fsx-file-system.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms 
+summary: 推奨されるFSx for ONTAPファイルシステム（場合によってはファイルシステム）がお客様の要件を正確に満たしていることを確認したら、Workload Factoryを使用してAWS環境にシステムを導入できます。 
+---
+= 推奨されるFSx for ONTAPファイルシステムを導入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+推奨されるFSx for ONTAPファイルシステム（場合によっては複数のファイルシステム）が正確な要件を満たしていることを確認したら、Workload Factoryを使用してAWS環境にシステムを導入できます。
+
+Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factory（自動モードを使用）を使用してFSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合(読み取りモード)、または権限がない場合(基本モード)は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。
+
+.要件
+* FSx for ONTAPファイルシステムを導入するには、VMware Cloud on AWS Software-Defined Data Center（SDDC）バージョン1.20以降を使用している必要があります。
+* FSx for ONTAPファイルシステムは、SDDCの導入時に使用したVPCに導入しないでください。VMware Cloud on AWSとAmazon FSx for NetApp ONTAPを統合するには、所有する新しいAmazon VPCに導入する必要があります。
+* FSx for ONTAPファイルシステムは、SDDCと同じAWSリージョン内に導入する必要があります。
+
+
+.手順
+. [Review plan]ページの下部にある[Deploy]*を選択すると、[FSx for ONTAPファイルシステムの作成]ページが表示されます。
++
+FSx for ONTAPファイルシステムを定義するフィールドのほとんどは、入力した情報に基づいて入力されますが、このページで入力する必要があるフィールドがいくつかあります。
+
++
+[クイック作成]または[詳細作成]オプションを使用できます。高度な作成には、カスタマイズ可能ないくつかの追加のストレージパラメータが用意されています。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["この2つのオプションの詳細を見る"]です。
+
+. * AWSクレデンシャル*：FSx for ONTAPファイルシステムを直接作成するために必要な権限をWorkload Factoryに付与するクレデンシャルを選択または追加します。また、CodeboxからCloudFormationコードを選択し、AWSでFSx for ONTAPファイルシステムを自分でデプロイすることもできます。
+. *ファイルシステム名*：このFSx for ONTAPファイルシステムに使用する名前を入力します。
+. *タグ*:オプションでタグを追加して、このFSx for ONTAPファイルシステムを分類できます。
+. [Network & security]セクションで、次の情報を入力します。
++
+.. *リージョンとVPC *：FSx for ONTAPファイルシステムを導入するリージョンとVPCを選択します。
++
+VMware Cloud on AWSが導入されているVPCとは別のVPCに導入する必要があります。
+
+.. *セキュリティグループ*：*詳細作成*オプションを使用する場合、すべてのトラフィックがFSx for ONTAPファイルシステムにアクセスできるように、FSx for ONTAP VPCのデフォルトのセキュリティグループを選択できます。
++
+他のAWSサービスがFSx for ONTAPファイルシステムにアクセスできるように制限するインバウンドルールを追加できます。これにより、開いているサービスの量がブロックされます。最小ポートとプロトコルは次のとおりです。
+
++
+[cols="15,10,55"]
+|===
+| プロトコル | ポート | 目的 
+
+
+| TCP、UDP | 一一一 | portmapper（NFS要求で使用されるポートをネゴシエートするために使用） 
+
+
+| TCP、UDP | 635 | nfs mountd（NFSマウントヨウキュウノジュシン） 
+
+
+| TCP、UDP | 2049 | NFSネットワークトラフィック 
+
+
+| TCP、UDP | 4045 | Network Lock Manager（NLM、lockd）-ロック要求を処理します。 
+
+
+| TCP、UDP | 4046 | Network Status Monitor（NSM、statd）-ロック管理のためにサーバがリブートされたことをNFSクライアントに通知します。 
+|===
+.. *アベイラビリティゾーン*：アベイラビリティゾーンとサブネットを選択します。
++
+AZ間トラフィックの課金を回避するには、VMware SDDCが導入されている場所と同じアベイラビリティゾーンを選択する必要があります。
+
+.. *暗号化*：*高度な作成*オプションを使用する場合は、ドロップダウンからAWS暗号化キー名を選択できます。
+.. *データストアアクセス制御*：*[詳細作成]*オプションを使用して、すべてのホストがデータストアにアクセスできるかどうか、または特定のサブネット上の特定のvSphereクラスタノードのみがデータストアにアクセスできるかどうかを選択できます。
+
+
+. [File system details]セクションで、次の情報を入力します。
++
+.. * ONTAPクレデンシャル*：ONTAPパスワードを入力して確認します。
+.. * Storage VMクレデンシャル*（アドバンスト作成のみ）：Storage VMのパスワードを入力し、確認のためにもう一度入力します。このファイルシステムに固有のパスワードを指定することも、ONTAPクレデンシャルに入力したパスワードと同じパスワードを使用することもできます。
+
+
+. [まとめ]セクションでは、VMware Migration Advisorがお客様の情報に基づいて設計したFSx for ONTAPファイルシステムとデータストアの構成を確認できます。
+. FSx for ONTAPファイルシステムを導入するには、[作成]*を選択します。このプロセスには最大2時間かかることがあります。
++
+必要に応じて、Codeboxウィンドウで* Redirect to CloudFormation *を選択して、CloudFormationスタックを使用してファイルシステムを作成できます。
+
++
+どちらの場合も、CloudFormationで作成の進行状況を監視できます。
+
+
+
+.結果
+FSx for ONTAPファイルシステムが導入されます。
