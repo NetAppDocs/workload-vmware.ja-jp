@@ -28,12 +28,12 @@ Workload Factoryにアクセスするには、ユーザ名とパスワードが�
 オンプレミスのvSphere環境で現在の仮想マシン構成をVMware Cloud on AWSの仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。
 
 .要件
-* Migration Advisor VMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。
+* Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。
 * Workload Factoryにログインするシステムのインベントリファイルにアクセスできる必要があります。
 
 
 .手順
-. [VMware Workloads]タイルで*[Plan and deploy]*を選択すると、VMware Migration Advisorのメインページが表示されます。
+. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。
 +
 image:screenshot-choose-method-create.png["現在のVM構成情報をロードするために使用できるさまざまな方法のスクリーンショット。"]
 

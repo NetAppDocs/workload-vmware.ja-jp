@@ -193,7 +193,6 @@
   <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Workload Factoryにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>。</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">オンプレミスのvSphere環境を基に導入計画を作成</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">オンプレミスのvSphere環境で現在の仮想マシン構成をVMware Cloud on AWSの仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
-  <block id="56a6fbe00ab3546c5044f6b0c6eca438" category="list-text">Migration Advisor VMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Workload Factoryにログインするシステムのインベントリファイルにアクセスできる必要があります。</block>
   <block id="2627024352d67ddaed97566f9597199d" category="list-text">[VMware Workloads]タイルで*[Plan and deploy]*を選択すると、VMware Migration Advisorのメインページが表示されます。</block>
   <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">現在のVM構成情報をロードするために使用できるさまざまな方法のスクリーンショット。</block>
@@ -426,4 +425,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
   <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">FSx for ONTAPをVMware Cloud on AWSに接続</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
+  <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
+  <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
 </blocks>
