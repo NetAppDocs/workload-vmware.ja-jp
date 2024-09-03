@@ -13,7 +13,7 @@ summary: VMware Hybrid Cloud Extensionなどのツールを使用して、古い
 [role="lead"]
 VMware Hybrid Cloud Extension（HCX）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXのコア機能を使用すると、オンプレミスのデータセンターからSoftware-Defined Data Center（SDDC）にワークロードを透過的に移行できます。
 
-https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["詳細については、VMware HCXのドキュメントを参照してください。"^]
+https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["VMware HCXのドキュメントを確認する"^] を参照してください。
 
 .次の手順
 VMware Cloud on AWSとAmazon FSx for NetApp ONTAPの外部データストアにデータを移行したので、FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、データを常に利用できるようにすることができます。

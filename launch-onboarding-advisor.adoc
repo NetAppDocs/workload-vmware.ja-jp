@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。 
 ---
-= 移行アドバイザを使用して導入計画を作成
+= Migration Advisorを使用してVMware Cloud on AWSの導入計画を作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,9 +13,9 @@ summary: NetAppワークロードファクトリにログインして、VMware M
 [role="lead"]
 NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。
 
-Migration Advisorを使用して、次のシナリオの導入計画を作成できます。
+VMware Cloudに移行する場合は、Migration Advisorを使用して次のシナリオの導入計画を作成できます。
 
-* <<オンプレミスのvSphere環境を基に導入計画を作成,をクリックして、現在のオンプレミスのvSphere環境をクラウドに移行します。>>
+* <<オンプレミスのvSphere環境を基に導入計画を作成,をクリックして、現在のオンプレミスのvSphere環境をVMwareクラウドに移行します。>>
 * <<既存の計画に基づいて導入計画を作成する,同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。>>
 
 
@@ -33,9 +33,9 @@ Workload Factoryにアクセスするには、ユーザ名とパスワードが�
 
 
 .手順
-. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。
+. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。
 +
-image:screenshot-choose-method-create.png["現在のVM構成情報をロードするために使用できるさまざまな方法のスクリーンショット。"]
+VMware Migration Advisorのメインページが表示されます。
 
 . [新しい導入計画を作成する]*を選択します。
 . 現在のVM構成をWorkload Factoryに入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
@@ -83,7 +83,7 @@ image:screenshot-choose-method-create.png["現在のVM構成情報をロード�
 
 . [_VM storage capacity considerations]セクションで、ストレージオプションをいくつか選択します。
 +
-.. *平均データ削減比率*：3つの一般的なデータ削減選択値から選択します。[1：1-No reduction]、[1：1.25-20% reduction]、または[1：1.5-33% reduction]を選択します。
+.. *平均データ削減比率*：3つの一般的なデータ削減選択値から選択します。「1：1 -削減なし」、「1：1.25 - 20%削減」、または「1：1.5 - 33%削減」を選択します。
 .. *ヘッドルームパーセンテージ*：FSx for ONTAPファイルシステムの容量に追加される容量増加率を入力します。
 +
 20%未満の値を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成できなくなります。
@@ -134,7 +134,7 @@ image:screenshot-choose-method-create.png["現在のVM構成情報をロード�
 
 . [Review deployment plan（導入計画の確認）]ページで、移行するすべてのVMの予測月次コストを確認します。
 +
-ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コストの内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。
+ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コスト内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。
 
 . 移行計画に満足したら、次のような選択肢があります。
 +
@@ -157,10 +157,7 @@ Workload Factoryにログインするシステムから、既存の導入計画�
 
 .手順
 . Workload Factoryにログインします。
-. [VMware Workloads]タイルで*[Plan and deploy]*を選択すると、VMware Migration Advisorのメインページが表示されます。
-+
-image:screenshot-choose-method-import.png["現在のVM構成情報をロードするために使用できるさまざまな方法のスクリーンショット。"]
-
+. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。
 . [Import an existing deployment plan]を選択します。
 . image:button-upload-file.png["アップロードボタン"]Migration Advisorにインポートする既存の計画ファイルを選択します。
 . [次へ]*を選択すると、[計画のレビュー]ページが表示されます。

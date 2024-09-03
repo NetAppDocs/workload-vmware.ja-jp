@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: migrate-data-native.html 
+keywords: vm workloads, fsx for ontap, migration, data migration, vmware hcx 
+summary: AWSアプリケーション移行サービス（MGN）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動します。 
+---
+= 新しいインフラへのデータ移行
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWSアプリケーション移行サービス（MGN）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動します。
+
+AWS MGNを使用すると、Amazon EC2内のFSx for NetApp ONTAPボリュームにアプリケーションを移行できます。
+
+https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html["AWS Application Migration Serviceのドキュメントを確認する"^] を参照してください。
+
+.次の手順
+AWSとAmazon FSx for NetApp ONTAPの外部データストアにデータを移行したので、FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、データを常に利用できるようにすることができます。
+
+FSx for ONTAPファイルシステムの管理については、で https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX for NetApp ONTAP のドキュメント"] 使用できるバックアップ機能と保護機能を確認してください。

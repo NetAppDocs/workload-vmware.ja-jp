@@ -18,9 +18,6 @@
   <block id="3650e2eb7f7794332db7036831f768dd" category="paragraph">VMから長期統計（日次統計）を取得する場合は、vSphere管理コンソール（VMware管理環境）で統計レベル3以上をアクティブ化しておく必要があります。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="d34fab7936dd110b003945d679bb4133" category="list-text">Workload Factoryにログインします。</block>
-  <block id="e89045fcaeea0596351f980d8876a90a" category="list-text">[VMware]タイルで、*[計画と導入]*を選択します。</block>
-  <block id="56dbec4488b5001a29504a3a766a4f86" category="inline-image-macro">現在のVM構成情報の収集に使用できるさまざまな方法のスクリーンショット。</block>
-  <block id="ab42a9ea30ee72a49c9dd83c04a1fa74" category="paragraph"><block ref="ab42a9ea30ee72a49c9dd83c04a1fa74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7733cfea4c10d8edbae71f745c8adcc4" category="list-text">[Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。</block>
   <block id="7797697bf5f4b38c4de3f12c9a5194ac" category="paragraph">[VMware Cloud on AWSへの移行の準備]*ページが表示されます。</block>
   <block id="f383f073a6edf7564d29459bef094282" category="inline-image-macro">ダウンロードボタン</block>
@@ -30,7 +27,6 @@
   <block id="35fc8aad1c96a506870619b99b225bd3" category="list-text">PowerShellとPowerCLIがインストールされているデータコレクタをダウンロードしたシステムにログインします。</block>
   <block id="ea290aa0b4fc7a1e5e3a3d4108b40f29" category="list-text">次のコマンドを実行して、VMware vCenterサーバに接続します。</block>
   <block id="8283e4c9758f438b06e1efdea761629b" category="paragraph">&lt;server_IP&gt;をVMwareサーバのIPアドレスまたはホスト名に置き換えます。</block>
-  <block id="b882080acef378635311a1d56cbfd3e5" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。</block>
   <block id="5976be1a3647c1d1d6df4ce77cd4c6de" category="paragraph">ここで、</block>
   <block id="f463cab33838fd5d10abccaf72330f35" category="list-text">* true *過去24時間のIOPSとスループットのデータを5分間隔で収集します。</block>
   <block id="14b13715e39f4ef8d6e21c37afc154b7" category="list-text">* false *過去1時間のIOPSとスループットのデータを20秒間隔で収集します。</block>
@@ -46,11 +42,9 @@
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">これにより、指定したvCenter Serverに関する情報がキャプチャされます。</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">VMware情報をxlsxまたはxlsファイルにエクスポートします。</block>
   <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">RVToolsのマニュアル</block>
-  <block id="7d2cf15a702542e944716ce9fffaed68" category="paragraph">詳細については、『』の「コマンドラインパラメータ」の章を参照してください<block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block> 。</block>
   <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">結果を含むxlsxまたはxlsファイルが作業ディレクトリに保存されます。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
   <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="inline-link-macro">移行アドバイザを使用して導入計画を作成</block>
-  <block id="ed04dfca3ba99cc02a56786b8fee09d3" category="paragraph"><block ref="b33ad552760aea505851a4e799b84f84" category="inline-link-macro-rx"></block>です。</block>
   <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。SDDCには、VPCピアリング機能を使用してFSx for ONTAPファイルシステムに接続し、外部NFSストレージボリュームへのネットワーク接続を拡張するためのネットワークオプションが用意されています。</block>
   <block id="07413029412abf4b07d59a7418a48d98" category="doc">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
   <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。Software-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。</block>
@@ -76,7 +70,6 @@
   <block id="359e1e6f7c29e9b4dac5878404beab8e" category="list-text">*タグ*:オプションでタグを追加して、このFSx for ONTAPファイルシステムを分類できます。</block>
   <block id="f6da2acef7db3c4a718d343f3dfe3c4c" category="list-text">[Network &amp; security]セクションで、次の情報を入力します。</block>
   <block id="7d41d89314fd1a2df6210e91f6da55a7" category="list-text">*リージョンとVPC *：FSx for ONTAPファイルシステムを導入するリージョンとVPCを選択します。</block>
-  <block id="875cc5528c7347167f10ab54d3e80c6b" category="paragraph">VMware Cloud on AWSが導入されているVPCとは別のVPCに導入する必要があります。</block>
   <block id="d7b999322a22682588eba6652df7e969" category="list-text">*セキュリティグループ*：*詳細作成*オプションを使用する場合、すべてのトラフィックがFSx for ONTAPファイルシステムにアクセスできるように、FSx for ONTAP VPCのデフォルトのセキュリティグループを選択できます。</block>
   <block id="955565afef9175d40dc796c8c08484e8" category="paragraph">他のAWSサービスがFSx for ONTAPファイルシステムにアクセスできるように制限するインバウンドルールを追加できます。これにより、開いているサービスの量がブロックされます。最小ポートとプロトコルは次のとおりです。</block>
   <block id="9985b4390c40137573e6da05caf85874" category="cell">プロトコル</block>
@@ -184,9 +177,6 @@
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2559e4d6b9e2e602a91b8df995b458c8" category="summary">NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。</block>
-  <block id="31f8985acb8af1ba9c63a40c3a7ceeee" category="paragraph">Migration Advisorを使用して、次のシナリオの導入計画を作成できます。</block>
-  <block id="c2fc31ef454cc8e0f7af0db95923a688" category="inline-xref">をクリックして、現在のオンプレミスのvSphere環境をクラウドに移行します。</block>
-  <block id="e8fd05295638b6180f44a5f4c0d57bf4" category="list-text"><block ref="5a7eb2b4bf76f0222b9bec2f2e8b4fa9" category="inline-xref-macro-rx"></block></block>
   <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。</block>
   <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">ここをクリック</block>
@@ -194,9 +184,6 @@
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">オンプレミスのvSphere環境を基に導入計画を作成</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">オンプレミスのvSphere環境で現在の仮想マシン構成をVMware Cloud on AWSの仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
   <block id="b13e28ff6e5b463fac6d9d320af1db48" category="list-text">Workload Factoryにログインするシステムのインベントリファイルにアクセスできる必要があります。</block>
-  <block id="2627024352d67ddaed97566f9597199d" category="list-text">[VMware Workloads]タイルで*[Plan and deploy]*を選択すると、VMware Migration Advisorのメインページが表示されます。</block>
-  <block id="cff0ff09fa5d46af3e6c32d9a5e2d408" category="inline-image-macro">現在のVM構成情報をロードするために使用できるさまざまな方法のスクリーンショット。</block>
-  <block id="be546eb7700a271b12e087db71616a76" category="paragraph"><block ref="be546eb7700a271b12e087db71616a76" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e805dde1d276b6165ec64309a45ea71e" category="list-text">[新しい導入計画を作成する]*を選択します。</block>
   <block id="4f85817ed18f4d26c6d18e7183794766" category="list-text">現在のVM構成をWorkload Factoryに入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。</block>
   <block id="e7864d4b66ace757c2a108b5b0e4db3e" category="list-text">VMwareデータコレクタを使用して作成した.csvファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。</block>
@@ -220,13 +207,11 @@
   <block id="35c06a302c6771923f1bf0ae87021382" category="list-text">*平均I/Oブロックサイズ*：読み取りまたは書き込み処理を含む各ブロックのサイズ。デフォルトのサイズは4KBです。ブロックサイズを大きくした方が、ラージシーケンシャルリード/ライトワークロードに適している場合があります。スパースファイルまたは大容量ファイルへの小規模なランダム書き込みを実行するワークロードでは、ブロックサイズを小さくするとパフォーマンスが向上します。</block>
   <block id="671f570e3ea106a7c662d27393517d77" category="list-text">*平均書き込み比率*：ワークロードの書き込み処理の割合。デフォルトの比率は、書き込みが30%、読み取りが70%です。</block>
   <block id="8cee69b8c05f31ed2796e76723e0346d" category="list-text">[_VM storage capacity considerations]セクションで、ストレージオプションをいくつか選択します。</block>
-  <block id="6f46f8eb6a78042e25d606c158b4f91b" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減選択値から選択します。[1：1-No reduction]、[1：1.25-20% reduction]、または[1：1.5-33% reduction]を選択します。</block>
   <block id="0c47db7e17a6772593257a96d46f5cef" category="list-text">*ヘッドルームパーセンテージ*：FSx for ONTAPファイルシステムの容量に追加される容量増加率を入力します。</block>
   <block id="aebce73a3f5f4b5eb62667bc03380901" category="paragraph">20%未満の値を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成できなくなります。</block>
   <block id="b861243dc465efb48d26f7b08e8092dd" category="list-text">[次へ]*を選択すると、[VMware cloud on AWS node configuration]ページが表示されます。</block>
   <block id="eb45b66ef322066cb931c800b0ff5a5d" category="paragraph">このページでは、予想される削減量の分析と推奨されるノードタイプを使用して、VMware Cloud on AWSクラスタの構成を定義できます。次の項目を設定できます。</block>
   <block id="c89e6e0aa2bb09c1d7b8e38b112b33e1" category="list-text">* VSANアーキテクチャ*：VSAN Express Storage Architecture（ESA）とVSAN Original Storage Architecture（OSA）のどちらのアーキテクチャを使用するかを選択します。</block>
-  <block id="43a0e9cbfc582c1e66e7982369aae32e" category="list-text">* VSAN Fault Tolerance *：VMに必要なフォールトトレランスのレベルを選択します。推奨される「自動」を選択するか、さまざまなRAIDレベルから選択できます。</block>
   <block id="74ea3f5cdcbfe5071a021f2bcbcf8f1d" category="list-text">RAID-1（FTT 1）：2つ以上のディスク上にある一連のデータの完全なコピー（ミラー）で構成されます。</block>
   <block id="afd103de82421fcd40e3a247053edca8" category="list-text">RAID-5（FTT 1）：ブロックレベルのストライピングと分散パリティ情報で構成され、3つ以上のドライブに分散されます。1つのディスクで障害が発生しても運用を継続できます。</block>
   <block id="540c7a94a98b70d6ef1eca9ecb05237b" category="list-text">RAID-5（FTT 2）：ブロックレベルのストライピングと分散パリティ情報で構成され、4つ以上のドライブに分散されます。2つのディスクで同時に障害が発生しても、データは保護されます。</block>
@@ -245,7 +230,6 @@
   <block id="4345e81606df5dc45287de1f6571b7e8" category="paragraph">ページの下部には、この新しいVMとデータストアをプロビジョニングするソースVM（または複数のVM）が表示されます。</block>
   <block id="370536ffe24c99675c2d3115f877ecb6" category="list-text">データストアの導入方法を確認したら、*[次へ]*を選択します。</block>
   <block id="365938d07c3056cb5ddd57ae13a34718" category="list-text">[Review deployment plan（導入計画の確認）]ページで、移行するすべてのVMの予測月次コストを確認します。</block>
-  <block id="6337ff3f1523ba47c97a795e4b5bbc20" category="paragraph">ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コストの内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。</block>
   <block id="8687a48178491c960e3d406f98cbf29c" category="list-text">移行計画に満足したら、次のような選択肢があります。</block>
   <block id="0afb54dff7a72cd0654a60ad3ddcbeca" category="inline-link-macro">FSx for ONTAPファイルシステムの導入方法をご確認ください</block>
   <block id="97d5613878abc66cd0377bc72293e1c7" category="list-text">VMをサポートするためにFSx for ONTAPファイルシステムを導入するには、* Deploy *を選択します。<block ref="6d03875f1725fb0475157a3f38b365e6" category="inline-link-macro-rx"></block>です。</block>
@@ -255,7 +239,6 @@
   <block id="eb0382b6d1486520f7db805842e3cb39" category="section-title">既存の計画に基づいて導入計画を作成する</block>
   <block id="8c7f50d238649f9f07e3c2778bd32944" category="paragraph">以前に使用した既存の導入計画に似た新しい導入を計画している場合は、その計画をインポートして編集し、新しい導入計画として保存できます。</block>
   <block id="2ba4d56c67bf769878bdd42cd7cca655" category="paragraph">Workload Factoryにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。</block>
-  <block id="8e6d200b693c56bf0c412dc1466869ca" category="paragraph"><block ref="8e6d200b693c56bf0c412dc1466869ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0cf508bfdfca6645623887a9bbdf21a6" category="list-text">[Import an existing deployment plan]を選択します。</block>
   <block id="5f729e0cf80af6c0509f40c4e10b8e21" category="list-text"><block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>Migration Advisorにインポートする既存の計画ファイルを選択します。</block>
   <block id="8909739edfc984376de0bcbd81aa6b66" category="list-text">[次へ]*を選択すると、[計画のレビュー]ページが表示されます。</block>
@@ -263,25 +246,19 @@
   <block id="ad004cea2e3efcaa61893ef5d25d7633" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、FSx for ONTAPファイルシステム上のデータストアの導入プロセスを開始できます。</block>
   <block id="44e948f72707f7630f611b68923bfc83" category="summary">Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWSにデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。</block>
   <block id="be5711eda7e0bf4f780900d61a066a0c" category="doc">Workload Factory for VMwareの詳細</block>
-  <block id="9a65636d5ca5b878904a6057dac83843" category="paragraph">Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWS（VMC）にデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。</block>
-  <block id="95b939b0f0e220091a7ff9d176a3097b" category="paragraph">Amazon FSx for NetApp ONTAPは、ネットアップのONTAPファイルシステム上に構築された外部NFSデータストアで、VMware Cloud on AWS vSphereクラスタに接続できます。利用可能なストレージを増やすためにホストを追加する必要はありません。代わりに、FSx for ONTAPボリュームを外付けデータストアとして使用するだけで、vSANデータストアを補完できます。これにより、コンピューティングリソースとは別に拡張できる、柔軟性に優れたハイパフォーマンスな仮想ストレージインフラが実現します。</block>
   <block id="30141ccedd6bc04bfcb3e98195efc3cb" category="inline-image-macro">アーキテクチャを示す図。</block>
   <block id="b3bddd6280dd2182432a9d3160f06da2" category="paragraph"><block ref="b3bddd6280dd2182432a9d3160f06da2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ccaa90f171b926c0ccd9ee1bae9f5282" category="section-title">VMware Migration Advisorの仕組み</block>
-  <block id="7d197b845beffcefcc2b7624db4536bc" category="paragraph">Migration Advisorは、VMwareがサポートしている任意のデータストアで実行されているオンプレミスの仮想マシン（VM）とそのデータを、FSx for ONTAPファイルシステム上の補完的なNFSデータストアを含むVMware Cloudデータストアに移行するのに役立ちます。</block>
   <block id="3104e285f52d2373db8e64fa25908a0a" category="inline-image-macro">古いアーキテクチャと移行後の新しいアーキテクチャの例を示す図。</block>
   <block id="793538922c4536c046db4d0b15151ec1" category="paragraph"><block ref="793538922c4536c046db4d0b15151ec1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f16579e3ec27716e8cd4980fbae4d3e4" category="paragraph">VMware Cloud on AWS上の単一のvSphereクラスタに最大4個のFSx for ONTAPボリュームを接続できます。</block>
   <block id="389a4416c476e7624728b96c49b3cce2" category="section-title">Migration Advisorでできること</block>
   <block id="a5f8a88b580feb03d498f8605e413984" category="paragraph">Migration Advisorには次の機能があります。</block>
   <block id="8cab295292831bfdeb59bccbb79bdd46" category="list-text">現在のオンプレミスVM構成を分析</block>
-  <block id="c25aec1fd0ebfaedc74c756cad69abd2" category="list-text">VMware Cloud on AWSに移行するVMを決定</block>
   <block id="1a05637cb863ca10f5a7d788eab39615" category="list-text">FSx for ONTAPボリュームにVMの外部データストアとして使用するために必要なスペースを特定する</block>
   <block id="feb18d16cfa710c71684233bc628e803" category="list-text">作成されたレポートを確認して導入手順を理解する</block>
   <block id="ecd032206ca6be7b4497c7dadd4679ff" category="list-text">実際の導入の実行</block>
-  <block id="404d1cf9d1cf2f009727efa79f365ed0" category="paragraph">移行アドバイザは、単一のFSx for ONTAPファイルシステムに接続された単一のVMware Cloud on AWSクラスタの構成計画をサポートします。</block>
   <block id="59a64ee2ba08e22b44728c86d8f75c1b" category="section-title">Migration Advisorを使用するメリット</block>
-  <block id="68b045681603b3999a47a329a1c2f2f2" category="paragraph">Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラの一部をVMware Cloud on AWSに移行すると、次のようなメリットがあります。</block>
   <block id="633d759efd4c2199d984faea480082ad" category="list-text">ホストとストレージの分離と高度なデータ効率化によるコスト最適化</block>
   <block id="52800f54ef93212b18b3653970aa2ed4" category="list-text">ホストインスタンスを追加購入することなく、必要に応じてストレージ容量を拡張可能</block>
   <block id="17167f5b04002560e9e2c5818b543bfa" category="list-text">クラウドでのNetApp ONTAPデータ管理機能（スペース効率に優れたSnapshot、クローニング、圧縮、重複排除、コンパクションなど）</block>
@@ -323,13 +300,10 @@
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">VMware Hybrid Cloud Extensionなどのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXコア機能を使用すると、オンプレミスのデータセンターからSDDCにワークロードを透過的に移行できます。</block>
   <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">新しいインフラへのデータ移行</block>
   <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">VMware Hybrid Cloud Extension（HCX）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXのコア機能を使用すると、オンプレミスのデータセンターからSoftware-Defined Data Center（SDDC）にワークロードを透過的に移行できます。</block>
-  <block id="81296b60bd3fac67fc4c879b35c21ce7" category="inline-link">詳細については、VMware HCXのドキュメントを参照してください。</block>
-  <block id="38b89112e54a0592b6516a64ce8ab7cd" category="paragraph"><block ref="38b89112e54a0592b6516a64ce8ab7cd" category="inline-link-rx"></block></block>
   <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">VMware Cloud on AWSとAmazon FSx for NetApp ONTAPの外部データストアにデータを移行したので、FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、データを常に利用できるようにすることができます。</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Amazon FSX for NetApp ONTAP のドキュメント</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">FSx for ONTAPファイルシステムの管理については、で<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> 使用できるバックアップ機能と保護機能を確認してください。</block>
   <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。</block>
-  <block id="4a715abf409664eac4dbee272a84b726" category="doc">VMware Migration Advisorのクイックスタートガイド</block>
   <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">動作モード</block>
   <block id="02d45e6950dba7745c9b6afe3c8338ca" category="paragraph">開始する前に、次のことを理解しておく必要があります。<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block></block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
@@ -417,7 +391,6 @@
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">オンプレミスのvSphere環境からVMware Cloud on AWSへの移行を合理化し、カスタマイズしたFSx for ONTAPファイルシステムを外部データストアとして実装します。</block>
   <block id="73f5c244b09686e8501c3a915df34d30" category="sidebar">Workload Factory for VMwareドキュメント</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
-  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイックスタート</block>
   <block id="9faf81d72d2e94d2a3b1079129468863" category="sidebar">VMware Migration Advisorを使用する</block>
   <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
   <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">VMwareワークロードのドキュメント</block>
@@ -427,4 +400,75 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
+  <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Amazon EC2への移行</block>
+  <block id="a8d4a316d0df9e6b884220ad60451578" category="paragraph">Workload Factory for VMwareでは、VMware Migration Advisorを使用したAmazon EC2への移行がサポートされるようになりました。</block>
+  <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">Amazon EC2に移行する前に、現在のVM構成を把握</block>
+  <block id="1af00da7b1991dc3522efa12b13d06a5" category="list-text">[VMware]タイルで、*[Access and plan]*を選択します。</block>
+  <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。</block>
+  <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">スクリプトは、現在の作業ディレクトリ内の名前にタイムスタンプを含む圧縮ファイルを出力します。.zipファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。</block>
+  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>詳細については、『』の「コマンドラインパラメータ」の章を参照してください。</block>
+  <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">移行アドバイザを使用してAmazon EC2導入計画を作成</block>
+  <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>です。</block>
+  <block id="2937dfbcdcb41e8eba68b50ecd25d526" category="doc">VMware Cloudに移行する前に、現在のVM構成を把握</block>
+  <block id="ad593b2d0fe3cbb86e53650eaaf4824a" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。</block>
+  <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">VMware Migration Advisorのメインページが表示されます。</block>
+  <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">移行アドバイザを使用してVMware Cloud on AWSの導入計画を作成</block>
+  <block id="4768fe1dcba86ded88bcf4933b3796e9" category="paragraph"><block ref="a42505b35c6e27042bbc626caf0dab0e" category="inline-link-macro-rx"></block>です。</block>
+  <block id="4b4cbcf57cb0bd98e4741d1d43b22196" category="list-title">VMware Cloud on AWSへの導入の要件</block>
+  <block id="5d103325262d22fbc44efacfdca8a26f" category="list-title">Amazon EC2への導入の要件</block>
+  <block id="40e4643f209887a63ee9e277510c8d21" category="list-text">FSx for ONTAPファイルシステムのルートボリュームは、EBSボリュームとして作成する必要があります。</block>
+  <block id="8c762f17b3d2ee1292e4c6d599e3c4f4" category="paragraph">VMware Cloud on AWSに導入する場合は、VMware Cloud on AWSが導入されているVPCとは別のVPCに導入してください。</block>
+  <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">移行アドバイザを使用してAmazon EC2の導入計画を作成</block>
+  <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">オンプレミスのvSphere環境の現在の仮想マシン構成をAmazon EC2の仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
+  <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">Migration AdvisorのVMコレクタ（.zipファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
+  <block id="278a85e02b26dbd2e7a5074820679e8c" category="list-text">VMwareデータコレクタを使用して作成したファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。</block>
+  <block id="26a805e1dd0fca3151bedb2d8e12a651" category="paragraph">[Prepare for AWS Cloud Onboarding]ページが表示されます。</block>
+  <block id="5d962e477a215e1da47c1123eb0453bc" category="list-text">[_Upload VM configuration_]セクションで、<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>使用するインベントリファイルを選択します。</block>
+  <block id="6b5dae90780a08c5ba86866abd8a1432" category="list-text">Migration Advisor VMコレクタを使用する場合は、.zipファイルを選択します。</block>
+  <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">インベントリファイルの*[VMs summary]*セクションに、VMの数と合計ストレージ容量が入力されます。</block>
+  <block id="1a04b9149745d21476396398a73240e3" category="list-text">*仮想マシンを考慮*：オペレーティング・パワー状態に基づいて、インベントリ・ファイルから抽出される仮想マシンを指定します。すべてのVMを取り込むことも、オン、オフ、または一時停止中のVMのみを取り込むこともできます。</block>
+  <block id="5e6d5c629d61f338ad33388904a1a38d" category="list-text">[_Cloud deployment configuration_]セクションで、必要なAmazon EC2設定に関する詳細を入力します。</block>
+  <block id="284c0194166a2962fd51534f6158914b" category="list-text">*リージョン*：Amazon FSx for NetApp ONTAPファイルシステムを導入するリージョンを選択します。</block>
+  <block id="57fd0f79436be23d539fc3dd6791b37f" category="paragraph">最適なパフォーマンスとコスト効率を実現するには、通常、既存のAmazon EC2 SDDCが導入されているリージョンと同じリージョンを使用します。</block>
+  <block id="aec55cbdf93104d8f633395f34d47241" category="list-text">*平均I/Oブロックサイズ*：読み取りまたは書き込み処理を含む各ブロックのサイズ。デフォルトのサイズは4KBです。ブロックサイズを大きくした方が、ラージシーケンシャルリード/ライトワークロードに適している場合があります。スパースファイルや大容量ファイルへの小規模なランダム書き込みを実行するワークロードでは、ブロックサイズを小さくするとパフォーマンスが向上する場合があります。</block>
+  <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">[Target capacity and protection considerations_]セクションで、ストレージオプションをいくつか選択します。</block>
+  <block id="2371c65768dba03d44190d2797940527" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減比率から選択します。「1：1 -削減なし」、「1：1.25 - 20%削減」、または「1：1.5 - 33%削減」を選択します。</block>
+  <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20%未満の容量を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成することはできません。</block>
+  <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VMスナップショット保護*：スナップショットでVMを保護する場合は、このオプションを有効にします。</block>
+  <block id="989b80d51d89a9c4e98f8e9d93a8b430" category="list-text">[EC2ボリュームの確認]ページで、VM情報、ボリューム分類ルール、ボリュームの割り当て、導入時にマイグレートするボリュームのリストを確認します。</block>
+  <block id="0bd2351ba13aaa50e485f5d6ed8991d1" category="list-text">[Review instance storage]*ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認します。</block>
+  <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コスト内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。</block>
+  <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">Migration Advisorを使用してVMware Cloud on AWSの導入計画を作成</block>
+  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">VMware Cloudに移行する場合は、Migration Advisorを使用して次のシナリオの導入計画を作成できます。</block>
+  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">をクリックして、現在のオンプレミスのvSphere環境をVMwareクラウドに移行します。</block>
+  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
+  <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減選択値から選択します。「1：1 -削減なし」、「1：1.25 - 20%削減」、または「1：1.5 - 33%削減」を選択します。</block>
+  <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">* VSAN Fault Tolerance *：VMに必要なフォールトトレランスのレベルを選択します。推奨される「自動」を選択するか、さまざまなRAIDレベルから選択できます。</block>
+  <block id="64b1201878c295edf1882326e991ba6c" category="paragraph">Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。</block>
+  <block id="d76132d0cba84b58ca2dcb647eda106b" category="paragraph">Amazon FSx for NetApp ONTAPは、NetAppのONTAPファイルシステム上に構築された外部NFSデータストアで、Amazon EC2インスタンスまたはVMware Cloud on AWS vSphereクラスタに接続できます。利用可能なストレージを増やすためにホストを追加する必要はありません。代わりに、FSx for ONTAPボリュームを外付けデータストアとして使用するだけで、vSANデータストアを補完できます。これにより、コンピューティングリソースとは別に拡張できる、柔軟性に優れたハイパフォーマンスな仮想ストレージインフラが実現します。</block>
+  <block id="1050240de009d728cf8820bddb4f10af" category="paragraph">Migration Advisorは、VMwareがサポートしている任意のデータストアで実行されているオンプレミスの仮想マシン（VM）とそのデータを、Amazon EC2またはVMware Cloudのデータストアに移動するのに役立ちます。このデータストアには、FSx for ONTAPファイルシステム上の補完的なNFSデータストアが含まれます。</block>
+  <block id="d371f01eca51770f71308170e7000111" category="list-text">Amazon EC2またはVMware Cloud on AWSに移行するVMを決定</block>
+  <block id="060a8c21670f2278959efb3bd6dcdbf8" category="paragraph">移行アドバイザは、単一のAmazon EC2インスタンスまたは単一のFSx for ONTAPファイルシステムに接続されたVMware Cloud on AWSクラスタの構成計画をサポートします。</block>
+  <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラの一部をAmazon EC2またはVMware Cloud on AWSに移行することには、次のようなメリットがあります。</block>
+  <block id="f261a631c51179505f4fc191ce3709be" category="summary">AWSアプリケーション移行サービス（MGN）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動します。</block>
+  <block id="8d8d941840593c266de0ff70d190c4d6" category="paragraph">AWS MGNを使用すると、Amazon EC2内のFSx for NetApp ONTAPボリュームにアプリケーションを移行できます。</block>
+  <block id="55b3c4f530374071eeab11ad7c800812" category="inline-link">AWS Application Migration Serviceのドキュメントを確認する</block>
+  <block id="dd71a9ab0a6d12ec3b7055ec9fb57af5" category="paragraph"><block ref="6d9771562af57950e6338ef52b98a7fc" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="4f4118147c2e5c1031ff5e9b1275a455" category="paragraph">AWSとAmazon FSx for NetApp ONTAPの外部データストアにデータを移行したので、FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、データを常に利用できるようにすることができます。</block>
+  <block id="5cf77a6cd1a6546f96141615c376acb2" category="inline-link">VMware HCXのドキュメントを確認する</block>
+  <block id="1cdaa881e46a57173b4ffb5ec3faacc3" category="paragraph"><block ref="cef3bc29c9f27088570c1e3262538cf8" category="inline-link-rx"></block> を参照してください。</block>
+  <block id="e893ba46613a19a9294b7b151c4df83e" category="summary">VMware移行アドバイザを利用して、外部NFSデータストアとしてAmazon FSx for ONTAPを使用し、現在のインフラをAmazon EC2に移行しましょう。</block>
+  <block id="294f9af291a855904cc69ccf0e3c306f" category="doc">VMware Migration Advisorを使用してAmazon EC2に移行するためのクイックスタート</block>
+  <block id="b0e3e3f0b950f1696359666176a911cc" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、Workload Factoryを_Basic_modeで使用できます。AWSクレデンシャルを_Read_or_automate_modeでWorkload Factoryに追加すると、FSx for ONTAPファイルシステムの作成と管理、Amazon EC2内でのワークロードの導入と管理に必要な権限がWorkload Factoryアカウントに付与されます。</block>
+  <block id="9cd1f8c893219dcc9697141d6585e5d9" category="paragraph"><block ref="ab4df44eb8806514d8649fc0b63ead31" category="inline-link-macro-rx"></block>です。</block>
+  <block id="d645e6b9cc715485914696dcaeed7e40" category="paragraph">VMware Migration Advisorを起動し、Amazon FSx for ONTAPファイルシステムを外部NFSデータストアとして使用して、Amazon EC2インフラに移行するVMを選択します。計画を保存する前に、いくつかの変更を行うことができます。</block>
+  <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>です。</block>
+  <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">Amazon EC2インフラ内のVMにデータストアを提供する新しいFSx for ONTAPファイルシステムを導入します。</block>
+  <block id="d8329106d0f4da40a239ea890e93904c" category="doc">VMware Migration Advisorを使用してVMware Cloud on AWSに移行するためのクイックスタートガイド</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
+  <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">クイックスタート：VMware Cloud on AWSへの移行</block>
+  <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">クイックスタート：Amazon EC2への移行</block>
+  <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">VMware Cloud on AWSへの移行</block>
+  <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">クイックスタートガイド：VMware Cloud on AWSへの移行</block>
+  <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2への移行のクイックスタート</block>
 </blocks>

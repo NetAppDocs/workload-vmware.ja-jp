@@ -8,6 +8,8 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
@@ -21,20 +23,34 @@ sidebar:
     entries:
     - title: Workload Factory for VMwareの詳細
       url: "/learn-about-vmware-workloads.html"
-    - title: クイックスタート
+    - title: クイックスタートガイド：VMware Cloud on AWSへの移行
       url: "/quick-start.html"
+    - title: Amazon EC2への移行のクイックスタート
+      url: "/quick-start-native.html"
   - title: VMware Migration Advisorを使用する
     entries:
-    - title: 現在のVM構成のキャプチャ
-      url: "/capture-vm-configurations.html"
-    - title: 移行アドバイザを使用して導入計画を作成
-      url: "/launch-onboarding-advisor.html"
-    - title: 推奨されるFSx for ONTAPファイルシステムを導入
-      url: "/deploy-fsx-file-system.html"
-    - title: FSx for ONTAPをVMware Cloud on AWSに接続
-      url: "/connect-sddc-to-fsx.html"
-    - title: 新しいインフラへのデータ移行
-      url: "/migrate-data.html"
+    - title: VMware Cloud on AWSへの移行
+      entries:
+      - title: 現在のVM構成のキャプチャ
+        url: "/capture-vm-configurations.html"
+      - title: 移行アドバイザを使用して導入計画を作成
+        url: "/launch-onboarding-advisor.html"
+      - title: 推奨されるFSx for ONTAPファイルシステムを導入
+        url: "/deploy-fsx-file-system.html"
+      - title: FSx for ONTAPをVMware Cloud on AWSに接続
+        url: "/connect-sddc-to-fsx.html"
+      - title: 新しいインフラへのデータ移行
+        url: "/migrate-data.html"
+    - title: Amazon EC2への移行
+      entries:
+      - title: 現在のVM構成のキャプチャ
+        url: "/capture-vm-configurations-native.html"
+      - title: 移行アドバイザを使用して導入計画を作成
+        url: "/launch-onboarding-advisor-native.html"
+      - title: 推奨されるFSx for ONTAPファイルシステムを導入
+        url: "/deploy-fsx-file-system.html"
+      - title: 新しいインフラへのデータ移行
+        url: "/migrate-data-native.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します

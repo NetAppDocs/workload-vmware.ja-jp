@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations.html 
+permalink: capture-vm-configurations-native.html 
 keywords: vm workloads, capture vm details 
 summary: Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。 
 ---
-= VMware Cloudに移行する前に、現在のVM構成を把握
+= Amazon EC2に移行する前に、現在のVM構成を把握
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -12,8 +12,6 @@ summary: Migration Advisor VMコレクタスクリプトまたはRVToolsを使�
 
 [role="lead"]
 Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。
-
-以前にローカルに保存した既存の導入計画に基づいて新しいシステムを導入する場合は、この手順を省略して既存の導入計画を選択できます。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["既存の計画を使用して新しい計画を作成する方法を確認する"]です。
 
 [role="tabbed-block"]
 ====
@@ -36,10 +34,7 @@ VMから長期統計（日次統計）を取得する場合は、vSphere管理�
 
 .手順
 . Workload Factoryにログインします。
-. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。
-+
-VMware Migration Advisorのメインページが表示されます。
-
+. [VMware]タイルで、*[Access and plan]*を選択します。
 . [Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。
 +
 [VMware Cloud on AWSへの移行の準備]*ページが表示されます。
@@ -70,7 +65,7 @@ VMware Migration Advisorのメインページが表示されます。
 
 
 .結果
-スクリプトは、現在の作業ディレクトリにという名前のCSVファイルを出力し `list-vms-yyyy-MM-dd-HH-mm-ss.csv` ます。CSVファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。
+スクリプトは、現在の作業ディレクトリ内の名前にタイムスタンプを含む圧縮ファイルを出力します。.zipファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。
 
 --
 .RVToolsソフトウェアの使用
@@ -97,4 +92,4 @@ https://www.robware.net/home["RVToolsの詳細"^]
 --
 ====
 .次の手順
-link:launch-onboarding-advisor.html["移行アドバイザを使用してVMware Cloud on AWSの導入計画を作成"]です。
+link:launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2導入計画を作成"]です。

@@ -15,10 +15,14 @@ summary: 推奨されるFSx for ONTAPファイルシステム（場合によっ�
 
 Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factory（自動モードを使用）を使用してFSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合(読み取りモード)、または権限がない場合(基本モード)は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。
 
-.要件
+.VMware Cloud on AWSへの導入の要件
 * FSx for ONTAPファイルシステムを導入するには、VMware Cloud on AWS Software-Defined Data Center（SDDC）バージョン1.20以降を使用している必要があります。
 * FSx for ONTAPファイルシステムは、SDDCの導入時に使用したVPCに導入しないでください。VMware Cloud on AWSとAmazon FSx for NetApp ONTAPを統合するには、所有する新しいAmazon VPCに導入する必要があります。
 * FSx for ONTAPファイルシステムは、SDDCと同じAWSリージョン内に導入する必要があります。
+
+
+.Amazon EC2への導入の要件
+* FSx for ONTAPファイルシステムのルートボリュームは、EBSボリュームとして作成する必要があります。
 
 
 .手順
@@ -36,7 +40,7 @@ FSx for ONTAPファイルシステムを定義するフィールドのほとん�
 +
 .. *リージョンとVPC *：FSx for ONTAPファイルシステムを導入するリージョンとVPCを選択します。
 +
-VMware Cloud on AWSが導入されているVPCとは別のVPCに導入する必要があります。
+VMware Cloud on AWSに導入する場合は、VMware Cloud on AWSが導入されているVPCとは別のVPCに導入してください。
 
 .. *セキュリティグループ*：*詳細作成*オプションを使用する場合、すべてのトラフィックがFSx for ONTAPファイルシステムにアクセスできるように、FSx for ONTAP VPCのデフォルトのセキュリティグループを選択できます。
 +
