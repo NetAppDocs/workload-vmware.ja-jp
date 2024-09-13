@@ -472,4 +472,6 @@
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">クイックスタートガイド：VMware Cloud on AWSへの移行</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2への移行のクイックスタート</block>
   <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
+  <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">[Download plan]&gt;[Instance storage deployment]*を選択して、外部データストアの導入計画を.csv形式でダウンロードし、クラウドベースの新しいインテリジェントデータインフラを作成します。</block>
+  <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">[Download plan（計画のダウンロード）]&gt;[Plan report（計画レポートの計画）]*を選択して、計画をレビュー用に配布できるように、展開計画を.pdf形式でダウンロードします。</block>
 </blocks>
