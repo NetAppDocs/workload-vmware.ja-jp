@@ -27,7 +27,7 @@ Workload Factoryにアクセスするには、ユーザ名とパスワードが�
 
 
 .手順
-. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。
+. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのメインページが表示されます。
 . [新しい導入計画を作成する]*を選択します。
 . 現在のVM構成をWorkload Factoryに入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
 +
