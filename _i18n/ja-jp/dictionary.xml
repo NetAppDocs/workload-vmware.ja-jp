@@ -435,8 +435,6 @@
   <block id="2371c65768dba03d44190d2797940527" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減比率から選択します。「1：1 -削減なし」、「1：1.25 - 20%削減」、または「1：1.5 - 33%削減」を選択します。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20%未満の容量を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成することはできません。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VMスナップショット保護*：スナップショットでVMを保護する場合は、このオプションを有効にします。</block>
-  <block id="989b80d51d89a9c4e98f8e9d93a8b430" category="list-text">[EC2ボリュームの確認]ページで、VM情報、ボリューム分類ルール、ボリュームの割り当て、導入時にマイグレートするボリュームのリストを確認します。</block>
-  <block id="0bd2351ba13aaa50e485f5d6ed8991d1" category="list-text">[Review instance storage]*ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認します。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コスト内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。</block>
   <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">Migration Advisorを使用してVMware Cloud on AWSの導入計画を作成</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">VMware Cloudに移行する場合は、Migration Advisorを使用して次のシナリオの導入計画を作成できます。</block>
@@ -471,7 +469,23 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">VMware Cloud on AWSへの移行</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">クイックスタートガイド：VMware Cloud on AWSへの移行</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2への移行のクイックスタート</block>
-  <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
   <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">[Download plan]&gt;[Instance storage deployment]*を選択して、外部データストアの導入計画を.csv形式でダウンロードし、クラウドベースの新しいインテリジェントデータインフラを作成します。</block>
   <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">[Download plan（計画のダウンロード）]&gt;[Plan report（計画レポートの計画）]*を選択して、計画をレビュー用に配布できるように、展開計画を.pdf形式でダウンロードします。</block>
+  <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware Migration Advisorの機能拡張</block>
+  <block id="bdcdfcdfcb9e0d2084c9c9ff58163d0b" category="paragraph">このリリースのWorkload Factory for VMwareには、機能と安定性が強化されたほか、VMware Migration Advisorを使用して移行計画をインポートおよびエクスポートできる機能があります。</block>
+  <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
+  <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。</block>
+  <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">以下の情報を確認して、Migration Advisorのメリットを確認してください。</block>
+  <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">準備ができたら、* Let's start *を選択します。</block>
+  <block id="26c8e4d27d311b3dd56356d32a6bace5" category="list-text">[EC2ボリューム割り当ての確認]*ページで、VM情報、ボリューム分類ルール、ボリューム割り当て、導入時にマイグレートするボリュームのリストを確認します。</block>
+  <block id="84c81acf71fd02d43242aed2387e9584" category="list-text">[Review instance storage assignment]*ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認します。</block>
+  <block id="0c9d619e17114784eebf5b4294145625" category="list-text">[Review your migration plan（移行計画の確認）]ページで、移行を計画しているすべてのVMの予測月次コストを確認します。</block>
+  <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">ページの上部には、FSx for ONTAPファイルシステムとEBSボリュームの月間削減量が試算されています。各セクションを展開すると、推奨されるファイルシステム構成、予想される削減量の内訳、前提条件、技術的な免責事項の詳細を確認できます。</block>
+  <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">以前に使用した既存の導入計画と同様の新しい導入計画を計画している場合は、その計画をインポートして変更を加え、新しい導入計画として保存できます。</block>
+  <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。</block>
+  <block id="32a33bea1503730affb121be4db1856d" category="list-text">を選択し<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>、Migration Advisorにインポートする既存の.json計画ファイルを選択します。</block>
+  <block id="381cf8f0eafd87b02005eb434ff3e0f0" category="paragraph">[Review plan]ページが表示されます。</block>
+  <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">前のセクションで説明したように、*前のページにアクセスしてプランの設定を変更するには、*前の*前の*を選択します。</block>
+  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、計画レポートをPDFファイルとしてダウンロードできます。</block>
+  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
 </blocks>
