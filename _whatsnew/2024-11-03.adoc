@@ -1,0 +1,11 @@
+= VMware Migration Advisorによるデータ削減比率の向上
+:allow-uri-read: 
+
+
+
+
+=== VMware Migration Advisorによるデータ削減比率の向上
+
+このリリースのWorkload Factory for VMwareには、データ削減比率アシスタントが搭載されています。データ削減比率アシスタントは、AWSクラウドのオンボーディングを準備する際に、VMwareのインベントリとストレージ資産に最適な比率を判断するのに役立ちます。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]

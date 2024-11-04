@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">前のセクションで説明したように、*前のページにアクセスしてプランの設定を変更するには、*前の*前の*を選択します。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、計画レポートをPDFファイルとしてダウンロードできます。</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware Migration Advisorによるデータ削減比率の向上</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">このリリースのWorkload Factory for VMwareには、データ削減比率アシスタントが搭載されています。データ削減比率アシスタントは、AWSクラウドのオンボーディングを準備する際に、VMwareのインベントリとストレージ資産に最適な比率を判断するのに役立ちます。</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">どちらの比率を選択するかわからない場合は、*[決定を手伝ってください]*を選択します。Data reduction ratio assistant_dialogが表示されます。VMインベントリとストレージ環境に該当する文を選択してください。アシスタントは適切なデータ削減率を推奨します。推奨比率を使用するには、*適用*を選択します。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>
