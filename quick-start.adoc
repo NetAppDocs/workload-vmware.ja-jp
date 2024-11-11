@@ -13,18 +13,17 @@ summary: VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外
 [role="lead"]
 VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。
 
-開始する前に、次のことを理解しておく必要があります。 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]
+作業を開始する前に、を理解しておく必要があります https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] Workload Factoryにサインアップしてアカウントを作成する
-[role="quick-margin-para"]
-に移動 https://console.workloads.netapp.com["Workload Factoryコンソール"^] してサインアップします。 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["アカウントの作成に関する詳細情報"]です。
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
+のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する
 [role="quick-margin-para"]
-AWSアカウントにアクセスするためのクレデンシャルを追加することなく、Workload Factoryを_Basic_modeで使用できます。AWSクレデンシャルを_Read_or_automate_modeでWorkload Factoryに追加すると、FSx for ONTAPファイルシステムの作成と管理、およびVMware Cloud内でのワークロードの導入と管理に必要な権限がWorkload Factoryアカウントに付与されます。
+AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。AWSクレデンシャルを_Read_or_automate_modeでワークロードファクトリに追加すると、FSx for ONTAPファイルシステムの作成と管理、およびVMware Cloud内でのワークロードの導入と管理に必要な権限がワークロードファクトリアカウントに付与されます。
 
 [role="quick-margin-para"]
-https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] vSphere環境の現在のVM構成の把握
 [role="quick-margin-para"]
@@ -52,7 +51,7 @@ link:deploy-fsx-file-system.html["新しいFSx for ONTAPファイルシステム
 ご使用のSoftware-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。
 
 [role="quick-margin-para"]
-link:connect-sddc-to-fsx.html["データ移行の詳細はこちら"]です。
+link:connect-sddc-to-fsx.html["FSx for ONTAPファイルシステムを接続する方法をご紹介します"]です。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["7"] 古いシステムから新しいFSx for ONTAPファイルシステムにデータを移行
 [role="quick-margin-para"]

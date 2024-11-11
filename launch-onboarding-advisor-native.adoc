@@ -13,7 +13,7 @@ summary: NetAppワークロードファクトリにログインして、VMware M
 [role="lead"]
 NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。
 
-Workload Factoryにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
+ワークロードファクトリにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
 
 
 
@@ -23,17 +23,18 @@ Workload Factoryにアクセスするには、ユーザ名とパスワードが�
 
 .要件
 * Migration AdvisorのVMコレクタ（.zipファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。
-* Workload Factoryにログインするシステムのインベントリファイルにアクセスできる必要があります。
+* ワークロードファクトリにログインするシステムのインベントリファイルにアクセスできる必要があります。
 
 
 .手順
+. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。
 +
 以下の情報を確認して、Migration Advisorのメリットを確認してください。
 
 . 準備ができたら、* Let's start *を選択します。
 . [新しい導入計画を作成する]*を選択します。
-. 現在のVM構成をWorkload Factoryに入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
+. 現在のVM構成をワークロード工場に入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
 +
 ** VMwareデータコレクタを使用して作成したファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。
 ** RVToolsを使用して作成した.xlsxファイルを使用するには、*[Use RVTools]*を選択します。
@@ -111,10 +112,10 @@ Workload Factoryにアクセスするには、ユーザ名とパスワードが�
 以前に使用した既存の導入計画と同様の新しい導入計画を計画している場合は、その計画をインポートして変更を加え、新しい導入計画として保存できます。
 
 .要件
-Workload Factoryにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。
+ワークロードファクトリにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。
 
 .手順
-. Workload Factoryにログインします。
+. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。
 . [Import an existing deployment plan]を選択します。
 . を選択しimage:button-upload-file.png["アップロードボタン"]、Migration Advisorにインポートする既存の.json計画ファイルを選択します。

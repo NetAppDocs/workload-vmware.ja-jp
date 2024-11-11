@@ -1,9 +1,9 @@
-= Workload Factory for VMwareの初版リリース
+= VMware向けワークロードファクトリの初期リリース
 :allow-uri-read: 
 
 
 
 
-=== Workload Factory for VMwareの初版リリース
+=== VMware向けワークロードファクトリの初期リリース
 
 初期リリースには、VMware Migration Advisorを使用してオンプレミスのvSphere環境で現在の仮想マシン構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWSに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成する機能が含まれています。

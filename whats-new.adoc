@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: Workload FactoryのVMware Migration Advisorコンポーネントの新機能について説明します。 
+summary: ワークロードファクトリのVMware Migration Advisorコンポーネントの最新情報をご確認ください。 
 ---
 = 新機能
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Workload FactoryのVMware Migration Advisorコンポーネントの新�
 
 
 [role="lead"]
-Workload FactoryのVMware Cloud Migration Advisorコンポーネントの新機能について説明します。
+ワークロードファクトリのVMware Cloud Migration Advisorコンポーネントの最新情報をご確認ください。
 
 
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware Migration Advisorの機能拡張
 
-このリリースのWorkload Factory for VMwareには、機能と安定性が強化されたほか、VMware Migration Advisorを使用して移行計画をインポートおよびエクスポートできる機能があります。
+このリリースのVMware向けワークロードファクトリでは、機能と安定性が強化され、VMware Migration Advisorを使用して移行計画をインポートおよびエクスポートできるようになりました。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2への移行
 
-Workload Factory for VMwareでは、VMware Migration Advisorを使用したAmazon EC2への移行がサポートされるようになりました。
+VMwareのワークロードファクトリでは、VMware Migration Advisorを使用したAmazon EC2への移行がサポートされるようになりました。
 
 
 
@@ -53,6 +53,6 @@ Workload Factory for VMwareでは、VMware Migration Advisorを使用したAmazo
 
 
 
-=== Workload Factory for VMwareの初版リリース
+=== VMware向けワークロードファクトリの初期リリース
 
 初期リリースには、VMware Migration Advisorを使用してオンプレミスのvSphere環境で現在の仮想マシン構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWSに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成する機能が含まれています。

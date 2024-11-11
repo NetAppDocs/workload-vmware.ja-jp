@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: Workload Factory for VMwareの詳細
+    - title: VMware向けワークロードファクトリの詳細
       url: "/learn-about-vmware-workloads.html"
     - title: クイックスタートガイド：VMware Cloud on AWSへの移行
       url: "/quick-start.html"
@@ -36,9 +36,7 @@ sidebar:
       - title: 移行アドバイザを使用して導入計画を作成
         url: "/launch-onboarding-advisor-native.html"
       - title: 推奨されるFSx for ONTAPファイルシステムを導入
-        url: "/deploy-fsx-file-system.html"
-      - title: 新しいインフラへのデータ移行
-        url: "/migrate-data-native.html"
+        url: "/deploy-fsx-file-system-native.html"
     - title: VMware Cloud on AWSへの移行
       entries:
       - title: 現在のVM構成のキャプチャ
@@ -60,5 +58,5 @@ sidebar:
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family

@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: Workload Factory for VMwareドキュメント
+  title: VMwareドキュメントのワークロードファクトリ
   summary: オンプレミスのvSphere環境からVMware Cloud on AWSへの移行を合理化し、カスタマイズしたFSx for ONTAPファイルシステムを外部データストアとして実装します。
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
   lead: オンプレミスのvSphere環境からVMware Cloud on AWSへの移行を合理化し、カスタマイズしたFSx for ONTAPファイルシステムを外部データストアとして実装します。
   tiles:
   - title: はじめに
     links:
-    - title: Workload Factory for VMwareの詳細
+    - title: VMware向けワークロードファクトリの詳細
       url: learn-about-vmware-workloads.html
     - title: クイックスタート：VMware Cloud on AWSへの移行
       url: quick-start.html

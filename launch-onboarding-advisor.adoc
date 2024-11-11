@@ -19,7 +19,7 @@ VMware Cloudに移行する場合は、Migration Advisorを使用して次のシ
 * <<既存の計画に基づいて導入計画を作成する,同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。>>
 
 
-Workload Factoryにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
+ワークロードファクトリにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
 
 
 
@@ -29,16 +29,17 @@ Workload Factoryにアクセスするには、ユーザ名とパスワードが�
 
 .要件
 * Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。
-* Workload Factoryにログインするシステムのインベントリファイルにアクセスできる必要があります。
+* ワークロードファクトリにログインするシステムのインベントリファイルにアクセスできる必要があります。
 
 
 .手順
+. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。
 +
 VMware Migration Advisorのメインページが表示されます。
 
 . [新しい導入計画を作成する]*を選択します。
-. 現在のVM構成をWorkload Factoryに入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
+. 現在のVM構成をワークロード工場に入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
 +
 ** VMwareデータコレクタを使用して作成した.csvファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。
 ** RVToolsを使用して作成した.xlsxファイルを使用するには、*[Use RVTools]*を選択します。
@@ -153,10 +154,10 @@ VMware Migration Advisorのメインページが表示されます。
 以前に使用した既存の導入計画に似た新しい導入を計画している場合は、その計画をインポートして編集し、新しい導入計画として保存できます。
 
 .要件
-Workload Factoryにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。
+ワークロードファクトリにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。
 
 .手順
-. Workload Factoryにログインします。
+. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。
 . [Import an existing deployment plan]を選択します。
 . image:button-upload-file.png["アップロードボタン"]Migration Advisorにインポートする既存の計画ファイルを選択します。

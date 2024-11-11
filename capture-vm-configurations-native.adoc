@@ -33,7 +33,7 @@ NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集�
 VMから長期統計（日次統計）を取得する場合は、vSphere管理コンソール（VMware管理環境）で統計レベル3以上をアクティブ化しておく必要があります。
 
 .手順
-. Workload Factoryにログインします。
+. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
 . [VMware]タイルで、*[Access and plan]*を選択します。
 . [Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。
 +

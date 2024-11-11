@@ -2,20 +2,28 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWSにデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。 
+summary: VMwareのワークロードファクトリーには、オンプレミスシステムからワークロードファクトリーにデータを移動するためのツールが用意されています。VMwareには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。 
 ---
-= Workload Factory for VMwareの詳細
+= VMware向けワークロードファクトリの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory for VMwareは、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールを提供します。VMware Migration Advisorを使用すると、オンプレミスのvSphere環境で現在の仮想マシンの構成を分析し、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成できます。
+VMwareのワークロードファクトリーには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。
+
+
+
+== VMwareのワークロードファクトリとは何ですか。
+
+VMwareのWorkload Factoryには、オンプレミスのvSphere環境で現在の仮想マシン構成を分析するための移行アドバイザが用意されています。その後、移行アドバイザは、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用する計画を作成します。
 
 Amazon FSx for NetApp ONTAPは、NetAppのONTAPファイルシステム上に構築された外部NFSデータストアで、Amazon EC2インスタンスまたはVMware Cloud on AWS vSphereクラスタに接続できます。利用可能なストレージを増やすためにホストを追加する必要はありません。代わりに、FSx for ONTAPボリュームを外付けデータストアとして使用するだけで、vSANデータストアを補完できます。これにより、コンピューティングリソースとは別に拡張できる、柔軟性に優れたハイパフォーマンスな仮想ストレージインフラが実現します。
 
 image:diagram-vmware-fsx-overview.png["アーキテクチャを示す図。"]
+
+ワークロードファクトリの詳細については、を参照して https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["ワークロードファクトリの概要"^]ください。
 
 
 
@@ -55,6 +63,19 @@ Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在の
 * ボリュームのサイズの増減に加えて、データスループット、IOPS、ファイルシステムのサイズを変更可能
 * 複数のアベイラビリティゾーン（AZ）環境をサポートする高可用性
 * Transit Gatewayを使用せずにVPCピアリングを使用するシングルAZ構成によるコストとレイテンシの削減
+
+
+
+
+== ワークロードファクトリを使用するためのツール
+
+BlueXP  ワークロード工場では、次のツールを使用できます。
+
+* *ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの全体的なビューを提供するビジュアルインターフェイスを提供します。
+* * BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。
+* * REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理できます。
+* * CloudFormation *：AWS CloudFormationコードを使用すると、ワークロードファクトリコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理できます。
+* *Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用すると、ワークロードファクトリコンソールで生成されたインフラワークフローを構築および管理できます。
 
 
 

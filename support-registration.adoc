@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: support-registration.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: NetAppテクニカルサポートでサポートケースをオープンするには、NetAppサポートサイトのアカウントをWorkload Factoryに追加してから、サポートに登録する必要があります。 
+summary: NetAppテクニカルサポートでサポートケースをオープンする前に、NetAppサポートサイトのアカウントをワークロード工場に追加し、サポートに登録する必要があります。 
 ---
 = サポートに登録します
 :allow-uri-read: 
