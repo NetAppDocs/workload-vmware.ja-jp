@@ -7,7 +7,7 @@ summary:
 = 法的通知
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -47,8 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。
 
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["ワークロードファクトリ"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["データベース用ワークロードファクトリ"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["GenAI向けワークロードファクトリー"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["VMwareのワークロードファクトリー"^]
-
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["BlueXP  ワークロードファクトリ"^]

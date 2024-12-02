@@ -7,7 +7,7 @@ indexpage:
   tiles:
   - title: はじめに
     links:
-    - title: VMware向けワークロードファクトリの詳細
+    - title: VMware向けBlueXP  ワークロードファクトリの詳細
       url: learn-about-vmware-workloads.html
     - title: クイックスタート：VMware Cloud on AWSへの移行
       url: quick-start.html
@@ -33,5 +33,3 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: 推奨されるFSx for ONTAPファイルシステムを導入
       url: deploy-fsx-file-system.html
-    - title: 新しいインフラへのデータ移行
-      url: migrate-data-native.html

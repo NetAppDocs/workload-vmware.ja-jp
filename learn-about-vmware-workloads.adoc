@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: VMwareのワークロードファクトリーには、オンプレミスシステムからワークロードファクトリーにデータを移動するためのツールが用意されています。VMwareには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。 
+summary: BlueXP  Workload Factory for VMwareには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。 
 ---
-= VMware向けワークロードファクトリの詳細
+= VMware向けBlueXP  ワークロードファクトリの詳細
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-VMwareのワークロードファクトリーには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。
+BlueXP  Workload Factory for VMwareには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。
 
 
 
-== VMwareのワークロードファクトリとは何ですか。
+== BlueXP  Workload Factory for VMwareについて教えてください。
 
-VMwareのWorkload Factoryには、オンプレミスのvSphere環境で現在の仮想マシン構成を分析するための移行アドバイザが用意されています。その後、移行アドバイザは、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用する計画を作成します。
+BlueXP  Workload Factory for VMwareには、オンプレミスのvSphere環境で現在の仮想マシン構成を分析するための移行アドバイザが用意されています。その後、移行アドバイザは、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用する計画を作成します。
 
 Amazon FSx for NetApp ONTAPは、NetAppのONTAPファイルシステム上に構築された外部NFSデータストアで、Amazon EC2インスタンスまたはVMware Cloud on AWS vSphereクラスタに接続できます。利用可能なストレージを増やすためにホストを追加する必要はありません。代わりに、FSx for ONTAPボリュームを外付けデータストアとして使用するだけで、vSANデータストアを補完できます。これにより、コンピューティングリソースとは別に拡張できる、柔軟性に優れたハイパフォーマンスな仮想ストレージインフラが実現します。
 

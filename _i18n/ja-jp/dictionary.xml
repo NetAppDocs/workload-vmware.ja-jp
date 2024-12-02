@@ -276,14 +276,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">ワークロードファクトリ</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">データベース用ワークロードファクトリ</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI向けワークロードファクトリー</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMwareのワークロードファクトリー</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">VMware Hybrid Cloud Extensionなどのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXコア機能を使用すると、オンプレミスのデータセンターからSDDCにワークロードを透過的に移行できます。</block>
   <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">新しいインフラへのデータ移行</block>
   <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">VMware Hybrid Cloud Extension（HCX）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXのコア機能を使用すると、オンプレミスのデータセンターからSoftware-Defined Data Center（SDDC）にワークロードを透過的に移行できます。</block>
@@ -376,7 +368,6 @@
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Amazon EC2への移行</block>
   <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">Amazon EC2に移行する前に、現在のVM構成を把握</block>
-  <block id="1af00da7b1991dc3522efa12b13d06a5" category="list-text">[VMware]タイルで、*[Access and plan]*を選択します。</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">スクリプトは、現在の作業ディレクトリ内の名前にタイムスタンプを含む圧縮ファイルを出力します。.zipファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>詳細については、『』の「コマンドラインパラメータ」の章を参照してください。</block>
@@ -394,16 +385,7 @@
   <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">移行アドバイザを使用してAmazon EC2の導入計画を作成</block>
   <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">オンプレミスのvSphere環境の現在の仮想マシン構成をAmazon EC2の仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
   <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">Migration AdvisorのVMコレクタ（.zipファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
-  <block id="278a85e02b26dbd2e7a5074820679e8c" category="list-text">VMwareデータコレクタを使用して作成したファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。</block>
-  <block id="26a805e1dd0fca3151bedb2d8e12a651" category="paragraph">[Prepare for AWS Cloud Onboarding]ページが表示されます。</block>
-  <block id="5d962e477a215e1da47c1123eb0453bc" category="list-text">[_Upload VM configuration_]セクションで、<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>使用するインベントリファイルを選択します。</block>
-  <block id="6b5dae90780a08c5ba86866abd8a1432" category="list-text">Migration Advisor VMコレクタを使用する場合は、.zipファイルを選択します。</block>
   <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">インベントリファイルの*[VMs summary]*セクションに、VMの数と合計ストレージ容量が入力されます。</block>
-  <block id="1a04b9149745d21476396398a73240e3" category="list-text">*仮想マシンを考慮*：オペレーティング・パワー状態に基づいて、インベントリ・ファイルから抽出される仮想マシンを指定します。すべてのVMを取り込むことも、オン、オフ、または一時停止中のVMのみを取り込むこともできます。</block>
-  <block id="5e6d5c629d61f338ad33388904a1a38d" category="list-text">[_Cloud deployment configuration_]セクションで、必要なAmazon EC2設定に関する詳細を入力します。</block>
-  <block id="284c0194166a2962fd51534f6158914b" category="list-text">*リージョン*：Amazon FSx for NetApp ONTAPファイルシステムを導入するリージョンを選択します。</block>
-  <block id="57fd0f79436be23d539fc3dd6791b37f" category="paragraph">最適なパフォーマンスとコスト効率を実現するには、通常、既存のAmazon EC2 SDDCが導入されているリージョンと同じリージョンを使用します。</block>
-  <block id="aec55cbdf93104d8f633395f34d47241" category="list-text">*平均I/Oブロックサイズ*：読み取りまたは書き込み処理を含む各ブロックのサイズ。デフォルトのサイズは4KBです。ブロックサイズを大きくした方が、ラージシーケンシャルリード/ライトワークロードに適している場合があります。スパースファイルや大容量ファイルへの小規模なランダム書き込みを実行するワークロードでは、ブロックサイズを小さくするとパフォーマンスが向上する場合があります。</block>
   <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">[Target capacity and protection considerations_]セクションで、ストレージオプションをいくつか選択します。</block>
   <block id="2371c65768dba03d44190d2797940527" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減比率から選択します。「1：1 -削減なし」、「1：1.25 - 20%削減」、または「1：1.5 - 33%削減」を選択します。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20%未満の容量を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成することはできません。</block>
@@ -429,7 +411,6 @@
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>です。</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">Amazon EC2インフラ内のVMにデータストアを提供する新しいFSx for ONTAPファイルシステムを導入します。</block>
   <block id="d8329106d0f4da40a239ea890e93904c" category="doc">VMware Migration Advisorを使用してVMware Cloud on AWSに移行するためのクイックスタートガイド</block>
-  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
   <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">クイックスタート：VMware Cloud on AWSへの移行</block>
   <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">クイックスタート：Amazon EC2への移行</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">VMware Cloud on AWSへの移行</block>
@@ -442,15 +423,9 @@
   <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。</block>
   <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">以下の情報を確認して、Migration Advisorのメリットを確認してください。</block>
   <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">準備ができたら、* Let's start *を選択します。</block>
-  <block id="26c8e4d27d311b3dd56356d32a6bace5" category="list-text">[EC2ボリューム割り当ての確認]*ページで、VM情報、ボリューム分類ルール、ボリューム割り当て、導入時にマイグレートするボリュームのリストを確認します。</block>
-  <block id="84c81acf71fd02d43242aed2387e9584" category="list-text">[Review instance storage assignment]*ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認します。</block>
-  <block id="0c9d619e17114784eebf5b4294145625" category="list-text">[Review your migration plan（移行計画の確認）]ページで、移行を計画しているすべてのVMの予測月次コストを確認します。</block>
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">ページの上部には、FSx for ONTAPファイルシステムとEBSボリュームの月間削減量が試算されています。各セクションを展開すると、推奨されるファイルシステム構成、予想される削減量の内訳、前提条件、技術的な免責事項の詳細を確認できます。</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">以前に使用した既存の導入計画と同様の新しい導入計画を計画している場合は、その計画をインポートして変更を加え、新しい導入計画として保存できます。</block>
   <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。</block>
-  <block id="32a33bea1503730affb121be4db1856d" category="list-text">を選択し<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>、Migration Advisorにインポートする既存の.json計画ファイルを選択します。</block>
-  <block id="381cf8f0eafd87b02005eb434ff3e0f0" category="paragraph">[Review plan]ページが表示されます。</block>
-  <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">前のセクションで説明したように、*前のページにアクセスしてプランの設定を変更するには、*前の*前の*を選択します。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、計画レポートをPDFファイルとしてダウンロードできます。</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware Migration Advisorによるデータ削減比率の向上</block>
@@ -472,11 +447,6 @@
   <block id="f8ca7604a7d532f5f35cb42769a74291" category="list-text">ワークロードファクトリにログインするシステムのインベントリファイルにアクセスできる必要があります。</block>
   <block id="49560c1c66151469e4510dc332719b0f" category="list-text">現在のVM構成をワークロード工場に入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。</block>
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">ワークロードファクトリにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。</block>
-  <block id="da815c20aaea2edb198e469b3c876791" category="summary">VMwareのワークロードファクトリーには、オンプレミスシステムからワークロードファクトリーにデータを移動するためのツールが用意されています。VMwareには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。</block>
-  <block id="4f373148ed2de637be7edb26c4e2311a" category="doc">VMware向けワークロードファクトリの詳細</block>
-  <block id="ddbac8a6a6590fc2ecb2b323c6e8e1ff" category="paragraph">VMwareのワークロードファクトリーには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。</block>
-  <block id="f050b6dd74962f8256e223aa2552ec0d" category="section-title">VMwareのワークロードファクトリとは何ですか。</block>
-  <block id="eceaa4dccec237f43c9e610c6a989dd2" category="paragraph">VMwareのWorkload Factoryには、オンプレミスのvSphere環境で現在の仮想マシン構成を分析するための移行アドバイザが用意されています。その後、移行アドバイザは、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用する計画を作成します。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">ワークロードファクトリの概要</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">ワークロードファクトリの詳細については、を参照して<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>ください。</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">ワークロードファクトリを使用するためのツール</block>
@@ -500,4 +470,45 @@
   <block id="034aea94174faaaaa75a9f1c1ac4b15a" category="summary">ワークロードファクトリのVMware Migration Advisorコンポーネントの最新情報をご確認ください。</block>
   <block id="5df361f1373a0606daf80b69ecfa0a96" category="paragraph">ワークロードファクトリのVMware Cloud Migration Advisorコンポーネントの最新情報をご確認ください。</block>
   <block id="c3aaf7c410f8a7244dafe42037dc12ce" category="sidebar">VMwareドキュメント用のBlueXP  ワークロードファクトリ</block>
+  <block id="1d194f6c398ca78aaffd8c430203e1ec" category="doc">Amazon EC2 Migration Advisorの機能強化</block>
+  <block id="1e5e06dbbf4cb0bb655126bc90757161" category="paragraph">今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。</block>
+  <block id="80384840ba856b44e35be4918f28a26b" category="list-text">*データ収集*: BlueXP  Workload Factory for VMwareでは、Migration Advisorを使用する際に特定の期間のデータ収集機能をサポートしています。</block>
+  <block id="2e47bf0e10f6acdee08b3889dc872c4c" category="list-text">* VMの選択*：BlueXP  Workload Factory for VMwareでは、移行環境に含めるVMの選択がサポートされるようになりました。</block>
+  <block id="3f4f1b85f4effee9c5e9ae9034f0e684" category="list-text">*クイックエクスペリエンスと高度なエクスペリエンス*：Migration Advisorを使用すると、RVtoolsを使用したクイックマイグレーションエクスペリエンスまたはMigration Advisorデータコレクタを使用した高度なエクスペリエンスを選択できるようになりました。</block>
+  <block id="c20f4c2c66d387d7831ea5e0b0ec1825" category="list-text">[詳細計画]タイルを選択し、[次へ]*を選択します。</block>
+  <block id="a9c684bfbdda0fc1f3c7654eb995d2a2" category="paragraph">ページの右側に[コードボックス]ウィンドウが表示されます。</block>
+  <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">[コードボックス]ウィンドウで、Migration Advisorデータコレクタスクリプト（「list-VMs.ps1」という名前）をターゲットシステムに保存するか、スクリプトをコピーして適切なシステムに貼り付けるかを選択し<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>ます<block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">導入計画の作成プロセスで使用する詳細レベルと方法を選択します。</block>
+  <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">*クイック評価*：このオプションでは、高速プロセス中にRVtoolsインベントリファイルを使用してVMに関する情報を取得し、クラウド移行の設計青写真を作成します。</block>
+  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">*詳細な計画*: Migration Advisorのデータコレクタインベントリファイルを使用して詳細な情報を収集することで、導入可能な設計になります。</block>
+  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">迅速な評価</block>
+  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">[クイック評価]タイルを選択し、[次へ]*を選択します。</block>
+  <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">[Prepare for AWS Cloud Onboarding]*ページが表示されます。</block>
+  <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">[_VM configuration upload_]セクションで、<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>RVToolsによって作成された.xlsxファイルを選択します。</block>
+  <block id="b201be50fb24455e1169e30ba042483c" category="list-text">*リージョン*：Amazon FSx for NetApp ONTAPファイルシステムを導入するリージョンを選択します。最適なパフォーマンスとコスト効率を実現するには、通常、既存のAmazon EC2 SDDCが導入されているリージョンと同じリージョンを使用します。</block>
+  <block id="3b4b72587570c96b11427b0d7983dc63" category="list-text">このリージョンのVMの予測パフォーマンスレベルを選択します。最初は小さいIOPS設定から始めることを推奨します。ワークロードの移行または導入時にファイルシステムを作成したあとに、プロビジョニングされたSSDのIOPSを増やすことができます。</block>
+  <block id="8322562b9931621dac341ec2891a8ed7" category="list-text">*標準から高パフォーマンス*：平均I/O速度が20~5000 IOPSのVMの場合。</block>
+  <block id="fe6746d68f60ac87ac812195dbe0ba44" category="list-text">*非常に高いパフォーマンス*：VMの平均I/O速度が5、000 IOPSを超える場合。</block>
+  <block id="def2319cb1ab48e55abf938aae0948be" category="list-text">*パフォーマンスが非常に低い*：平均I/O速度が20 IOPS未満のVMの場合。</block>
+  <block id="b31024f3340bb98c95da565075ba28e4" category="list-text">[Scope]*ページで、AWSクラウドへの移行に含めるVMをリストから選択し、*[Next]*を選択します。</block>
+  <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">[分類]ページで、VM情報、ボリューム分類ルール、ボリュームの割り当て、導入時にマイグレートするボリュームのリストを確認し、*[次へ]*を選択します。</block>
+  <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">[パッケージ]ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認し、*[次へ]*を選択します。</block>
+  <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">[Review plan（計画の確認）]ページで、移行を計画しているすべてのVMの予測される月単位の削減量とコストの見積もりを確認します。</block>
+  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">詳細な計画</block>
+  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">[詳細計画]タイルを選択し、[次へ]*を選択します。</block>
+  <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">[_VM configuration upload_]セクションで、<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>Migration Advisorデータコレクタで作成された.zipファイルを選択します。</block>
+  <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">[_VM inventory considerations_]セクションで、Amazon FSx for NetApp ONTAPファイルシステムを導入するリージョンを選択します。最適なパフォーマンスとコスト効率を実現するには、通常、既存のAmazon EC2 SDDCが導入されているリージョンと同じリージョンを使用します。</block>
+  <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">[完了]*を選択すると、VMware移行アドバイザーのページに戻ることができます。</block>
+  <block id="7726d5796471d8b93e1bd91aa1db9caa" category="list-text">[計画のインポート]*を選択します。</block>
+  <block id="d117b15d4decf0a56ccac3c38c271055" category="list-text">移行アドバイザにインポートする既存の.json計画ファイルを選択し、*[開く]*を選択します。</block>
+  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">[Review plan（計画のレビュー）]ページが表示されます。</block>
+  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">前のセクションで説明したように、* Previous *を選択して前のページにアクセスし、プランの設定を変更できます。</block>
+  <block id="fbcf13b4033589220687bf9717dd7cda" category="summary">BlueXP  Workload Factory for VMwareには、オンプレミスシステムからVMware Cloud on AWS（VMC）またはAmazon EC2にデータを移動するためのツールが用意されています。</block>
+  <block id="76882d4f1c13ac2d5609c95803006de5" category="doc">VMware向けBlueXP  ワークロードファクトリの詳細</block>
+  <block id="878b0838fec14a308c058b697894e8b9" category="section-title">BlueXP  Workload Factory for VMwareについて教えてください。</block>
+  <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">BlueXP  Workload Factory for VMwareには、オンプレミスのvSphere環境で現在の仮想マシン構成を分析するための移行アドバイザが用意されています。その後、移行アドバイザは、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用する計画を作成します。</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  ワークロードファクトリ</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
+  <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2024年9月1日</block>
 </blocks>

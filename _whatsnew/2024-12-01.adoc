@@ -1,0 +1,16 @@
+= Amazon EC2 Migration Advisorの機能強化
+:allow-uri-read: 
+
+
+
+
+=== Amazon EC2 Migration Advisorの機能強化
+
+今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。
+
+* *データ収集*: BlueXP  Workload Factory for VMwareでは、Migration Advisorを使用する際に特定の期間のデータ収集機能をサポートしています。
+* * VMの選択*：BlueXP  Workload Factory for VMwareでは、移行環境に含めるVMの選択がサポートされるようになりました。
+* *クイックエクスペリエンスと高度なエクスペリエンス*：Migration Advisorを使用すると、RVtoolsを使用したクイックマイグレーションエクスペリエンスまたはMigration Advisorデータコレクタを使用した高度なエクスペリエンスを選択できるようになりました。
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]

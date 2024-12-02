@@ -10,7 +10,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: VMwareワークロードのドキュメント
@@ -21,7 +21,7 @@ sidebar:
       url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: VMware向けワークロードファクトリの詳細
+    - title: VMware向けBlueXP  ワークロードファクトリの詳細
       url: "/learn-about-vmware-workloads.html"
     - title: クイックスタートガイド：VMware Cloud on AWSへの移行
       url: "/quick-start.html"

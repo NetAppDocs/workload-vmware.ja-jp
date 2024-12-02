@@ -7,7 +7,7 @@ summary: NetAppテクニカルサポートでサポートケースをオープ�
 = サポートに登録します
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

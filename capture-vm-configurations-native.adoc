@@ -34,12 +34,16 @@ VMから長期統計（日次統計）を取得する場合は、vSphere管理�
 
 .手順
 . いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [VMware]タイルで、*[Access and plan]*を選択します。
-. [Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。
+. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。
 +
-[VMware Cloud on AWSへの移行の準備]*ページが表示されます。
+以下の情報を確認して、Migration Advisorのメリットを確認してください。
 
-. [コードボックス]ウィンドウで、Migration Advisor VMコレクタスクリプト（「list-VMs.ps1」という名前）をターゲットシステムに保存するか、スクリプトをコピーして適切なシステムに貼り付けるかを選択します image:button-download-codebox.png["ダウンロードボタン"] image:button-copy-codebox.png["コピーボタン"] 。
+. 準備ができたら、* Let's start *を選択します。
+. [詳細計画]タイルを選択し、[次へ]*を選択します。
++
+ページの右側に[コードボックス]ウィンドウが表示されます。
+
+. [コードボックス]ウィンドウで、Migration Advisorデータコレクタスクリプト（「list-VMs.ps1」という名前）をターゲットシステムに保存するか、スクリプトをコピーして適切なシステムに貼り付けるかを選択しimage:button-copy-codebox.png["コピーボタン"]ますimage:button-download-codebox.png["ダウンロードボタン"]。
 . 現在のVMの構成をキャプチャするには、次の手順を実行します。
 +
 .. PowerShellとPowerCLIがインストールされているデータコレクタをダウンロードしたシステムにログインします。
