@@ -4,7 +4,7 @@ permalink: capture-vm-configurations-native.html
 keywords: vm workloads, capture vm details 
 summary: Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。 
 ---
-= Amazon EC2に移行する前に、現在のVM構成を把握
+= VMwareワークロードを使用してAmazon EC2に移行する前に、VM構成をキャプチャ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

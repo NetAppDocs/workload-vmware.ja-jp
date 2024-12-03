@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。 
 ---
-= Migration Advisorを使用してVMware Cloud on AWSの導入計画を作成
+= VMware Workloads Migration Advisorを使用して、VMware Cloud on AWSの導入計画を作成
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

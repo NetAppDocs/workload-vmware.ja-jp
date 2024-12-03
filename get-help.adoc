@@ -4,7 +4,7 @@ permalink: get-help.html
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
 summary: NetAppは、さまざまな方法でワークロードファクトリをサポートします。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。 
 ---
-= ヘルプを表示します
+= VMware向けBlueXP  ワークロードファクトリのサポート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: VMware移行アドバイザを利用して、外部NFSデータストアとしてAmazon FSx for ONTAPを使用し、現在のインフラをAmazon EC2に移行しましょう。 
 ---
-= VMware Migration Advisorを使用してAmazon EC2に移行するためのクイックスタート
+= VMware Workloads Migration Advisorを使用してAmazon EC2に移行するためのクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -16,6 +16,7 @@ VMware移行アドバイザを利用して、外部NFSデータストアとし�
 作業を開始する前に、を理解しておく必要があります https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
+[role="quick-margin-para"]
 のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する

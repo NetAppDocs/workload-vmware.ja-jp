@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 法的通知
+= BlueXP  Workload Factory for VMwareの法的通知
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

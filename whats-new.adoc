@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: ワークロードファクトリのVMware Migration Advisorコンポーネントの最新情報をご確認ください。 
 ---
-= 新機能
+= VMware向けBlueXP  ワークロードファクトリの最新情報
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

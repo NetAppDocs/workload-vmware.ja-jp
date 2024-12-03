@@ -4,7 +4,7 @@ permalink: support-registration.html
 keywords: support registration, register for support, support, nss account, add nss account, 
 summary: NetAppテクニカルサポートでサポートケースをオープンする前に、NetAppサポートサイトのアカウントをワークロード工場に追加し、サポートに登録する必要があります。 
 ---
-= サポートに登録します
+= BlueXP  Workload Factory for VMwareのサポートに登録
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

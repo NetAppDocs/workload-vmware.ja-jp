@@ -4,7 +4,7 @@ permalink: deploy-fsx-file-system.html
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: 推奨されるFSx for ONTAPファイルシステム（場合によってはファイルシステム）がお客様の要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。 
 ---
-= 推奨されるFSx for ONTAPファイルシステムを導入
+= VMwareワークロードの導入推奨されるFSx for ONTAPファイルシステム
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
