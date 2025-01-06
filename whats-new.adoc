@@ -15,6 +15,22 @@ summary: ワークロードファクトリのVMware Migration Advisorコンポ�
 
 
 
+== 2025年1月5日
+
+
+
+=== Amazon EC2 Migration Advisorの機能強化
+
+今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。
+
+* *移行計画を保存またはダウンロードする*:これで、移行計画を保存またはダウンロードし、移行計画をロードして移行アドバイザに取り込むことができます。移行計画を保存すると、その計画はワークロードファクトリアカウントに保存されます。
+* *仮想マシン選択の改善*：VMware向けBlueXP  ワークロードファクトリでは、移行環境に含める仮想マシンのリストのフィルタリングと検索がサポートされるようになりました。
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
+
+
+
 == 2024年12月1日
 
 
@@ -40,11 +56,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 このリリースのWorkload Factory for VMwareには、データ削減比率アシスタントが搭載されています。データ削減比率アシスタントは、AWSクラウドのオンボーディングを準備する際に、VMwareのインベントリとストレージ資産に最適な比率を判断するのに役立ちます。
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
-
-
-
-== 2024年9月19日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]== 2024年9月19日
 
 
 
@@ -52,7 +64,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 このリリースのVMware向けワークロードファクトリでは、機能と安定性が強化され、VMware Migration Advisorを使用して移行計画をインポートおよびエクスポートできるようになりました。
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]== 2024年9月1日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
+
+
+
+== 2024年9月1日
 
 
 

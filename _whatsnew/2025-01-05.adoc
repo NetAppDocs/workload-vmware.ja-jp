@@ -1,0 +1,15 @@
+= Amazon EC2 Migration Advisorの機能強化
+:allow-uri-read: 
+
+
+
+
+=== Amazon EC2 Migration Advisorの機能強化
+
+今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。
+
+* *移行計画を保存またはダウンロードする*:これで、移行計画を保存またはダウンロードし、移行計画をロードして移行アドバイザに取り込むことができます。移行計画を保存すると、その計画はワークロードファクトリアカウントに保存されます。
+* *仮想マシン選択の改善*：VMware向けBlueXP  ワークロードファクトリでは、移行環境に含める仮想マシンのリストのフィルタリングと検索がサポートされるようになりました。
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]

@@ -17,7 +17,7 @@ Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して�
 ====
 .Migration Advisor VMコレクタスクリプトを使用する
 --
-NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。
+NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。スクリプトは、次の2つのモードのいずれかで使用できます。*短期データ収集*長期データ収集
 
 [コードボックス]ウィンドウからMigration Advisor VMコレクタスクリプトをコピーするには、Migration Advisorを起動する必要があります。
 
@@ -60,7 +60,7 @@ VMから長期統計（日次統計）を取得する場合は、vSphere管理�
 ここで、
 
 +
-*** * true *過去24時間のIOPSとスループットのデータを5分間隔で収集します。
+*** * true *カスタム期間のIOPSとスループットのデータを1時間間隔で収集します。
 *** * false *過去1時間のIOPSとスループットのデータを20秒間隔で収集します。
 
 
