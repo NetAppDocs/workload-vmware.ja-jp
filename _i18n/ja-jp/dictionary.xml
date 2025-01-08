@@ -355,20 +355,16 @@
   <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">FSx for ONTAPをVMware Cloud on AWSに接続</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
-  <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Amazon EC2への移行</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">スクリプトは、現在の作業ディレクトリ内の名前にタイムスタンプを含む圧縮ファイルを出力します。.zipファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>詳細については、『』の「コマンドラインパラメータ」の章を参照してください。</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">移行アドバイザを使用してAmazon EC2導入計画を作成</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>です。</block>
-  <block id="ad593b2d0fe3cbb86e53650eaaf4824a" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">VMware Migration Advisorのメインページが表示されます。</block>
   <block id="0c9cddf33e5d4dde0908a43c0281f4c9" category="inline-link-macro">移行アドバイザを使用してVMware Cloud on AWSの導入計画を作成</block>
   <block id="4768fe1dcba86ded88bcf4933b3796e9" category="paragraph"><block ref="a42505b35c6e27042bbc626caf0dab0e" category="inline-link-macro-rx"></block>です。</block>
   <block id="4b4cbcf57cb0bd98e4741d1d43b22196" category="list-title">VMware Cloud on AWSへの導入の要件</block>
-  <block id="5d103325262d22fbc44efacfdca8a26f" category="list-title">Amazon EC2への導入の要件</block>
-  <block id="40e4643f209887a63ee9e277510c8d21" category="list-text">FSx for ONTAPファイルシステムのルートボリュームは、EBSボリュームとして作成する必要があります。</block>
   <block id="8c762f17b3d2ee1292e4c6d599e3c4f4" category="paragraph">VMware Cloud on AWSに導入する場合は、VMware Cloud on AWSが導入されているVPCとは別のVPCに導入してください。</block>
   <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">移行アドバイザを使用してAmazon EC2の導入計画を作成</block>
   <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">オンプレミスのvSphere環境の現在の仮想マシン構成をAmazon EC2の仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
@@ -402,12 +398,10 @@
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2への移行のクイックスタート</block>
   <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware Migration Advisorの機能拡張</block>
   <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
-  <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。</block>
   <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">以下の情報を確認して、Migration Advisorのメリットを確認してください。</block>
   <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">準備ができたら、* Let's start *を選択します。</block>
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">ページの上部には、FSx for ONTAPファイルシステムとEBSボリュームの月間削減量が試算されています。各セクションを展開すると、推奨されるファイルシステム構成、予想される削減量の内訳、前提条件、技術的な免責事項の詳細を確認できます。</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">以前に使用した既存の導入計画と同様の新しい導入計画を計画している場合は、その計画をインポートして変更を加え、新しい導入計画として保存できます。</block>
-  <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">[VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware Migration Advisorによるデータ削減比率の向上</block>
   <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">このリリースのWorkload Factory for VMwareには、データ削減比率アシスタントが搭載されています。データ削減比率アシスタントは、AWSクラウドのオンボーディングを準備する際に、VMwareのインベントリとストレージ資産に最適な比率を判断するのに役立ちます。</block>
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">どちらの比率を選択するかわからない場合は、*[決定を手伝ってください]*を選択します。Data reduction ratio assistant_dialogが表示されます。VMインベントリとストレージ環境に該当する文を選択してください。アシスタントは適切なデータ削減率を推奨します。推奨比率を使用するには、*適用*を選択します。</block>
@@ -514,7 +508,6 @@
   <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">インベントリファイルの*[VM inventory summary]*セクションに、VMの数と合計ストレージ容量が入力されます。</block>
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">[Scope]*ページで、AWS移行に含めるVMをリストから選択します。各VMの電源状態、およびVMが配置されているデータセンターとクラスタでリストをフィルタリングできます。</block>
   <block id="06be6f495115a5a35b66e96726f02c68" category="paragraph">VMリストでは、列として表示するVM情報のタイプを選択できます。</block>
-  <block id="42f16e28c3177812ada64d38e636ae26" category="list-text">[Manage plan（計画の管理）]&gt;[Save a plan（計画の保存）]*を選択して、導入計画のデータをアカウントに保存します。これにより、後で計画をインポートして、同様の要件のシステムを導入するときにテンプレートとして使用できます。保存する前にプランに名前を付けることができます。</block>
   <block id="a1d4e19ec2439c8dc7cd938fc77c75bf" category="list-text">[プランの管理]&gt;[プランのエクスポート]*を選択して、移行プランを.json形式のテンプレートとしてコンピューターに保存します。後で計画をインポートして、同様の要件のシステムを導入する際にテンプレートとして使用できます。</block>
   <block id="edb193ada9589bdd34ce3be340dd56b8" category="list-text">[Manage plan（計画の管理）]&gt;[Download a report（レポートのダウンロード）]*を選択して、レビュー用に計画を配布できるように、展開計画を.pdf形式でダウンロードします。</block>
   <block id="12b1a213ece510a085b9e12a71432992" category="list-text">[Manage plan]&gt;[Download instance storage deployment]*を選択して、外部データストアの導入計画を.csv形式でダウンロードし、クラウドベースの新しいインテリジェントデータインフラストラクチャの作成に使用できるようにします。</block>
@@ -523,10 +516,19 @@
   <block id="f3029172ae69383e67245128a26c3e63" category="list-text">リストから、インポートする計画を選択します。</block>
   <block id="77e0db0ca8a943ba2d5e456b53ecdf89" category="list-text">[Load]*を選択します。</block>
   <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">[マイコンピュータから]*を選択します。</block>
-  <block id="1faf4fef6046370079cb5fb1e673a625" category="paragraph">[Review plan（計画のレビュー）]ページが表示されます。です。前のセクションで説明したように、* Previous *を選択して前のページにアクセスし、プランの設定を変更できます。です。要件に合わせて計画をカスタマイズしたら、計画を保存するか、計画レポートをPDFファイルとしてダウンロードできます。</block>
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  ワークロードファクトリおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、サポート登録が必要です。BlueXP  コンソールからサポートに登録する必要があります。このコンソールは、ワークロードファクトリとは別のWebベースのコンソールです。</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">サポートに登録しても、クラウドプロバイダのファイルサービスでNetAppのサポートは有効になりません。クラウドプロバイダのファイルサービス、そのインフラ、またはサービスを使用するソリューションに関連するテクニカルサポートについては、その製品のワークロードファクトリドキュメントの「困ったときは」を参照してください。</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
   <block id="c12526e52dcc59e8997a1d5b998bdbcb" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2024年9月19日</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
+  <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">[VMware Workloads]タイルで、*[Assess and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。</block>
+  <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">[VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。</block>
+  <block id="88ece72bda0e38c0bdca32d19f42a979" category="inline-link-macro">BlueXP  ワークロード工場でFSx for ONTAPファイルシステムを作成</block>
+  <block id="5938e9d2f32b91ad793322e2f04a5132" category="paragraph">Workload Factoryが推奨する構成に基づいて、の手順に従って<block ref="81e31fba6bc91e280c1371b9fe439927" category="inline-link-macro-rx"></block>FSx for ONTAPファイルシステムを導入します。手順の* Advanced create *ステップを使用して、ファイルシステムを完全にカスタマイズできます。</block>
+  <block id="5cf446add0063a0d451a2002cb6ffde0" category="list-text">[Manage plan（計画の管理）]&gt;[Save a plan（計画の保存）]*を選択して、導入計画のデータをアカウントに保存します。これにより、後で計画をインポートして、同様の要件のシステムを導入するときにテンプレートとして使用できます。保存する前にプランに名前を付けることができます(ユーザー名とタイムスタンプが指定した名前に追加されます)。</block>
+  <block id="d69d4fda2d1463d6feef69fc6ea3e76c" category="list-text">[VMware Workloads]タイルで、*[Assess and plan]*を選択し、*[Migration to AWS native compute]*を選択します。</block>
+  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">[Review plan（計画のレビュー）]ページが表示されます。</block>
+  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">前のセクションで説明したように、* Previous *を選択して前のページにアクセスし、プランの設定を変更できます。</block>
+  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、計画レポートをPDFファイルとしてダウンロードできます。</block>
+  <block id="8ee9b2adbe4d5a2c623d823af805b9a0" category="list-text">[VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
 </blocks>

@@ -34,7 +34,7 @@ VMware Cloudに移行する場合は、Migration Advisorを使用して次のシ
 
 .手順
 . いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。
+. [VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。
 +
 VMware Migration Advisorのメインページが表示されます。
 
@@ -158,7 +158,7 @@ VMware Migration Advisorのメインページが表示されます。
 
 .手順
 . いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to VMware Cloud on AWS]*を選択します。VMware Migration Advisorのメインページが表示されます。
+. [VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。VMware Migration Advisorのメインページが表示されます。
 . [Import an existing deployment plan]を選択します。
 . image:button-upload-file.png["アップロードボタン"]Migration Advisorにインポートする既存の計画ファイルを選択します。
 . [次へ]*を選択すると、[計画のレビュー]ページが表示されます。

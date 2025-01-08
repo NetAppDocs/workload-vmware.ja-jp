@@ -34,7 +34,7 @@ VMから長期統計（日次統計）を取得する場合は、vSphere管理�
 
 .手順
 . いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [VMware Workloads]タイルで、*[Access and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。
+. [VMware Workloads]タイルで、*[Assess and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。
 +
 以下の情報を確認して、Migration Advisorのメリットを確認してください。
 
