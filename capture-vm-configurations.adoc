@@ -50,13 +50,19 @@ VMware Migration Advisorのメインページが表示されます。
 .. PowerShellとPowerCLIがインストールされているデータコレクタをダウンロードしたシステムにログインします。
 .. 次のコマンドを実行して、VMware vCenterサーバに接続します。
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 <server_IP>をVMwareサーバのIPアドレスまたはホスト名に置き換えます。
 
 .. ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+----
 +
 ここで、
 

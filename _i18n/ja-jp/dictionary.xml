@@ -496,7 +496,6 @@
   <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">*移行計画を保存またはダウンロードする*:これで、移行計画を保存またはダウンロードし、移行計画をロードして移行アドバイザに取り込むことができます。移行計画を保存すると、その計画はワークロードファクトリアカウントに保存されます。</block>
   <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">*仮想マシン選択の改善*：VMware向けBlueXP  ワークロードファクトリでは、移行環境に含める仮想マシンのリストのフィルタリングと検索がサポートされるようになりました。</block>
   <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。スクリプトは、次の2つのモードのいずれかで使用できます。*短期データ収集*長期データ収集</block>
-  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">* true *カスタム期間のIOPSとスループットのデータを1時間間隔で収集します。</block>
   <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetAppは、BlueXP  ワークロードファクトリとそのクラウドサービスをさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">FSx for ONTAP、そのインフラ、またはサービスを使用するソリューションに関連するテクニカルサポートについては、その製品のワークロード工場のドキュメントで「困ったときは」を参照してください。</block>
   <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">現在表示しているワークロードファクトリのドキュメント。</block>
@@ -531,4 +530,8 @@
   <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">前のセクションで説明したように、* Previous *を選択して前のページにアクセスし、プランの設定を変更できます。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">要件に合わせて計画をカスタマイズしたら、計画を保存するか、計画レポートをPDFファイルとしてダウンロードできます。</block>
   <block id="8ee9b2adbe4d5a2c623d823af805b9a0" category="list-text">[VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。VMware Migration Advisorのメインページが表示されます。</block>
+  <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「hourly」または「daily」に指定します。</block>
+  <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">* LastHour *は、過去1時間のIOPSとスループットのデータを20秒間隔で収集します。</block>
+  <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">* LastDay *は、過去24時間のIOPSとスループットのデータを5分間隔で収集します。</block>
+  <block id="f0cbed8418df3c7702700c7e26a8bca8" category="paragraph">オプションを指定せずにデータコレクタスクリプトを実行することもできます。これにより、対話型メニューからデータ収集期間を選択できます。</block>
 </blocks>

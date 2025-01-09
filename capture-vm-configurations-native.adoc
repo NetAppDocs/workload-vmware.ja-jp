@@ -49,22 +49,31 @@ VMから長期統計（日次統計）を取得する場合は、vSphere管理�
 .. PowerShellとPowerCLIがインストールされているデータコレクタをダウンロードしたシステムにログインします。
 .. 次のコマンドを実行して、VMware vCenterサーバに接続します。
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 <server_IP>をVMwareサーバのIPアドレスまたはホスト名に置き換えます。
 
-.. ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。
+.. ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「hourly」または「daily」に指定します。
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 ここで、
 
 +
-*** * true *カスタム期間のIOPSとスループットのデータを1時間間隔で収集します。
-*** * false *過去1時間のIOPSとスループットのデータを20秒間隔で収集します。
+*** * LastHour *は、過去1時間のIOPSとスループットのデータを20秒間隔で収集します。
+*** * LastDay *は、過去24時間のIOPSとスループットのデータを5分間隔で収集します。
 
 
 
+
++
+オプションを指定せずにデータコレクタスクリプトを実行することもできます。これにより、対話型メニューからデータ収集期間を選択できます。
 
 
 
