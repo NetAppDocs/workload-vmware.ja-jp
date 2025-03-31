@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">BlueXP  Workload Factory for VMwareには、オンプレミスのvSphere環境で現在の仮想マシン構成を分析するための移行アドバイザが用意されています。その後、移行アドバイザは、推奨されるVMレイアウトをAmazon EC2またはVMware Cloud on AWS vSphereクラスタに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用する計画を作成します。</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  ワークロードファクトリ</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">VMwareワークロードを使用してAmazon EC2に移行する前に、VM構成をキャプチャ</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">VMwareワークロードを使用してVMware Cloudに移行する前に、VM構成をキャプチャ</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">VMwareワークロードの導入推奨されるFSx for ONTAPファイルシステム</block>
@@ -539,10 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">VMリストでは、列として表示するVM情報のタイプを選択できます。たとえば、[_Estimated instance type]を選択すると、VMのリソース要件に基づいて、各VMの推定Amazon EC2インスタンスタイプを示す列が表示されます。</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">特定のリージョンのAmazon FSx for NetApp ONTAPファイルシステムの容量を超える容量やパフォーマンスの要件がボリュームにある場合、移行アドバイザはそのボリュームをAmazon EBSファイルシステムに導入することを推奨します。</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025年3月2日</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2024年11月3日</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetAppコミュニティ</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXPのブログ</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*ボリューム割り当てガイダンスの強化*：EC2 Migration Advisorの「Classify」および「Package」ステップのボリューム割り当て情報には、読みやすさと操作性が向上しています。各ボリュームについて、より有益な情報が表示されるため、ボリュームの特定や割り当て方法の決定に役立ちます。</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*データコレクタスクリプトの効率化*: EC2移行アドバイザのデータコレクタスクリプトは、小規模なVM環境でデータを収集する際のCPU使用率を最適化します。</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2024年12月1日</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>
