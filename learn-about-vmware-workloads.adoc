@@ -65,18 +65,7 @@ Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在の
 * Transit Gatewayを使用せずにVPCピアリングを使用するシングルAZ構成によるコストとレイテンシの削減
 
 
-
-
-== ワークロードファクトリを使用するためのツール
-
-BlueXP  ワークロード工場では、次のツールを使用できます。
-
-* *ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの全体的なビューを提供するビジュアルインターフェイスを提供します。
-* * BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。
-* * REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理できます。
-* * CloudFormation *：AWS CloudFormationコードを使用すると、ワークロードファクトリコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理できます。
-* *Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用すると、ワークロードファクトリコンソールで生成されたインフラワークフローを構築および管理できます。
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 

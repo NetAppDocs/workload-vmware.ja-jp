@@ -412,7 +412,6 @@
   <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">いずれかを使用してワークロードファクトリにログインし<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>ます。</block>
   <block id="d976ce7b00249b4ad474f3d0bbefedbc" category="summary">推奨されるFSx for ONTAPファイルシステム（場合によってはファイルシステム）がお客様の要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。</block>
   <block id="8d3bf2572336618eb2a21a708a9e620f" category="paragraph">推奨されるFSx for ONTAPファイルシステム（場合によっては複数のファイルシステム）が要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。</block>
-  <block id="2589791e68019a74d4c1966e01ee9a23" category="paragraph">Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factoryを使用して（自動モードを使用して）FSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合(読み取りモード)、または権限がない場合(基本モード)は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。</block>
   <block id="a17419346eeea7a8b754d54e457aad0b" category="list-text">* AWSクレデンシャル*：FSx for ONTAPファイルシステムを直接作成するために必要な権限をワークロードファクトリに付与するクレデンシャルを選択または追加します。また、CodeboxからCloudFormationコードを選択し、AWSでFSx for ONTAPファイルシステムを自分でデプロイすることもできます。</block>
   <block id="894106a56db6962222de989043e29e02" category="summary">NetAppは、さまざまな方法でワークロードファクトリをサポートします。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="b634387d5ccb17a06840d1d9c30bd867" category="summary">NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。</block>
@@ -422,13 +421,6 @@
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">ワークロードファクトリにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">ワークロードファクトリの概要</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">ワークロードファクトリの詳細については、を参照して<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>ください。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">ワークロードファクトリを使用するためのツール</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">BlueXP  ワークロード工場では、次のツールを使用できます。</block>
-  <block id="b49621858369606c8835ffee4bc53434" category="list-text">*ワークロードファクトリコンソール*:ワークロードファクトリコンソールは、アプリケーションとプロジェクトの全体的なビューを提供するビジュアルインターフェイスを提供します。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  コンソール*：BlueXP  コンソールはハイブリッドインターフェイスを提供するため、BlueXP  ワークロードファクトリを他のBlueXP  サービスと一緒に使用できます。</block>
-  <block id="23ae25c2ba38ca6ce35bbc556ab80a83" category="list-text">* REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理できます。</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用すると、ワークロードファクトリコンソールで定義したアクションを実行して、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理できます。</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">*Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用すると、ワークロードファクトリコンソールで生成されたインフラワークフローを構築および管理できます。</block>
   <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">作業を開始する前に、を理解しておく必要があります<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>。</block>
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>ワークロードファクトリへのログイン</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">ワークロードファクトリでアカウントを設定する</block>
@@ -452,9 +444,6 @@
   <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">[コードボックス]ウィンドウで、Migration Advisorデータコレクタスクリプト（「list-VMs.ps1」という名前）をターゲットシステムに保存するか、スクリプトをコピーして適切なシステムに貼り付けるかを選択し<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>ます<block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">導入計画の作成プロセスで使用する詳細レベルと方法を選択します。</block>
   <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">*クイック評価*：このオプションでは、高速プロセス中にRVtoolsインベントリファイルを使用してVMに関する情報を取得し、クラウド移行の設計青写真を作成します。</block>
-  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">*詳細な計画*: Migration Advisorのデータコレクタインベントリファイルを使用して詳細な情報を収集することで、導入可能な設計になります。</block>
-  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">迅速な評価</block>
-  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">[クイック評価]タイルを選択し、[次へ]*を選択します。</block>
   <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">[Prepare for AWS Cloud Onboarding]*ページが表示されます。</block>
   <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">[_VM configuration upload_]セクションで、<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>RVToolsによって作成された.xlsxファイルを選択します。</block>
   <block id="b201be50fb24455e1169e30ba042483c" category="list-text">*リージョン*：Amazon FSx for NetApp ONTAPファイルシステムを導入するリージョンを選択します。最適なパフォーマンスとコスト効率を実現するには、通常、既存のAmazon EC2 SDDCが導入されているリージョンと同じリージョンを使用します。</block>
@@ -465,8 +454,6 @@
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">[分類]ページで、VM情報、ボリューム分類ルール、ボリュームの割り当て、導入時にマイグレートするボリュームのリストを確認し、*[次へ]*を選択します。</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">[パッケージ]ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認し、*[次へ]*を選択します。</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">[Review plan（計画の確認）]ページで、移行を計画しているすべてのVMの予測される月単位の削減量とコストの見積もりを確認します。</block>
-  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">詳細な計画</block>
-  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">[詳細計画]タイルを選択し、[次へ]*を選択します。</block>
   <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">[_VM configuration upload_]セクションで、<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>Migration Advisorデータコレクタで作成された.zipファイルを選択します。</block>
   <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">[_VM inventory considerations_]セクションで、Amazon FSx for NetApp ONTAPファイルシステムを導入するリージョンを選択します。最適なパフォーマンスとコスト効率を実現するには、通常、既存のAmazon EC2 SDDCが導入されているリージョンと同じリージョンを使用します。</block>
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">[完了]*を選択すると、VMware移行アドバイザーのページに戻ることができます。</block>
@@ -512,7 +499,6 @@
   <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">[マイコンピュータから]*を選択します。</block>
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">BlueXP  ワークロードファクトリおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、サポート登録が必要です。BlueXP  コンソールからサポートに登録する必要があります。このコンソールは、ワークロードファクトリとは別のWebベースのコンソールです。</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">サポートに登録しても、クラウドプロバイダのファイルサービスでNetAppのサポートは有効になりません。クラウドプロバイダのファイルサービス、そのインフラ、またはサービスを使用するソリューションに関連するテクニカルサポートについては、その製品のワークロードファクトリドキュメントの「困ったときは」を参照してください。</block>
-  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">[VMware Workloads]タイルで、*[Assess and plan]*を選択し、*[Migration to AWS native compute]*を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">[VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。</block>
@@ -546,6 +532,51 @@
   <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*ボリューム割り当てガイダンスの強化*：EC2 Migration Advisorの「Classify」および「Package」ステップのボリューム割り当て情報には、読みやすさと操作性が向上しています。各ボリュームについて、より有益な情報が表示されるため、ボリュームの特定や割り当て方法の決定に役立ちます。</block>
   <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*データコレクタスクリプトの効率化*: EC2移行アドバイザのデータコレクタスクリプトは、小規模なVM環境でデータを収集する際のCPU使用率を最適化します。</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
-  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2024年12月1日</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
+  <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">このリリースのVMware向けBlueXP  ワークロードファクトリでは、Amazon EC2 Migration Advisorのエクスペリエンスが次のように改善されています。</block>
+  <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">* NetAppデータインフラのインサイトをデータソースとして*：ワークロードファクトリは、EC2移行アドバイザのデータコレクタを使用すると、NetAppデータインフラのインサイトに直接接続して、VMwareの導入情報を収集できるようになりました。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">権限に関する用語を更新</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">ワークロードファクトリのユーザインターフェイスとドキュメントでは、読み取り権限を「読み取り専用」に、自動権限を「読み取り/書き込み」に指定するようになりました。</block>
+  <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">Migration AdvisorのVMデータコレクタスクリプト、RVTools、またはNetAppデータインフラ分析情報を使用して、現在のVM構成を取得できます。最も正確な計画のためにVMの構成とパフォーマンスの両方のデータが収集されるため、Migration AdvisorのVMコレクタスクリプトまたはData Infrastructure Insightsを使用することを推奨します。</block>
+  <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">RVToolsの使用（クイック評価）</block>
+  <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">Migration Advisor VMコレクタスクリプトの使用（詳細な計画）</block>
+  <block id="905f3af3e1ec084a67a1b487b9ac6b66" category="open-title">NetAppデータインフラの分析情報を活用（詳細な計画）</block>
+  <block id="a0e5953d5eb8ffc03d66bca81a0c18e6" category="paragraph">NetApp Data Infrastructure Insightsは、インフラ全体を可視化できるクラウドインフラ監視ツールです。移行アドバイザがVMwareインフラに関する情報を収集できるように、移行アドバイザとData Infrastructure Insightsの間で一時的なAPI通信を有効にする必要があります。</block>
+  <block id="b5b31d8ce41e2f6be9d862f8948f3dcc" category="inline-link">データインフラの分析情報の詳細</block>
+  <block id="70e33e04e2c32f73e731d6c181dfb01f" category="paragraph"><block ref="70e33e04e2c32f73e731d6c181dfb01f" category="inline-link-rx"></block></block>
+  <block id="64f9349e02e421debf3f6d20a5be5ed2" category="list-text">Data Infrastructure Insightsのアカウントにログインします。</block>
+  <block id="58b51871d59c9ea6e3dfb178bf676134" category="list-text">サイドナビゲーションメニューで、* Admin *を選択します。</block>
+  <block id="372be835c202d63d8125e0f349ef82e4" category="list-text">表示されたメニューで*[API Access]*を選択します。</block>
+  <block id="1691ad67fe5d613f8659e3b1f3dbad92" category="list-text">[API Access Tokens]*タブで、[*+API Access Token]*を選択します。</block>
+  <block id="0d9f4e7c4781ab54219dde884e55e7de" category="paragraph">[Create an API Access Token]ダイアログが表示されます。</block>
+  <block id="8572681a78798eae07513e43042ec14e" category="list-text">APIトークンの名前と説明を指定します。</block>
+  <block id="25301bbb0bd6feeaa7d0f92041e91809" category="list-text">このトークンを呼び出すために使用されるAPIの種類*で、次のいずれかを選択します。</block>
+  <block id="7afd7da52e07dd7febdaa6f50c36644d" category="list-text">Acquisition Unit の略</block>
+  <block id="9aedeaf1f77b8642abe528503b8c5de8" category="list-text">資産</block>
+  <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="list-text">データ収集</block>
+  <block id="1632bcc011087537a13d82cdf7c72e92" category="list-text">[権限]*で*[読み取り専用]*を選択します。</block>
+  <block id="a30491a7247ae579cd45bb891810edc6" category="list-text">[トークンの有効期限]*で、APIトークンを有効にする必要がある期間を選択します。</block>
+  <block id="403c7f2f4480b30b6731e3047d4251f3" category="list-text">[Automatically rotate tokens for Kubernetes（Kubernetesのトークンを自動回転）]</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">[ 保存（ Save ） ] を選択します。</block>
+  <block id="61a464c915eccf6999e7c204f359223d" category="list-text">[APIアクセストークンのコピー]*を選択します。</block>
+  <block id="b75df169abd314f574bcc40ea5155622" category="list-text">このトークンは、Workload Factory Migration Advisorで使用するための準備として保存しておきます。</block>
+  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factoryを使用して（読み取り/書き込みモードを使用して）FSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合（読み取り専用モード）、または権限がない場合（Basicモード）は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。</block>
+  <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">*詳細な計画*：これらのオプションでは、移行アドバイザのデータコレクタインベントリファイルを使用するか、NetAppデータインフラインサイトへのAPI直接アクセスを使用して詳細な情報を収集し、導入可能な設計を実現します。</block>
+  <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools（クイックアセスメント）</block>
+  <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">[RVTools]タイルを選択し、[次へ]*を選択します。</block>
+  <block id="3cc6c29f47170a38b3e6942027d7a69c" category="open-title">Migration Advisorデータコレクタ（詳細な計画）</block>
+  <block id="e996abdfd89eafe08b518bb9c53ffb5c" category="list-text">[Migration Advisor data collector]タイルを選択し、*[Next]*を選択します。</block>
+  <block id="4fdc46a9c04edc23a039525075c001f6" category="open-title">NetAppデータインフラに関する分析情報（詳細な計画）</block>
+  <block id="f5cd0ecad07b6d4672d911e9b54865f1" category="list-text">[Data Infrastructure Insights（NetAppデータインフラの分析）]タイルを選択し、[次へ]*を選択します。</block>
+  <block id="947d830ffc5683c6bbe8aa6121603afd" category="list-text">[_ NetApp Data Infrastructure Insights connection configuration_]セクションで、Data Infrastructure Insightsのテナントエンドポイントを入力します。</block>
+  <block id="94d5cfc399e2d5a51a5607471312328b" category="paragraph">Data Infrastructure Insightsへのアクセスに使用するURLを指定します。</block>
+  <block id="5085d7cec411dbaca9f86e65ed057ff3" category="list-text">Data Infrastructure Insights用のAPIアクセストークンをまだ生成していない場合は、ページの手順に従って作成します。それ以外の場合は、[APIアクセストークンの入力]テキストボックスにAPIアクセストークンを貼り付けます。</block>
+  <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">「 * 接続」を選択します。</block>
+  <block id="5680d40c89174adbe60bc8bed6184bd1" category="paragraph">ワークロードファクトリは、データインフラの分析情報から情報を収集</block>
+  <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">収集した情報の*[VM inventory summary]*セクションに、VMの数と合計ストレージ容量が表示されます。</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">導入計画を作成する前に、Migration AdvisorのVMコレクタスクリプト、RVTools、またはNetApp Data Infrastructure Insightsを使用して、現在のVM構成を取得できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。</block>
+  <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025年5月4日</block>
+  <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2025年1月5日</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
 </blocks>

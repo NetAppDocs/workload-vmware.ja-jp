@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレ�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] vSphere環境の現在のVM構成の把握
 [role="quick-margin-para"]
-Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して現在のVM構成をキャプチャし、導入計画を作成できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。
+導入計画を作成する前に、Migration AdvisorのVMコレクタスクリプト、RVTools、またはNetApp Data Infrastructure Insightsを使用して、現在のVM構成を取得できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。
 
 [role="quick-margin-para"]
 link:capture-vm-configurations-native.html["現在のVM構成を取得する方法"]です。

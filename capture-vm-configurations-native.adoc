@@ -11,11 +11,33 @@ summary: Migration Advisor VMコレクタスクリプトまたはRVToolsを使�
 
 
 [role="lead"]
-Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。
+Migration AdvisorのVMデータコレクタスクリプト、RVTools、またはNetAppデータインフラ分析情報を使用して、現在のVM構成を取得できます。最も正確な計画のためにVMの構成とパフォーマンスの両方のデータが収集されるため、Migration AdvisorのVMコレクタスクリプトまたはData Infrastructure Insightsを使用することを推奨します。
 
 [role="tabbed-block"]
 ====
-.Migration Advisor VMコレクタスクリプトを使用する
+.RVToolsの使用（クイック評価）
+--
+RVToolsは、vCenterおよびESXサーバ（5.x～8.0）と通信してVMware仮想環境に関する情報を取得するWindowsアプリケーションです。VM、CPU、メモリ、ディスク、クラスタ、 ESXホスト、データストアなど。この情報をxlsxファイルにエクスポートして、移行アドバイザで使用できます。
+
+https://www.robware.net/home["RVToolsの詳細"^]
+
+.手順
+. RVTools 4.4.2以降をダウンロードしてからインストールします。 https://www.robware.net/download["RVTools Webサイト"^]
+. RVToolsを起動し、ターゲットのvCenter Serverにログインします。
++
+これにより、指定したvCenter Serverに関する情報がキャプチャされます。
+
+. VMware情報をxlsxまたはxlsファイルにエクスポートします。
++
+ https://resources.robware.net/resources/prod/RVTools.pdf["RVToolsのマニュアル"^]詳細については、『』の「コマンドラインパラメータ」の章を参照してください。
+
+
+
+.結果
+結果を含むxlsxまたはxlsファイルが作業ディレクトリに保存されます。
+
+--
+.Migration Advisor VMコレクタスクリプトの使用（詳細な計画）
 --
 NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。スクリプトは、次の2つのモードのいずれかで使用できます。
 
@@ -85,26 +107,35 @@ Connect-VIServer -server <server_IP>
 スクリプトは、現在の作業ディレクトリ内の名前にタイムスタンプを含む圧縮ファイルを出力します。.zipファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。
 
 --
-.RVToolsソフトウェアの使用
+.NetAppデータインフラの分析情報を活用（詳細な計画）
 --
-RVToolsは、vCenterおよびESXサーバ（5.x～8.0）と通信してVMware仮想環境に関する情報を取得するWindowsアプリケーションです。VM、CPU、メモリ、ディスク、クラスタ、 ESXホスト、データストアなど。この情報をxlsxファイルにエクスポートして、移行アドバイザで使用できます。
+NetApp Data Infrastructure Insightsは、インフラ全体を可視化できるクラウドインフラ監視ツールです。移行アドバイザがVMwareインフラに関する情報を収集できるように、移行アドバイザとData Infrastructure Insightsの間で一時的なAPI通信を有効にする必要があります。
 
-https://www.robware.net/home["RVToolsの詳細"^]
+https://docs.netapp.com/us-en/data-infrastructure-insights/["データインフラの分析情報の詳細"^]
 
 .手順
-. RVTools 4.4.2以降をダウンロードしてからインストールします。 https://www.robware.net/download["RVTools Webサイト"^]
-. RVToolsを起動し、ターゲットのvCenter Serverにログインします。
+. Data Infrastructure Insightsのアカウントにログインします。
+. サイドナビゲーションメニューで、* Admin *を選択します。
+. 表示されたメニューで*[API Access]*を選択します。
+. [API Access Tokens]*タブで、[*+API Access Token]*を選択します。
 +
-これにより、指定したvCenter Serverに関する情報がキャプチャされます。
+[Create an API Access Token]ダイアログが表示されます。
 
-. VMware情報をxlsxまたはxlsファイルにエクスポートします。
+. APIトークンの名前と説明を指定します。
+. このトークンを呼び出すために使用されるAPIの種類*で、次のいずれかを選択します。
 +
- https://resources.robware.net/resources/prod/RVTools.pdf["RVToolsのマニュアル"^]詳細については、『』の「コマンドラインパラメータ」の章を参照してください。
+** Acquisition Unit の略
+** 資産
+** データ収集
 
 
+. [権限]*で*[読み取り専用]*を選択します。
+. [トークンの有効期限]*で、APIトークンを有効にする必要がある期間を選択します。
+. [Automatically rotate tokens for Kubernetes（Kubernetesのトークンを自動回転）]
+. [ 保存（ Save ） ] を選択します。
+. [APIアクセストークンのコピー]*を選択します。
+. このトークンは、Workload Factory Migration Advisorで使用するための準備として保存しておきます。
 
-.結果
-結果を含むxlsxまたはxlsファイルが作業ディレクトリに保存されます。
 
 --
 ====
