@@ -425,10 +425,8 @@
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>ワークロードファクトリへのログイン</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">ワークロードファクトリでアカウントを設定する</block>
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">のいずれかを使用してログインする<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>必要があります<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block>。</block>
-  <block id="de1e04d3212ed90a1e381e49a4b2d13d" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。AWSクレデンシャルを_Read_or_automate_modeでワークロードファクトリに追加すると、FSx for ONTAPファイルシステムの作成と管理、Amazon EC2内でのワークロードの導入と管理に必要な権限がワークロードファクトリアカウントに付与されます。</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>です。</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>です。</block>
-  <block id="3157cd9076119066c34a23e78c720d17" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。AWSクレデンシャルを_Read_or_automate_modeでワークロードファクトリに追加すると、FSx for ONTAPファイルシステムの作成と管理、およびVMware Cloud内でのワークロードの導入と管理に必要な権限がワークロードファクトリアカウントに付与されます。</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">FSx for ONTAPファイルシステムを接続する方法をご紹介します</block>
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>です。</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">NetAppテクニカルサポートでサポートケースをオープンする前に、NetAppサポートサイトのアカウントをワークロード工場に追加し、サポートに登録する必要があります。</block>
@@ -536,7 +534,6 @@
   <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">このリリースのVMware向けBlueXP  ワークロードファクトリでは、Amazon EC2 Migration Advisorのエクスペリエンスが次のように改善されています。</block>
   <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">* NetAppデータインフラのインサイトをデータソースとして*：ワークロードファクトリは、EC2移行アドバイザのデータコレクタを使用すると、NetAppデータインフラのインサイトに直接接続して、VMwareの導入情報を収集できるようになりました。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">権限に関する用語を更新</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">ワークロードファクトリのユーザインターフェイスとドキュメントでは、読み取り権限を「読み取り専用」に、自動権限を「読み取り/書き込み」に指定するようになりました。</block>
   <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">Migration AdvisorのVMデータコレクタスクリプト、RVTools、またはNetAppデータインフラ分析情報を使用して、現在のVM構成を取得できます。最も正確な計画のためにVMの構成とパフォーマンスの両方のデータが収集されるため、Migration AdvisorのVMコレクタスクリプトまたはData Infrastructure Insightsを使用することを推奨します。</block>
   <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">RVToolsの使用（クイック評価）</block>
   <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">Migration Advisor VMコレクタスクリプトの使用（詳細な計画）</block>
@@ -560,7 +557,6 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">[ 保存（ Save ） ] を選択します。</block>
   <block id="61a464c915eccf6999e7c204f359223d" category="list-text">[APIアクセストークンのコピー]*を選択します。</block>
   <block id="b75df169abd314f574bcc40ea5155622" category="list-text">このトークンは、Workload Factory Migration Advisorで使用するための準備として保存しておきます。</block>
-  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factoryを使用して（読み取り/書き込みモードを使用して）FSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合（読み取り専用モード）、または権限がない場合（Basicモード）は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。</block>
   <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">*詳細な計画*：これらのオプションでは、移行アドバイザのデータコレクタインベントリファイルを使用するか、NetAppデータインフラインサイトへのAPI直接アクセスを使用して詳細な情報を収集し、導入可能な設計を実現します。</block>
   <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools（クイックアセスメント）</block>
   <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">[RVTools]タイルを選択し、[次へ]*を選択します。</block>
@@ -586,5 +582,9 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CLI *：ワークロードファクトリには、1つのブラウザベースのCLIからアカウント間でAWSおよびNetApp環境を管理および運用するためのCloudShell CLIが含まれています。Workload FactoryコンソールのトップバーからCloudShellにアクセスします。</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API *：ワークロードファクトリREST APIを使用して、FSx for ONTAPファイルシステムやその他のAWSリソースを導入、管理します。</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudFormation *：AWS CloudFormationコードを使用して、ワークロードファクトリコンソールで定義したアクションを実行し、AWSアカウントのCloudFormationスタックからAWSおよびサードパーティリソースをモデル化、プロビジョニング、管理します。</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  ワークロードファクトリプロバイダ*：Terraformを使用して、ワークロードファクトリコンソールで生成されるインフラワークフローを構築および管理します。</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。</block>
+  <block id="22e3b254750c8ee79058a0cf095f5b60" category="paragraph">ワークロードファクトリーアカウントに追加したポリシーと権限に応じて、ワークロードファクトリーを使用してFSx for ONTAPファイルシステムを完全にデプロイできます（読み取り/書き込みモードを使用）。権限が少ない場合（読み取り専用モード）、または権限がまったくない場合（基本モード）は、CodeboxからCloudFormation情報を取得し、AWSにFSx for ONTAPファイルシステムを自分でデプロイする必要があります。</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用して、ワークロードファクトリコンソールで生成されるインフラワークフローを構築および管理します。</block>
+  <block id="93aede4db8facb711d27bf36fdf38874" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかで AWS 認証情報をワークロードファクトリーに追加すると、ワークロードファクトリーのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および Amazon EC2 内でのワークロードのデプロイと管理に必要な権限が付与されます。</block>
+  <block id="a3510fa27dbfcf1faf64ffdbe7d3fbcf" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかでワークロードファクトリに AWS 認証情報を追加すると、ワークロードファクトリのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および VMware Cloud 内でのワークロードの展開と管理に必要な権限が付与されます。</block>
 </blocks>

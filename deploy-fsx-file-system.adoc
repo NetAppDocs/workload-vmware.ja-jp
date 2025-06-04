@@ -13,7 +13,7 @@ summary: 推奨されるFSx for ONTAPファイルシステム（場合によっ�
 [role="lead"]
 推奨されるFSx for ONTAPファイルシステム（場合によっては複数のファイルシステム）が要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。
 
-Workload Factoryアカウントに追加したポリシーと権限に応じて、Workload Factoryを使用して（読み取り/書き込みモードを使用して）FSx for ONTAPファイルシステムを完全に導入できます。権限が少ない場合（読み取り専用モード）、または権限がない場合（Basicモード）は、CodeboxのCloudFormation情報を使用し、AWSでFSx for ONTAPファイルシステムを自分でデプロイする必要があります。
+ワークロードファクトリーアカウントに追加したポリシーと権限に応じて、ワークロードファクトリーを使用してFSx for ONTAPファイルシステムを完全にデプロイできます（読み取り/書き込みモードを使用）。権限が少ない場合（読み取り専用モード）、または権限がまったくない場合（基本モード）は、CodeboxからCloudFormation情報を取得し、AWSにFSx for ONTAPファイルシステムを自分でデプロイする必要があります。
 
 .VMware Cloud on AWSへの導入の要件
 * FSx for ONTAPファイルシステムを導入するには、VMware Cloud on AWS Software-Defined Data Center（SDDC）バージョン1.20以降を使用している必要があります。

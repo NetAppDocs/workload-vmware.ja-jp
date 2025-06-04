@@ -21,7 +21,7 @@ VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデ
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する
 [role="quick-margin-para"]
-AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。AWSクレデンシャルを_Read_or_automate_modeでワークロードファクトリに追加すると、FSx for ONTAPファイルシステムの作成と管理、およびVMware Cloud内でのワークロードの導入と管理に必要な権限がワークロードファクトリアカウントに付与されます。
+AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかでワークロードファクトリに AWS 認証情報を追加すると、ワークロードファクトリのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および VMware Cloud 内でのワークロードの展開と管理に必要な権限が付与されます。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]です。
