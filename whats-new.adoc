@@ -15,6 +15,18 @@ summary: ワークロードファクトリのVMware Migration Advisorコンポ�
 
 
 
+== 2025年6月29日
+
+
+
+=== Amazon Elastic VMWare Service の移行アドバイザーサポートの導入
+
+BlueXPのVMware向けワークロードファクトリーが、Amazon Elastic VMware Serviceをサポートするようになりました。移行アドバイザーを使用することで、オンプレミスのVMwareワークロードをAmazon Elastic VMware Serviceに迅速に移行できます。これにより、アプリケーションのリファクタリングやプラットフォーム変更を行うことなく、コストを最適化し、VMware環境をより細かく制御できるようになります。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]
+
+
+
 == 2025年5月4日
 
 
@@ -47,11 +59,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * *データコレクタスクリプトの効率化*: EC2移行アドバイザのデータコレクタスクリプトは、小規模なVM環境でデータを収集する際のCPU使用率を最適化します。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
-
-
-
-== 2025年3月2日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"] == 2025年3月2日
 
 
 
@@ -64,7 +72,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * *ファイルシステムの自動割り当ての強化*：Amazon FSx for NetApp ONTAPファイルシステムの割り当てが改善され、コストの最適化とスループットの最小化が実現しました。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]== 2025年1月5日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
+
+
+
+== 2025年1月5日
 
 
 

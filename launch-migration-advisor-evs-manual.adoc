@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: launch-migration-advisor-evs-manual.html 
+keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
+summary: NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。 
+---
+= VMware ワークロード移行アドバイザーを使用して Amazon EVS の展開計画を作成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。
+
+ワークロードファクトリにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
+
+
+
+== 環境要件を手動で指定して展開計画を作成する
+
+Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し、カスタマイズされた Amazon FSx for NetApp ONTAP ファイルシステムを外部データストアとして使用できます。
+
+.要件
+* Amazon Elastic VMware Service サブスクリプションが必要です。
+
+
+.手順
+. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
+. オプションとして、Workload Factory コンソールからワークロード ファクトリーにアクセスした場合は、VMware ワークロード タイルから *計画と作成* を選択し、*Amazon Elastic VMware サービス* を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。
+. *Amazon Elastic VMware サービス* タイルを選択します。
+. 準備ができたら、* Let's start *を選択します。
+. VM 環境の要件を入力します。
++
+[NOTE]
+====
+次の VM 移行のパフォーマンス要件と推奨事項に留意してください。
+
+** パフォーマンス上の理由から、VM インベントリには 10TiB 以上のストレージ容量が推奨されます。
+** このデプロイメントに指定する必要な IOPS 数に応じて、Amazon Elastic VMware Service データストアには最小スループットが必要です。
+** FSx for ONTAP ファイルシステムの構成に応じて、Amazon Elastic VMware Service 環境で最適なパフォーマンスを実現するために、最小限の数の外部データストアが必要になります。
+
+
+====
+. 準備ができたら、[次へ] を選択して移行計画を確認します。
+. 計画をレビューします。各セクションを展開すると、プランの詳細が表示されます。
+. オプションとして、移行計画に満足したら、それをテンプレートまたは PDF として保存できます。
++
+** *計画のエクスポート*を選択して、移行計画をテンプレートとして保存します。  `.json`コンピュータ上でフォーマットします。後で計画をインポートして、同様の要件のシステムを導入する際にテンプレートとして使用できます。
+** *プランのダウンロード*を選択して、展開プランをダウンロードします。  `.pdf`計画をレビュー用に配布できる形式です。
+
+
+. link:deploy-fsx-file-system-evs.html["VMwareワークロードの導入推奨されるFSx for ONTAPファイルシステム"]です。
+

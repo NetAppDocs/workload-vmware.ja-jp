@@ -23,12 +23,20 @@ sidebar:
     entries:
     - title: VMware向けBlueXP  ワークロードファクトリの詳細
       url: "/learn-about-vmware-workloads.html"
-    - title: クイックスタートガイド：VMware Cloud on AWSへの移行
-      url: "/quick-start.html"
+    - title: Amazon EVS への移行クイックスタート
+      url: "/quick-start-evs.html"
     - title: Amazon EC2への移行のクイックスタート
       url: "/quick-start-native.html"
+    - title: クイックスタートガイド：VMware Cloud on AWSへの移行
+      url: "/quick-start.html"
   - title: VMware Migration Advisorを使用する
     entries:
+    - title: Amazon Elastic VMware Service への移行
+      entries:
+      - title: 移行アドバイザを使用して導入計画を作成
+        url: "/launch-migration-advisor-evs-manual.html"
+      - title: 推奨されるFSx for ONTAPファイルシステムを導入
+        url: "/deploy-fsx-file-system-evs.html"
     - title: Amazon EC2への移行
       entries:
       - title: 現在のVM構成のキャプチャ

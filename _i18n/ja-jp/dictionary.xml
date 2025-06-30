@@ -521,7 +521,6 @@
   <block id="b4a4e72af96c527b186a3d8f12952f22" category="list-text">*ファイルシステムの自動割り当ての強化*：Amazon FSx for NetApp ONTAPファイルシステムの割り当てが改善され、コストの最適化とスループットの最小化が実現しました。</block>
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">VMリストでは、列として表示するVM情報のタイプを選択できます。たとえば、[_Estimated instance type]を選択すると、VMのリソース要件に基づいて、各VMの推定Amazon EC2インスタンスタイプを示す列が表示されます。</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">特定のリージョンのAmazon FSx for NetApp ONTAPファイルシステムの容量を超える容量やパフォーマンスの要件がボリュームにある場合、移行アドバイザはそのボリュームをAmazon EBSファイルシステムに導入することを推奨します。</block>
-  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025年3月2日</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetAppコミュニティ</block>
@@ -572,7 +571,6 @@
   <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">収集した情報の*[VM inventory summary]*セクションに、VMの数と合計ストレージ容量が表示されます。</block>
   <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">導入計画を作成する前に、Migration AdvisorのVMコレクタスクリプト、RVTools、またはNetApp Data Infrastructure Insightsを使用して、現在のVM構成を取得できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025年5月4日</block>
-  <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>== 2025年1月5日</block>
   <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">ワークロードファクトリを使用するためのツール</block>
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">BlueXP  ワークロード工場では、次のツールを使用できます。</block>
@@ -587,4 +585,52 @@
   <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Terraform BlueXP  ワークロードファクトリプロバイダ*: Terraformを使用して、ワークロードファクトリコンソールで生成されるインフラワークフローを構築および管理します。</block>
   <block id="93aede4db8facb711d27bf36fdf38874" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかで AWS 認証情報をワークロードファクトリーに追加すると、ワークロードファクトリーのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および Amazon EC2 内でのワークロードのデプロイと管理に必要な権限が付与されます。</block>
   <block id="a3510fa27dbfcf1faf64ffdbe7d3fbcf" category="paragraph">AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかでワークロードファクトリに AWS 認証情報を追加すると、ワークロードファクトリのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および VMware Cloud 内でのワークロードの展開と管理に必要な権限が付与されます。</block>
+  <block id="1832a7f4d2abf297aa0cee87f4c043e3" category="doc">Amazon Elastic VMWare Service の移行アドバイザーサポートの導入</block>
+  <block id="0a2319b536912bd5824ac0880375783c" category="paragraph">BlueXPのVMware向けワークロードファクトリーが、Amazon Elastic VMware Serviceをサポートするようになりました。移行アドバイザーを使用することで、オンプレミスのVMwareワークロードをAmazon Elastic VMware Serviceに迅速に移行できます。これにより、アプリケーションのリファクタリングやプラットフォーム変更を行うことなく、コストを最適化し、VMware環境をより細かく制御できるようになります。</block>
+  <block id="e64998710319712d47612cc187a1dc35" category="inline-link">移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する</block>
+  <block id="e38866fbf1fd8067b38b878041582246" category="paragraph"><block ref="e38866fbf1fd8067b38b878041582246" category="inline-link-rx"></block></block>
+  <block id="89caae77acbaec9919d3c71c10e004de" category="paragraph">ワークロードファクトリーアカウントに追加したポリシーと権限に応じて、ワークロードファクトリーを使用してFSx for ONTAPファイルシステムを完全にデプロイできます（読み取り/書き込みモードを使用）。権限が少ない場合 (読み取り専用モード)、または権限がまったくない場合 (基本モード) は、Codebox の CloudFormation テンプレートを使用して、AWS に FSx for ONTAP ファイルシステムを自分でデプロイする必要があります。</block>
+  <block id="802df5af335904750107954ab3a8ed46" category="list-title">Amazon Elastic VMware Service へのデプロイメントの要件</block>
+  <block id="af3e8ed9d9207dad8af46833f2eb0ab7" category="list-text">Amazon Elastic VMware Service サブスクリプションが必要です。</block>
+  <block id="ae7ebbe17e3811730276beadb335d6dd" category="list-text">AWS アカウントで FSx for ONTAP ファイルシステムを作成するには、必要な権限が必要です。</block>
+  <block id="24fc36f7e1c73cab9f76bb8ee2f25d79" category="list-text">「ファイル システムの一般構成」セクションで、次の情報を入力します。</block>
+  <block id="87597408c5356ee95acfb6204cb27959" category="list-text">*タグ*: オプションで、この FSx for ONTAP ファイル システムを分類するためのタグを追加できます。</block>
+  <block id="878b8332f582e3c39ba8b0c5141a2bc9" category="list-text">*リージョンと VPC*: FSx for ONTAP ファイルシステムをデプロイするリージョンと VPC を選択します。</block>
+  <block id="68da56496686d2dc164a51d6f90f1d12" category="list-text">*セキュリティグループ*（詳細作成のみ）: *詳細作成*オプションを使用する場合、FSx for ONTAP VPC のデフォルトのセキュリティグループを選択して、すべてのトラフィックが FSx for ONTAP ファイルシステムにアクセスできるようにします。新しいセキュリティグループを作成することも、既存のセキュリティグループを選択することもできます。</block>
+  <block id="a73a1c93ad165ac5c17c82603fc3a576" category="paragraph">*セキュリティ グループ構成を EVS NFS データストアに合わせて調整する* オプションを有効にすると、ワークロード ファクトリーは EVS NFS データストアの設定に従ってセキュリティ グループを構成します。</block>
+  <block id="d1ccf69487a52a741a6bfb38f901c5b1" category="paragraph">セキュリティグループにインバウンドルールを追加することで、他のAWSサービスからのFSx for ONTAPファイルシステムへのアクセスを制限できます。これにより、開いているサービスの数が減ります。最小ポートとプロトコルは次のとおりです。</block>
+  <block id="657cb66ece3451d22c97bdb6e58d16e0" category="list-text">*可用性ゾーン*: 可用性ゾーンとサブネットを選択します。</block>
+  <block id="dd53429e7a462cab042d43fcc9e6fd5b" category="list-text">*暗号化* (詳細作成のみ): *詳細作成* オプションを使用する場合、ドロップダウンから AWS 暗号化キー名を選択できます。</block>
+  <block id="313b56cb7d0011cb0629e69df54b8e27" category="list-text">*NFS データストア アクセス* (詳細作成のみ): *詳細作成* オプションを使用する場合、すべてのホストがデータストアにアクセスできるかどうか、または EVS 管理ホストのみがデータストアにアクセスできるかどうかを選択できます。</block>
+  <block id="7d87cf8c2865afef739dfc772b6aabc3" category="list-text">*ONTAP 資格情報*: ONTAP ユーザー名のパスワードを入力します。</block>
+  <block id="2240ad2300512b80bcff2fc7b3eadb2e" category="paragraph">オプションとして、Codebox ウィンドウで *CloudFormation にリダイレクト* を選択し、CloudFormation スタックを使用してファイルシステムと推奨される VM 構成を作成できます。</block>
+  <block id="f49f5d0e3a47bf2d077d9b5cb9387559" category="paragraph">FSx for ONTAPファイルシステムが導入されます。Codebox の AWS CloudFormation テンプレートを使用して、推奨される VM 構成を Amazon Elastic VMware Service 環境にデプロイできるようになりました。</block>
+  <block id="18558d28d08811f4ec25bd5acef85498" category="doc">VMware ワークロード移行アドバイザーを使用して Amazon EVS の展開計画を作成する</block>
+  <block id="afae2006111ac3752aa6ac921a1174d1" category="section-title">環境要件を手動で指定して展開計画を作成する</block>
+  <block id="3693b6808c8591ae14d0989957294e8c" category="paragraph">Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し、カスタマイズされた Amazon FSx for NetApp ONTAP ファイルシステムを外部データストアとして使用できます。</block>
+  <block id="8d4edb94cbb86591a03f23fc0d653003" category="list-text">オプションとして、Workload Factory コンソールからワークロード ファクトリーにアクセスした場合は、VMware ワークロード タイルから *計画と作成* を選択し、*Amazon Elastic VMware サービス* を選択します。VMware Migration Advisorのスプラッシュ画面が表示されます。</block>
+  <block id="79f480b47159732c8b7d2aafd18e060e" category="list-text">*Amazon Elastic VMware サービス* タイルを選択します。</block>
+  <block id="1b7c012ca7da212cb6ec387367494316" category="list-text">VM 環境の要件を入力します。</block>
+  <block id="330b61387619b0f8b4b8895b1ec8613f" category="paragraph">次の VM 移行のパフォーマンス要件と推奨事項に留意してください。</block>
+  <block id="4188b01aa6e6bb6ccb7125b23b28fafd" category="list-text">パフォーマンス上の理由から、VM インベントリには 10TiB 以上のストレージ容量が推奨されます。</block>
+  <block id="5b5460403cef0ea7685b6011079155e0" category="list-text">このデプロイメントに指定する必要な IOPS 数に応じて、Amazon Elastic VMware Service データストアには最小スループットが必要です。</block>
+  <block id="b5caa85d8d4f88117041949b5799396b" category="list-text">FSx for ONTAP ファイルシステムの構成に応じて、Amazon Elastic VMware Service 環境で最適なパフォーマンスを実現するために、最小限の数の外部データストアが必要になります。</block>
+  <block id="3355e631d51b295b53f6446e8fdf4cd7" category="list-text">準備ができたら、[次へ] を選択して移行計画を確認します。</block>
+  <block id="024245b5e6c75ae114dc398c5ca73ae7" category="list-text">計画をレビューします。各セクションを展開すると、プランの詳細が表示されます。</block>
+  <block id="a224105b72eaa33fd15b06abcd653ede" category="list-text">オプションとして、移行計画に満足したら、それをテンプレートまたは PDF として保存できます。</block>
+  <block id="5668e73ddaaf1b152f3748d30b45e020" category="list-text">*計画のエクスポート*を選択して、移行計画をテンプレートとして保存します。 <block ref="cc8f0c0e5a5cef9b33f236a0a9c19ca0" prefix=" " category="inline-code"></block>コンピュータ上でフォーマットします。後で計画をインポートして、同様の要件のシステムを導入する際にテンプレートとして使用できます。</block>
+  <block id="df5e6fa59277519d17b0cce829cf0807" category="list-text">*プランのダウンロード*を選択して、展開プランをダウンロードします。 <block ref="abdf095626d4a4ab2bcd4167b128c1f1" prefix=" " category="inline-code"></block>計画をレビュー用に配布できる形式です。</block>
+  <block id="a081cf5b640f454f47679c388f6530d7" category="list-text"><block ref="844d6e67804ecd2d3cf898790362c9e5" category="inline-link-macro-rx"></block>です。</block>
+  <block id="c0c3ffedc4190adc07720bcef4541cf4" category="summary">VMware 移行アドバイザーを使用して、Amazon FSx for ONTAP を外部 NFS データストアとして使用し、現在のインフラストラクチャを Amazon EVS に移行しましょう。</block>
+  <block id="97735cf08bc8cd1817cf2dbadd06154d" category="doc">VMware ワークロード移行アドバイザーを使用した Amazon EVS への移行のクイックスタート</block>
+  <block id="10fb6b3cc2639a71681659d3fc652b8a" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> VMware Migration Advisorを使用して導入計画を作成</block>
+  <block id="78522cc7fdf910d1c768be65dab81580" category="paragraph">VMware 移行アドバイザーを起動し、Amazon FSx for ONTAP ファイルシステムを外部 NFS データストアとして使用して、Amazon Elastic VMWare Service インフラストラクチャ上に作成する VM 環境を手動で設定します。</block>
+  <block id="252d7e7931c94880fe6fc1eac69d09f2" category="paragraph"><block ref="dc198a09c8e48764d8b3153d8454731b" category="inline-link-macro-rx"></block>です。</block>
+  <block id="d245f7ce84d001c84c5d15b65c1e1f82" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 推奨されるFSx for ONTAPファイルシステムを導入</block>
+  <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>です。</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
+  <block id="b86dc1705dea7f37874d95dc0b3ecb5d" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2025年3月2日</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
+  <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">Amazon EVS への移行クイックスタート</block>
+  <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">Amazon Elastic VMware Service への移行</block>
 </blocks>

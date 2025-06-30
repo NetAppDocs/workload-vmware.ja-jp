@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: quick-start-evs.html 
+keywords: quick start 
+summary: VMware 移行アドバイザーを使用して、Amazon FSx for ONTAP を外部 NFS データストアとして使用し、現在のインフラストラクチャを Amazon EVS に移行しましょう。 
+---
+= VMware ワークロード移行アドバイザーを使用した Amazon EVS への移行のクイックスタート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware 移行アドバイザーを使用して、Amazon FSx for ONTAP を外部 NFS データストアとして使用し、現在のインフラストラクチャを Amazon EVS に移行しましょう。
+
+作業を開始する前に、を理解しておく必要があります https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
+[role="quick-margin-para"]
+のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する
+[role="quick-margin-para"]
+AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかで AWS 認証情報をワークロードファクトリーに追加すると、ワークロードファクトリーのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および Amazon EC2 内でのワークロードのデプロイと管理に必要な権限が付与されます。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] VMware Migration Advisorを使用して導入計画を作成
+[role="quick-margin-para"]
+VMware 移行アドバイザーを起動し、Amazon FSx for ONTAP ファイルシステムを外部 NFS データストアとして使用して、Amazon Elastic VMWare Service インフラストラクチャ上に作成する VM 環境を手動で設定します。
+
+[role="quick-margin-para"]
+link:launch-migration-advisor-evs-manual.html["VMware Migration Advisorを使用して導入計画を作成する方法"]です。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"] 推奨されるFSx for ONTAPファイルシステムを導入
+[role="quick-margin-para"]
+Amazon EC2インフラ内のVMにデータストアを提供する新しいFSx for ONTAPファイルシステムを導入します。
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system-evs.html["新しいFSx for ONTAPファイルシステムの導入方法をご確認ください"]です。
