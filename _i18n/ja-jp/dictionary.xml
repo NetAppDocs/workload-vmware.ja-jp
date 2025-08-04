@@ -629,8 +629,38 @@
   <block id="d245f7ce84d001c84c5d15b65c1e1f82" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 推奨されるFSx for ONTAPファイルシステムを導入</block>
   <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>です。</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
-  <block id="b86dc1705dea7f37874d95dc0b3ecb5d" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block> == 2025年3月2日</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
   <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">Amazon EVS への移行クイックスタート</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">Amazon Elastic VMware Service への移行</block>
+  <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">Amazon Elastic VMWare Service の移行アドバイザーのサポートが強化されました</block>
+  <block id="37ac2db5bb5bc7f50e3b58bbb706b64b" category="paragraph">Amazon Elastic VMware Service 移行アドバイザーは、Amazon FSx for NetApp ONTAPファイルシステムの自動デプロイとマウントをサポートするようになりました。これにより、Amazon EVS 環境への移行が完了したら、FSx for ONTAPファイルシステムに VM のデプロイを開始できるようになります。</block>
+  <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">Amazon Elastic VMware Service への移行によるコスト削減額を計算する</block>
+  <block id="b1da4fce8da5117e3a9e1041d1749074" category="paragraph">VMware ワークロードを Amazon Elastic VMware Service (EVS) に移行することで得られる潜在的なコスト削減を検討できるようになりました。節約計算ツールを使用すると、基盤ストレージとしてAmazon FSx for NetApp ONTAP を使用した場合と使用しない場合の Amazon EVS のコストを比較できます。計算機は、環境の特性を調整すると、潜在的な節約額をリアルタイムで表示します。</block>
+  <block id="b5ddf28fa6b1419129cc60c87384d5f3" category="inline-link">BlueXP workload factoryで Amazon Elastic VMware Service の割引を探る</block>
+  <block id="e5201134512b46a1979954f15ddb8c25" category="paragraph"><block ref="e5201134512b46a1979954f15ddb8c25" category="inline-link-rx"></block></block>
+  <block id="89737fdc47d2ffa6f11712bb340e2a19" category="summary">FSx for ONTAPで Amazon EVS を使用するとどれだけ節約できるかを計算します。</block>
+  <block id="c99c39a5824ae2c9be487d0de19febcd" category="paragraph">VMware ワークロードを Amazon Elastic VMware Service (EVS) に移行することで得られる潜在的なコスト削減を検討します。この計算ツールを使用すると、ストレージとしてAmazon FSx for NetApp ONTAP を使用した場合と使用しない場合の Amazon EVS のコストを比較できます。</block>
+  <block id="85f9ebcaf90aa1d0aea8e19f23446085" category="paragraph">節約計算ツールによって、最もコスト効率の高いストレージが FSx for ONTAPであると判断された場合は、詳細な評価を作成して、使用前に確認できる移行計画を作成できます。その後、Codebox を使用して Infrastructure-as-Code テンプレートを生成できます。</block>
+  <block id="b23b05aa1d44c04b2da76aa4c7408d6c" category="section-title">EVS 環境の節約を検討する</block>
+  <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Amazon EVS 環境への計画的な移行で潜在的な節約を検討するには、次の手順に従ってください。</block>
+  <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">続行する前に、節約計算ツールの下部にある免責事項を確認し、価格見積りの計算方法について詳しく理解してください。</block>
+  <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">VMware ワークロード タイルから、*節約を調べる* を選択し、次に *Amazon Elastic VMware Service (EVS)* を選択します。節約計算機が表示されます。</block>
+  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">*環境設定* ペインには、環境のニーズに応じて調整できるスライダーがあります。</block>
+  <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">必要に応じて次のスライダーを調整し、選択した値に対するリアルタイムの節約計算を確認します。キーボードを使用する場合は、矢印キーを使用して微調整を行うことができます。</block>
+  <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*必要な物理CPU（数）*</block>
+  <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*必要な物理メモリ（GiB）*</block>
+  <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*必要なVMストレージ（TiB）*</block>
+  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*EVS料金プラン*</block>
+  <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">展開計画を作成する</block>
+  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">移行アドバイザーを使用して<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block>Amazon EVS 環境の場合は、[詳細な評価を作成する] を選択します。</block>
+  <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">TCO 計算機を閉じるには、[閉じる] を選択します。</block>
+  <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">「EVS クラスター接続」セクションで、次の情報を入力します。</block>
+  <block id="2e06075a8c3ccf8cb8ba301a238ce6f3" category="list-text">*データストアのマウント オプション*: オプションで、*データストアを EVS クラスターにマウント* オプションを有効にして、データストアを Amazon EVS クラスターに自動的に接続します。このオプションにより、ワークロード ファクトリーは、VMware ESXi ホスト設定をONTAP のベスト プラクティスの推奨事項と一致するように構成します。ファイル システムをデプロイする前に、*概要* セクションでプランの詳細を確認し、変更された設定を確認できます。</block>
+  <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*EVS クラスター vSphere コンソールの詳細*: Amazon EVS に接続する VMware vCenter サーバーの IP アドレスまたは FQDN を入力します。</block>
+  <block id="8216b024615cc78b62369ac15275d617" category="list-text">*vSphere 管理者認証情報のシークレット ARN*: vSphere 管理者認証情報のシークレット ARN を選択します。これらの資格情報は、データストアをマウントし、推奨される VMware 設定を構成するために使用されます。</block>
+  <block id="83fcfa0f731c9eadc58dd7b0bbe13131" category="paragraph">このリージョンで Amazon EVS が利用できない場合、またはアカウントに利用可能なシークレット ARN のリストを取得する権限がない場合は、シークレット ARN 値を手動で入力できます。</block>
+  <block id="a2e98ef8c2ce2e5671fe4097dbf5f4ce" category="section-title">2025年8月3日</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025年3月2日</block>
+  <block id="bb0d319ea44614c003c0a5e9c6e4f1a6" category="sidebar">クイックスタート: Amazon Elastic VMware Service への移行</block>
+  <block id="cf48d7891f28d92c4308fb5debb574b0" category="sidebar">節約方法を見る</block>
 </blocks>

@@ -32,6 +32,8 @@ sidebar:
     entries:
     - title: Amazon Elastic VMware Service への移行
       entries:
+      - title: 節約方法を見る
+        url: "/calculate-evs-savings.html"
       - title: 移行アドバイザを使用して導入計画を作成
         url: "/launch-migration-advisor-evs-manual.html"
       - title: 推奨されるFSx for ONTAPファイルシステムを導入

@@ -15,6 +15,26 @@ summary: ワークロードファクトリのVMware Migration Advisorコンポ�
 
 
 
+== 2025年8月3日
+
+
+
+=== Amazon Elastic VMWare Service の移行アドバイザーのサポートが強化されました
+
+Amazon Elastic VMware Service 移行アドバイザーは、Amazon FSx for NetApp ONTAPファイルシステムの自動デプロイとマウントをサポートするようになりました。これにより、Amazon EVS 環境への移行が完了したら、FSx for ONTAPファイルシステムに VM のデプロイを開始できるようになります。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]
+
+
+
+=== Amazon Elastic VMware Service への移行によるコスト削減額を計算する
+
+VMware ワークロードを Amazon Elastic VMware Service (EVS) に移行することで得られる潜在的なコスト削減を検討できるようになりました。節約計算ツールを使用すると、基盤ストレージとしてAmazon FSx for NetApp ONTAP を使用した場合と使用しない場合の Amazon EVS のコストを比較できます。計算機は、環境の特性を調整すると、潜在的な節約額をリアルタイムで表示します。
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP workload factoryで Amazon Elastic VMware Service の割引を探る"]
+
+
+
 == 2025年6月29日
 
 
@@ -59,7 +79,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * *データコレクタスクリプトの効率化*: EC2移行アドバイザのデータコレクタスクリプトは、小規模なVM環境でデータを収集する際のCPU使用率を最適化します。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"] == 2025年3月2日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
+
+
+
+== 2025年3月2日
 
 
 
