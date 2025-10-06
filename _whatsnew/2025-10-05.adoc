@@ -15,3 +15,11 @@ BlueXP は、データ インフラストラクチャの管理における役割
 VMware ワークロード プランニング センターを使用すると、VM インベントリと移行プランを 1 か所で表示および管理できます。異なる環境から複数の VM インベントリをアップロードして保存し、それらのいずれかについて AWS EC2 または Amazon Elastic VMware サービスへの移行の計画を開始できます。  AWS EC2 または EVS 移行プランを作成して保存することもできます。
 
 https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["VMware ワークロード プランニング センターの詳細"]
+
+
+
+=== Amazon Elastic VMWare Service の移行アドバイザーサポートの導入
+
+BlueXP Workload Factory for VMware では、Amazon Elastic VMware Service 移行アドバイザーを使用して、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるようになりました。移行アドバイザーを使用して移行計画を作成すると、計画センターの移行計画のリストに自動的に保存されます。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]

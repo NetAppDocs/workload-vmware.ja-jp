@@ -474,7 +474,6 @@
   <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">Amazon EVS への移行クイックスタート</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">Amazon Elastic VMware Service への移行</block>
   <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">Amazon Elastic VMWare Service の移行アドバイザーのサポートが強化されました</block>
-  <block id="37ac2db5bb5bc7f50e3b58bbb706b64b" category="paragraph">Amazon Elastic VMware Service 移行アドバイザーは、Amazon FSx for NetApp ONTAPファイルシステムの自動デプロイとマウントをサポートするようになりました。これにより、Amazon EVS 環境への移行が完了したら、FSx for ONTAPファイルシステムに VM のデプロイを開始できるようになります。</block>
   <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">Amazon Elastic VMware Service への移行によるコスト削減額を計算する</block>
   <block id="b1da4fce8da5117e3a9e1041d1749074" category="paragraph">VMware ワークロードを Amazon Elastic VMware Service (EVS) に移行することで得られる潜在的なコスト削減を検討できるようになりました。節約計算ツールを使用すると、基盤ストレージとしてAmazon FSx for NetApp ONTAP を使用した場合と使用しない場合の Amazon EVS のコストを比較できます。計算機は、環境の特性を調整すると、潜在的な節約額をリアルタイムで表示します。</block>
   <block id="89737fdc47d2ffa6f11712bb340e2a19" category="summary">FSx for ONTAPで Amazon EVS を使用するとどれだけ節約できるかを計算します。</block>
@@ -512,12 +511,10 @@
   <block id="9d310bdb300e7bb1ef7cd5e2fc08e57b" category="paragraph">BlueXP Workload Factory for VMware のこのリリースでは、Amazon EC2 移行アドバイザーのエクスペリエンスがいくつか改善されています。</block>
   <block id="28ac5ecdafc5d6be71f28783b5d53cc6" category="paragraph">BlueXP Workload Factory for VMware のこのリリースでは、Amazon EC2 移行アドバイザーのエクスペリエンスが次のように改善されています。</block>
   <block id="962abee1b74c5d5ab5f9bd0c47cbb068" category="paragraph">Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。</block>
-  <block id="50d3ff7077038387799b7b34d964df08" category="paragraph">BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。移行アドバイザーを使用すると、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるため、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わなくても VMware 環境をより細かく制御できるようになります。</block>
   <block id="041a7335d4bfbe01ea8a2d2f780732b6" category="inline-link">BlueXP Workload Factory で Amazon Elastic VMware Service の割引価格をご確認ください</block>
   <block id="1a1b8cfea3181a2937851fe76b4862d4" category="paragraph"><block ref="1a1b8cfea3181a2937851fe76b4862d4" category="inline-link-rx"></block></block>
   <block id="2bbead322f2dd5c4a40fbd66537e304f" category="doc">BlueXP workload factoryがNetAppワークロードファクトリーに</block>
   <block id="9c80606adc6065bc48c6d99fbb8c3f1d" category="paragraph">BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。その結果、 BlueXP workload factoryの名前がNetAppワークロード ファクトリーに変更されました。</block>
-  <block id="b77ed2f5662201a26b98b92e98329049" category="section-title">VMware ワークロード プランニング センターのご紹介</block>
   <block id="2dd03fc740a72e1c5fc0daf9be122249" category="paragraph">VMware ワークロード プランニング センターを使用すると、VM インベントリと移行プランを 1 か所で表示および管理できます。異なる環境から複数の VM インベントリをアップロードして保存し、それらのいずれかについて AWS EC2 または Amazon Elastic VMware サービスへの移行の計画を開始できます。  AWS EC2 または EVS 移行プランを作成して保存することもできます。</block>
   <block id="420ac911d98022d5289d3f00ff38ea84" category="inline-link">VMware ワークロード プランニング センターの詳細</block>
   <block id="81ee9955f68100a5e460b3f794e65e9b" category="paragraph"><block ref="81ee9955f68100a5e460b3f794e65e9b" category="inline-link-rx"></block></block>
@@ -733,4 +730,9 @@
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetAppコンソール</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetAppデータサービス</block>
   <block id="93ba13882942e9f41461a4867481e012" category="sidebar">VMware プランニング センターを使用する</block>
+  <block id="98d4c7385c3e640287a91e3032b576c3" category="paragraph">BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に手動で移行することで、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わずに VMware 環境をより細かく制御できるようになります。</block>
+  <block id="dcf522fe0928ea448e17a8ccb7b14d76" category="paragraph">NetApp Workload Factory は、Amazon FSx for NetApp ONTAPファイルシステムの自動デプロイメントとマウントをサポートするようになりました。これにより、Amazon EVS 環境への移行が完了したら、FSx for ONTAPファイルシステムに VM のデプロイを開始できるようになります。</block>
+  <block id="74f9db7fefcf8c24332761c003d46a02" category="section-title">VMware ワークロード プランニング センターのご紹介</block>
+  <block id="c1ed477ef5d58aa5d9931821badda717" category="paragraph">BlueXP Workload Factory for VMware では、Amazon Elastic VMware Service 移行アドバイザーを使用して、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるようになりました。移行アドバイザーを使用して移行計画を作成すると、計画センターの移行計画のリストに自動的に保存されます。</block>
+  <block id="c2ec0e17d82dd73344c2ef80a6de22f1" category="paragraph"><block ref="c2ec0e17d82dd73344c2ef80a6de22f1" category="inline-link-rx"></block></block>
 </blocks>

@@ -6,6 +6,6 @@
 
 === Amazon Elastic VMWare Service の移行アドバイザーサポートの導入
 
-BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。移行アドバイザーを使用すると、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるため、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わなくても VMware 環境をより細かく制御できるようになります。
+BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に手動で移行することで、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わずに VMware 環境をより細かく制御できるようになります。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]

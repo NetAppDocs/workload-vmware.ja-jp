@@ -33,13 +33,21 @@ https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["VMwa
 
 
 
+=== Amazon Elastic VMWare Service の移行アドバイザーサポートの導入
+
+BlueXP Workload Factory for VMware では、Amazon Elastic VMware Service 移行アドバイザーを使用して、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるようになりました。移行アドバイザーを使用して移行計画を作成すると、計画センターの移行計画のリストに自動的に保存されます。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]
+
+
+
 == 2025年8月3日
 
 
 
 === Amazon Elastic VMWare Service の移行アドバイザーのサポートが強化されました
 
-Amazon Elastic VMware Service 移行アドバイザーは、Amazon FSx for NetApp ONTAPファイルシステムの自動デプロイとマウントをサポートするようになりました。これにより、Amazon EVS 環境への移行が完了したら、FSx for ONTAPファイルシステムに VM のデプロイを開始できるようになります。
+NetApp Workload Factory は、Amazon FSx for NetApp ONTAPファイルシステムの自動デプロイメントとマウントをサポートするようになりました。これにより、Amazon EVS 環境への移行が完了したら、FSx for ONTAPファイルシステムに VM のデプロイを開始できるようになります。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]
 
@@ -59,7 +67,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP
 
 === Amazon Elastic VMWare Service の移行アドバイザーサポートの導入
 
-BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。移行アドバイザーを使用すると、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるため、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わなくても VMware 環境をより細かく制御できるようになります。
+BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に手動で移行することで、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わずに VMware 環境をより細かく制御できるようになります。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]
 
