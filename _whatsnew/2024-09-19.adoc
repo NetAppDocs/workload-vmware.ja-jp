@@ -6,6 +6,6 @@
 
 === VMware Migration Advisorの機能拡張
 
-このリリースのVMware向けワークロードファクトリでは、機能と安定性が強化され、VMware Migration Advisorを使用して移行計画をインポートおよびエクスポートできるようになりました。
+このリリースの Workload Factory for VMware では、機能性と安定性が強化されているほか、VMware 移行アドバイザーを使用する際に移行プランをインポートおよびエクスポートする機能も備わっています。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]

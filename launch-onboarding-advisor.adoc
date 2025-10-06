@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: launch-onboarding-advisor.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: VMware 移行アドバイザーにアクセスするには、 NetApp Workload Factory にログインします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた展開計画または移行計画を作成します。 
 ---
 = VMware Workloads Migration Advisorを使用して、VMware Cloud on AWSの導入計画を作成
 :allow-uri-read: 
@@ -11,15 +11,15 @@ summary: NetAppワークロードファクトリにログインして、VMware M
 
 
 [role="lead"]
-NetAppワークロードファクトリにログインして、VMware Migration Advisorにアクセスします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた導入計画または移行計画を作成します。
+VMware 移行アドバイザーにアクセスするには、 NetApp Workload Factory にログインします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた展開計画または移行計画を作成します。
 
 VMware Cloudに移行する場合は、Migration Advisorを使用して次のシナリオの導入計画を作成できます。
 
 * <<オンプレミスのvSphere環境を基に導入計画を作成,をクリックして、現在のオンプレミスのvSphere環境をVMwareクラウドに移行します。>>
-* <<既存の計画に基づいて導入計画を作成する,同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。>>
+* <<Create a deployment plan based on an existing plan,同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。>>
 
 
-ワークロードファクトリにアクセスするには、ユーザ名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順を参照してください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
+Workload Factory にアクセスするには、ユーザー名とパスワードが必要であることに注意してください。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
 
 
 
@@ -29,17 +29,17 @@ VMware Cloudに移行する場合は、Migration Advisorを使用して次のシ
 
 .要件
 * Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。
-* ワークロードファクトリにログインするシステムのインベントリファイルにアクセスできる必要があります。
+* Workload Factory にログインしているシステムからインベントリ ファイルにアクセスできる必要があります。
 
 
 .手順
-. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。
 +
-VMware Migration Advisorのメインページが表示されます。
+プランニングセンターが表示されます。
 
-. [新しい導入計画を作成する]*を選択します。
-. 現在のVM構成をワークロード工場に入力するために使用するインベントリファイルのタイプを選択し、* Next *を選択します。
+. *VMC の計画と作成*を選択します。
+. 現在の VM 構成を Workload Factory に取り込むために使用するインベントリ ファイルの種類を選択し、[次へ] を選択します。
 +
 ** VMwareデータコレクタを使用して作成した.csvファイルを使用する場合は、* Migration Advisor VMwareデータコレクタを使用する*を選択します。
 ** RVToolsを使用して作成した.xlsxファイルを使用するには、*[Use RVTools]*を選択します。
@@ -145,23 +145,4 @@ VMware Migration Advisorのメインページが表示されます。
 ** 移行計画を.json形式のテンプレートとして保存するには、*[計画のエクスポート]*を選択します。後で計画をインポートして、同様の要件のシステムを導入する際にテンプレートとして使用できます。
 
 
-
-
-
-
-== 既存の計画に基づいて導入計画を作成する
-
-以前に使用した既存の導入計画に似た新しい導入を計画している場合は、その計画をインポートして編集し、新しい導入計画として保存できます。
-
-.要件
-ワークロードファクトリにログインするシステムから、既存の導入計画の.jsonファイルにアクセスできる必要があります。
-
-.手順
-. いずれかを使用してワークロードファクトリにログインし https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]ます。
-. [VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。VMware Migration Advisorのメインページが表示されます。
-. [Import an existing deployment plan]を選択します。
-. image:button-upload-file.png["アップロードボタン"]Migration Advisorにインポートする既存の計画ファイルを選択します。
-. [次へ]*を選択すると、[計画のレビュー]ページが表示されます。
-. 前のセクションで説明したように、* Previous *を選択して_Prepare for VMware Cloud onboarding_pageと_Select VMs_pageにアクセスし、プランの設定を変更できます。
-. 要件に合わせて計画をカスタマイズしたら、計画を保存するか、FSx for ONTAPファイルシステム上のデータストアの導入プロセスを開始できます。
 

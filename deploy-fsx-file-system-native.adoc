@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-native.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: 推奨されるFSx for ONTAPファイルシステム（場合によってはファイルシステム）がお客様の要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。 
+summary: '推奨される FSx for ONTAPファイルシステム (場合によってはファイルシステム) が要件を正確に満たしていることを確認したら、Workload Factory を使用して AWS 環境にシステムをデプロイできます。' 
 ---
 = 推奨されるFSx for ONTAPファイルシステムを導入
 :allow-uri-read: 
@@ -11,6 +11,6 @@ summary: 推奨されるFSx for ONTAPファイルシステム（場合によっ�
 
 
 [role="lead"]
-推奨されるFSx for ONTAPファイルシステム（場合によっては複数のファイルシステム）が要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。
+推奨される FSx for ONTAPファイルシステム (場合によっては複数のファイルシステム) が要件を正確に満たしていることを確認したら、Workload Factory を使用して AWS 環境にシステムをデプロイできます。
 
-Workload Factoryが推奨する構成に基づいて、の手順に従ってlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["BlueXP  ワークロード工場でFSx for ONTAPファイルシステムを作成"^]FSx for ONTAPファイルシステムを導入します。手順の* Advanced create *ステップを使用して、ファイルシステムを完全にカスタマイズできます。
+以下の指示に従ってくださいlink:https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["NetApp Workload Factory で FSx for ONTAPファイルシステムを作成する"^]Workload Factory が推奨する構成に従って FSx for ONTAPファイルシステムを展開します。手順の*高度な作成*手順を使用して、ファイル システムを完全にカスタマイズできます。

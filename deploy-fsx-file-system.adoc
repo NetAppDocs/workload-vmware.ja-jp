@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms 
-summary: 推奨されるFSx for ONTAPファイルシステム（場合によってはファイルシステム）がお客様の要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。 
+summary: '推奨される FSx for ONTAPファイルシステム (場合によってはファイルシステム) が要件を正確に満たしていることを確認したら、Workload Factory を使用して AWS 環境にシステムをデプロイできます。' 
 ---
 = 推奨されるFSx for ONTAPファイルシステムを導入
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 推奨されるFSx for ONTAPファイルシステム（場合によっ�
 
 
 [role="lead"]
-推奨されるFSx for ONTAPファイルシステム（場合によっては複数のファイルシステム）が要件を正確に満たしていることを確認したら、ワークロードファクトリを使用してAWS環境にシステムを導入できます。
+推奨される FSx for ONTAPファイルシステム (場合によっては複数のファイルシステム) が要件を正確に満たしていることを確認したら、Workload Factory を使用して AWS 環境にシステムをデプロイできます。
 
-ワークロードファクトリーアカウントに追加したポリシーと権限に応じて、ワークロードファクトリーを使用してFSx for ONTAPファイルシステムを完全にデプロイできます（読み取り/書き込みモードを使用）。権限が少ない場合（読み取り専用モード）、または権限がまったくない場合（基本モード）は、CodeboxからCloudFormation情報を取得し、AWSにFSx for ONTAPファイルシステムを自分でデプロイする必要があります。
+Workload Factory アカウントに追加したポリシーと権限に応じて、Workload Factory を使用して (読み取り/書き込みモードを使用して) FSx for ONTAPファイル システムを完全にデプロイできます。権限が少ない場合 (読み取り専用モード)、または権限がまったくない場合 (基本モード) は、Codebox の CloudFormation 情報を使用して、AWS に FSx for ONTAPファイルシステムを自分でデプロイする必要があります。
 
 .VMware Cloud on AWSへの導入の要件
 * FSx for ONTAPファイルシステムを導入するには、VMware Cloud on AWS Software-Defined Data Center（SDDC）バージョン1.20以降を使用している必要があります。
@@ -29,7 +29,7 @@ FSx for ONTAPファイルシステムを定義するフィールドのほとん�
 +
 [クイック作成]または[詳細作成]オプションを使用できます。高度な作成には、カスタマイズ可能ないくつかの追加のストレージパラメータが用意されています。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["この2つのオプションの詳細を見る"]です。
 
-. * AWSクレデンシャル*：FSx for ONTAPファイルシステムを直接作成するために必要な権限をワークロードファクトリに付与するクレデンシャルを選択または追加します。また、CodeboxからCloudFormationコードを選択し、AWSでFSx for ONTAPファイルシステムを自分でデプロイすることもできます。
+. *AWS 認証情報*: FSx for ONTAPファイルシステムを直接作成するために必要な権限を Workload Factory に付与する認証情報を選択または追加します。  Codebox から CloudFormation コードを選択し、AWS に FSx for ONTAPファイルシステムを自分でデプロイすることもできます。
 . *ファイルシステム名*：このFSx for ONTAPファイルシステムに使用する名前を入力します。
 . *タグ*:オプションでタグを追加して、このFSx for ONTAPファイルシステムを分類できます。
 . [Network & security]セクションで、次の情報を入力します。

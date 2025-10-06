@@ -2,16 +2,34 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: ワークロードファクトリのVMware Migration Advisorコンポーネントの最新情報をご確認ください。 
+summary: Workload Factory の VMware 移行アドバイザー コンポーネントの新機能について説明します。 
 ---
-= VMware向けBlueXP  ワークロードファクトリの最新情報
+= NetApp Workload Factory for VMware の新機能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-ワークロードファクトリのVMware Migration Advisorコンポーネントの最新情報をご確認ください。
+Workload Factory の VMware 移行アドバイザー コンポーネントの新機能について説明します。
+
+
+
+== 2025年10月5日
+
+
+
+=== BlueXP workload factoryがNetAppワークロードファクトリーに
+
+BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。その結果、 BlueXP workload factoryの名前がNetAppワークロード ファクトリーに変更されました。
+
+
+
+=== VMware ワークロード プランニング センターのご紹介
+
+VMware ワークロード プランニング センターを使用すると、VM インベントリと移行プランを 1 か所で表示および管理できます。異なる環境から複数の VM インベントリをアップロードして保存し、それらのいずれかについて AWS EC2 または Amazon Elastic VMware サービスへの移行の計画を開始できます。  AWS EC2 または EVS 移行プランを作成して保存することもできます。
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["VMware ワークロード プランニング センターの詳細"]
 
 
 
@@ -31,7 +49,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 VMware ワークロードを Amazon Elastic VMware Service (EVS) に移行することで得られる潜在的なコスト削減を検討できるようになりました。節約計算ツールを使用すると、基盤ストレージとしてAmazon FSx for NetApp ONTAP を使用した場合と使用しない場合の Amazon EVS のコストを比較できます。計算機は、環境の特性を調整すると、潜在的な節約額をリアルタイムで表示します。
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP workload factoryで Amazon Elastic VMware Service の割引を探る"]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP Workload Factory で Amazon Elastic VMware Service の割引価格をご確認ください"]
 
 
 
@@ -41,7 +59,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["BlueXP
 
 === Amazon Elastic VMWare Service の移行アドバイザーサポートの導入
 
-BlueXPのVMware向けワークロードファクトリーが、Amazon Elastic VMware Serviceをサポートするようになりました。移行アドバイザーを使用することで、オンプレミスのVMwareワークロードをAmazon Elastic VMware Serviceに迅速に移行できます。これにより、アプリケーションのリファクタリングやプラットフォーム変更を行うことなく、コストを最適化し、VMware環境をより細かく制御できるようになります。
+BlueXP Workload Factory for VMware は、Amazon Elastic VMware Service をサポートするようになりました。移行アドバイザーを使用すると、オンプレミスの VMware ワークロードを Amazon Elastic VMware Service に迅速に移行できるため、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わなくても VMware 環境をより細かく制御できるようになります。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する"]
 
@@ -53,7 +71,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 === Amazon EC2 Migration Advisorの機能強化
 
-このリリースのVMware向けBlueXP  ワークロードファクトリでは、Amazon EC2 Migration Advisorのエクスペリエンスが次のように改善されています。
+BlueXP Workload Factory for VMware のこのリリースでは、Amazon EC2 移行アドバイザーのエクスペリエンスが次のように改善されています。
 
 * NetAppデータインフラのインサイトをデータソースとして*：ワークロードファクトリは、EC2移行アドバイザのデータコレクタを使用すると、NetAppデータインフラのインサイトに直接接続して、VMwareの導入情報を収集できるようになりました。
 
@@ -63,7 +81,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === 権限に関する用語を更新
 
-ワークロード ファクトリのユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
+Workload Factory のユーザー インターフェースとドキュメントでは、読み取り権限を示すために「読み取り専用」を使用し、自動化権限を示すために「読み取り/書き込み」を使用するようになりました。
 
 
 
@@ -73,7 +91,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 Migration Advisorの機能強化
 
-このリリースのVMware向けBlueXP  ワークロードファクトリでは、Amazon EC2 Migration Advisorのエクスペリエンスが次のように改善されています。
+BlueXP Workload Factory for VMware のこのリリースでは、Amazon EC2 移行アドバイザーのエクスペリエンスがいくつか改善されています。
 
 * *ボリューム割り当てガイダンスの強化*：EC2 Migration Advisorの「Classify」および「Package」ステップのボリューム割り当て情報には、読みやすさと操作性が向上しています。各ボリュームについて、より有益な情報が表示されるため、ボリュームの特定や割り当て方法の決定に役立ちます。
 * *データコレクタスクリプトの効率化*: EC2移行アドバイザのデータコレクタスクリプトは、小規模なVM環境でデータを収集する際のCPU使用率を最適化します。
@@ -89,7 +107,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 Migration Advisorの機能強化
 
-このリリースのVMware向けBlueXP  ワークロードファクトリでは、Amazon EC2 Migration Advisorのエクスペリエンスが次のように改善されています。
+BlueXP Workload Factory for VMware のこのリリースでは、Amazon EC2 移行アドバイザーのエクスペリエンスがいくつか改善されています。
 
 * *推定インスタンスタイプ*：Migration Advisorで環境の要件を確認し、VMごとに推定Amazon EC2インスタンスタイプを提供できるようになりました。移行アドバイザの「スコープ」ステップで、各VMの推定インスタンスタイプを含めるように選択できます。
 * * Amazon EBSボリュームの推奨機能*：移行アドバイザーは、特定のリージョンの容量やパフォーマンスのニーズに応じて、Amazon FSx for NetApp ONTAPではなくAmazon Elastic Block Store（EBS）にデータボリュームを移行することを推奨できるようになりました。
@@ -106,10 +124,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 Migration Advisorの機能強化
 
-今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。
+BlueXP Workload Factory for VMware のこのリリースでは、移行アドバイザーのエクスペリエンスがいくつか改善されています。
 
-* *移行計画を保存またはダウンロードする*:これで、移行計画を保存またはダウンロードし、移行計画をロードして移行アドバイザに取り込むことができます。移行計画を保存すると、その計画はワークロードファクトリアカウントに保存されます。
-* *仮想マシン選択の改善*：VMware向けBlueXP  ワークロードファクトリでは、移行環境に含める仮想マシンのリストのフィルタリングと検索がサポートされるようになりました。
+* *移行計画の保存またはダウンロード*: 移行計画を保存またはダウンロードし、移行計画を読み込んで移行アドバイザーに入力できるようになりました。移行計画を保存すると、その計画は Workload Factory アカウントに保存されます。
+* *VM 選択の改善*: BlueXP Workload Factory for VMware では、移行展開に含める VM のリストのフィルタリングと検索がサポートされるようになりました。
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
@@ -122,10 +140,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2 Migration Advisorの機能強化
 
-今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。
+NetApp Workload Factory for VMware のこのリリースでは、移行アドバイザーのエクスペリエンスがいくつか改善されています。
 
-* *データ収集*: BlueXP  Workload Factory for VMwareでは、Migration Advisorを使用する際に特定の期間のデータ収集機能をサポートしています。
-* * VMの選択*：BlueXP  Workload Factory for VMwareでは、移行環境に含めるVMの選択がサポートされるようになりました。
+* *データ収集*: BlueXP Workload Factory for VMware は、移行アドバイザーを使用する際に特定の期間のデータを収集する機能をサポートしています。
+* *VM の選択*: BlueXP Workload Factory for VMware では、移行展開に含める VM の選択がサポートされるようになりました。
 * *クイックエクスペリエンスと高度なエクスペリエンス*：Migration Advisorを使用すると、RVtoolsを使用したクイックマイグレーションエクスペリエンスまたはMigration Advisorデータコレクタを使用した高度なエクスペリエンスを選択できるようになりました。
 
 
@@ -151,7 +169,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware Migration Advisorの機能拡張
 
-このリリースのVMware向けワークロードファクトリでは、機能と安定性が強化され、VMware Migration Advisorを使用して移行計画をインポートおよびエクスポートできるようになりました。
+このリリースの Workload Factory for VMware では、機能性と安定性が強化されているほか、VMware 移行アドバイザーを使用する際に移行プランをインポートおよびエクスポートする機能も備わっています。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["移行アドバイザを使用してAmazon EC2の導入計画を作成"]
 
@@ -171,6 +189,6 @@ VMwareのワークロードファクトリでは、VMware Migration Advisorを�
 
 
 
-=== VMware向けワークロードファクトリの初期リリース
+=== VMware向けWorkload Factoryの初期リリース
 
 初期リリースには、VMware Migration Advisorを使用してオンプレミスのvSphere環境で現在の仮想マシン構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWSに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成する機能が含まれています。

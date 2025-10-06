@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= BlueXP  Workload Factory for VMwareの法的通知
+= NetApp Workload Factory for VMware に関する法的通知
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。
 
-https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["BlueXP  ワークロードファクトリ"^]
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["NetAppワークロード ファクトリー"^]

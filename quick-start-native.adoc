@@ -15,23 +15,23 @@ VMware移行アドバイザを利用して、外部NFSデータストアとし�
 
 作業を開始する前に、を理解しておく必要があります https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリへのログイン
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリーにログイン
 [role="quick-margin-para"]
-のいずれかを使用してログインする https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]必要があります https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["ワークロードファクトリでアカウントを設定する"^]。
+必要となるのは https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^]次のいずれかを使用してログインします https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する
 [role="quick-margin-para"]
-AWSアカウントにアクセスするためのクレデンシャルを追加することなく、_Basic_modeでワークロードファクトリを使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかで AWS 認証情報をワークロードファクトリーに追加すると、ワークロードファクトリーのアカウントに、FSx for ONTAP ファイルシステムの作成と管理、および Amazon EC2 内でのワークロードのデプロイと管理に必要な権限が付与されます。
+AWS アカウントにアクセスするための認証情報を追加せずに、Workload Factory を _Basic_ モードで使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかで AWS 認証情報を Workload Factory に追加すると、FSx for ONTAPファイルシステムの作成と管理、および Amazon EC2 内でのワークロードの展開と管理に必要な権限が Workload Factory アカウントに付与されます。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]です。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] vSphere環境の現在のVM構成の把握
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"]VMインベントリデータをアップロードする
 [role="quick-margin-para"]
-導入計画を作成する前に、Migration AdvisorのVMコレクタスクリプト、RVTools、またはNetApp Data Infrastructure Insightsを使用して、現在のVM構成を取得できます。既存の導入計画をテンプレートとしてインポートし、必要な属性を変更することもできます。
+計画センターを使用して、現在の VM 環境に関するインベントリの詳細をアップロードできます。データ コレクター スクリプト、RVTools、またはNetApp Data Infrastructure Insightsを使用して、現在の VM 構成をキャプチャし、データを計画センターにアップロードします。
 
 [role="quick-margin-para"]
-link:capture-vm-configurations-native.html["現在のVM構成を取得する方法"]です。
+link:upload-vm-inventory.html["VMインベントリデータをアップロードする方法を学ぶ"^] 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4つ"] VMware Migration Advisorを使用して導入計画を作成
 [role="quick-margin-para"]

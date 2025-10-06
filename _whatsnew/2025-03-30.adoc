@@ -6,7 +6,7 @@
 
 === Amazon EC2 Migration Advisorの機能強化
 
-このリリースのVMware向けBlueXP  ワークロードファクトリでは、Amazon EC2 Migration Advisorのエクスペリエンスが次のように改善されています。
+BlueXP Workload Factory for VMware のこのリリースでは、Amazon EC2 移行アドバイザーのエクスペリエンスがいくつか改善されています。
 
 * *ボリューム割り当てガイダンスの強化*：EC2 Migration Advisorの「Classify」および「Package」ステップのボリューム割り当て情報には、読みやすさと操作性が向上しています。各ボリュームについて、より有益な情報が表示されるため、ボリュームの特定や割り当て方法の決定に役立ちます。
 * *データコレクタスクリプトの効率化*: EC2移行アドバイザのデータコレクタスクリプトは、小規模なVM環境でデータを収集する際のCPU使用率を最適化します。

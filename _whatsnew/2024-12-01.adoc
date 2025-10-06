@@ -6,10 +6,10 @@
 
 === Amazon EC2 Migration Advisorの機能強化
 
-今回リリースされたVMware向けBlueXP  ワークロードファクトリでは、Migration Advisorのエクスペリエンスが次のように改善されています。
+NetApp Workload Factory for VMware のこのリリースでは、移行アドバイザーのエクスペリエンスがいくつか改善されています。
 
-* *データ収集*: BlueXP  Workload Factory for VMwareでは、Migration Advisorを使用する際に特定の期間のデータ収集機能をサポートしています。
-* * VMの選択*：BlueXP  Workload Factory for VMwareでは、移行環境に含めるVMの選択がサポートされるようになりました。
+* *データ収集*: BlueXP Workload Factory for VMware は、移行アドバイザーを使用する際に特定の期間のデータを収集する機能をサポートしています。
+* *VM の選択*: BlueXP Workload Factory for VMware では、移行展開に含める VM の選択がサポートされるようになりました。
 * *クイックエクスペリエンスと高度なエクスペリエンス*：Migration Advisorを使用すると、RVtoolsを使用したクイックマイグレーションエクスペリエンスまたはMigration Advisorデータコレクタを使用した高度なエクスペリエンスを選択できるようになりました。
 
 

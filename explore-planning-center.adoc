@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: explore-planning-center.html 
+keywords: vm workloads, netapp Workload Factory 
+summary: VMware プランニング センターを使用して、アップロードされたインベントリ データと作成した移行計画を管理できます。 
+---
+= VMware プランニング センターをご覧ください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware プランニング センターを使用すると、新しい VM インベントリ データをアップロードして新しい移行プランを作成できるほか、 NetApp Workload Factory ですでに保存した VM インベントリ データと移行プランを管理することもできます。
+
+
+
+== VMインベントリデータの管理
+
+計画センターを使用して、VM インベントリ データを作成および管理します。
+
+
+
+=== VMインベントリデータをアップロードする
+
+Workload Factory を使用して Amazon AWS 環境への移行オプションを検討する準備ができたら、VM インベントリ データをアップロードできます。参照link:upload-vm-inventory.html["VMインベントリデータをアップロードする"]手順についてはこちらをご覧ください。
+
+
+
+=== データセットの名前を変更する
+
+保存したデータセットの名前を変更できます。
+
+.手順
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. 名前を変更するデータセットの [アクション] メニュー (...) を選択し、[名前の変更] を選択します。
+. データセットの新しい名前を入力し、[保存] を選択します。
+
+
+
+
+=== データセットを削除する
+
+データセットが不要になったら、いつでも削除できます。
+
+.手順
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. 削除するデータセットの [アクション] メニュー (...) を選択し、[削除] を選択します。
+. 操作を確認するには、[*削除*] を選択します。
+
+
+
+
+== 移行計画の管理
+
+移行センターを使用して、移行計画を作成および管理します。
+
+
+
+=== 移行計画をプロビジョニングする
+
+移行プランを選択してプロビジョニングすることで、VM を任意の Amazon AWS 環境に移行できます。
+
+.手順
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. *移行計画*メニューを選択します。
+. プロビジョニングする移行プランの [アクション] メニュー (...) を選択し、[*プロビジョニング*] を選択します。
+. 移行計画に応じて、ファイル システムを展開するための手順を参照してください。
++
+** link:deploy-fsx-file-system.html["Amazon VMware Cloud プランのファイルシステムをデプロイする"]
+** link:deploy-fsx-file-system-native.html["Amazon EC2 プランのファイルシステムをデプロイする"]
+** link:deploy-fsx-file-system-evs.html["Amazon Elastic VMware Service プランのファイルシステムをデプロイする"]
+
+
+
+
+
+
+=== 移行計画のコメントを編集する
+
+移行計画のコメントの詳細を変更する必要がある場合は、計画センター内からコメントを編集します。
+
+.手順
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. *移行プラン*を選択します。
+. 編集する移行計画の [アクション] メニュー (...) を選択し、[コメントの編集] を選択します。
+. コメントを入力して「*保存*」を選択します。
+
+
+
+
+=== 移行計画のPDFレポートを作成する
+
+移行計画の詳細の PDF レポートを作成します。
+
+.手順
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. *移行プラン*を選択します。
+. PDF レポートを作成する移行計画の [アクション] メニュー (...) を選択し、[レポートの作成] を選択します。
+. レポート PDF の名前を入力し、[保存] を選択します。
+
+
+
+
+=== 移行計画を削除する
+
+移行計画が不要になった場合は、いつでも削除できます。
+
+.手順
+. 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
+. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. *移行プラン*を選択します。
+. 削除する移行計画の [アクション] メニュー (...) を選択し、[削除] を選択します。
+. *削除*を選択して操作を確認します。
+

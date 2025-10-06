@@ -20,7 +20,7 @@ sidebar:
       url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: VMware向けBlueXP  ワークロードファクトリの詳細
+    - title: VMware向けNetAppワークロードファクトリーの詳細
       url: "/learn-about-vmware-workloads.html"
     - title: Amazon EVS への移行クイックスタート
       url: "/quick-start-evs.html"
@@ -28,28 +28,30 @@ sidebar:
       url: "/quick-start-native.html"
     - title: クイックスタートガイド：VMware Cloud on AWSへの移行
       url: "/quick-start.html"
-  - title: VMware Migration Advisorを使用する
+    - title: VMware プランニング センターをご覧ください
+      url: "/explore-planning-center.html"
+  - title: VMware プランニング センターを使用する
     entries:
+    - title: VMインベントリデータをアップロードする
+      url: "/upload-vm-inventory.html"
     - title: Amazon Elastic VMware Service への移行
       entries:
       - title: 節約方法を見る
         url: "/calculate-evs-savings.html"
-      - title: 移行アドバイザを使用して導入計画を作成
+      - title: 手動で展開計画を作成する
         url: "/launch-migration-advisor-evs-manual.html"
+      - title: 移行アドバイザを使用して導入計画を作成
+        url: "/launch-migration-advisor-evs.html"
       - title: 推奨されるFSx for ONTAPファイルシステムを導入
         url: "/deploy-fsx-file-system-evs.html"
     - title: Amazon EC2への移行
       entries:
-      - title: 現在のVM構成のキャプチャ
-        url: "/capture-vm-configurations-native.html"
       - title: 移行アドバイザを使用して導入計画を作成
         url: "/launch-onboarding-advisor-native.html"
       - title: 推奨されるFSx for ONTAPファイルシステムを導入
         url: "/deploy-fsx-file-system-native.html"
     - title: VMware Cloud on AWSへの移行
       entries:
-      - title: 現在のVM構成のキャプチャ
-        url: "/capture-vm-configurations.html"
       - title: 移行アドバイザを使用して導入計画を作成
         url: "/launch-onboarding-advisor.html"
       - title: 推奨されるFSx for ONTAPファイルシステムを導入
@@ -67,5 +69,5 @@ sidebar:
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory
+  name: NetApp Workload Factory
   repo: workload-family
