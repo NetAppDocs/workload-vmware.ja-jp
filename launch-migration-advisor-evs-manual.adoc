@@ -13,19 +13,20 @@ summary: VMware プランニング センターにアクセスするには、 Ne
 [role="lead"]
 VMware プランニング センターにアクセスするには、 NetApp Workload Factory にログインします。そこから、ニーズに合わせてカスタマイズされた Amazon EVS のデプロイメントプランまたは移行プランを手動で作成できます。
 
-Workload Factory にアクセスするには、ユーザー名とパスワードが必要であることに注意してください。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
-
-
-
-== 環境要件を手動で指定して展開計画を作成する
-
 Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し、カスタマイズされた Amazon FSx for NetApp ONTAP ファイルシステムを外部データストアとして使用できます。
 
-.要件
+
+
+== 要件
+
+* Workload Factory にアクセスするには、ユーザー名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
 * Amazon Elastic VMware Service サブスクリプションが必要です。
 
 
-.手順
+
+
+== 手順
+
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
 . オプションとして、Workload Factory コンソールから Workload Factory にアクセスした場合は、VMware ワークロード タイルから *VMware プランニング センター* を選択し、*VMware プランニング センター* を選択します。  VMware プランニング センターが表示されます。
 . *EVS プランを手動で作成*を選択します。
@@ -46,7 +47,10 @@ Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し�
 +
 デフォルトでは、Workload Factory は移行計画を計画センターに保存します。ページの上部付近でこのオプションの選択を解除できます。
 
-. オプションとして、移行計画に満足したら、[計画のエクスポート (PDF)] を選択して計画の詳細を PDF ドキュメントとしてダウンロードできます。
+. オプションで、ページの右上にある *プランの管理* を選択し、*レポートのダウンロード (.pdf)* または *VM ストレージ デプロイメントのダウンロード (.csv)* を選択して、移行計画を PDF または CSV ファイルとしてエクスポートできます。
++
+.csv ファイルは、移行計画に含まれるすべての VM と、それらに割り当てられたストレージ ボリュームのマップを作成します。
+
 . 展開プランをプロビジョニングする準備ができたら、[*プロビジョニング*] を選択します。
 
 

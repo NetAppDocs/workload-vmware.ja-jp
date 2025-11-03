@@ -19,9 +19,15 @@ VMware移行アドバイザを利用して、外部NFSデータストアとし�
 [role="quick-margin-para"]
 必要となるのは https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factoryでアカウントを設定する"^]次のいずれかを使用してログインします https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"] AWSのクレデンシャルと権限をアカウントに追加する
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2つ"]資格情報と権限を追加する
 [role="quick-margin-para"]
-AWS アカウントにアクセスするための認証情報を追加せずに、Workload Factory を _Basic_ モードで使用できます。_読み取り専用_ モードまたは _読み取り/書き込み_ モードのいずれかで AWS 認証情報を Workload Factory に追加すると、FSx for ONTAPファイルシステムの作成と管理、および Amazon EC2 内でのワークロードの展開と管理に必要な権限が Workload Factory アカウントに付与されます。
+選択してください https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["権限ポリシー"]お客様のニーズを満たすために。
+
+[role="quick-margin-para"]
+権限を付与しない場合は、Workload Factory for Databases を使用して、部分的に完了したコード サンプルをコピーできます。
+
+[role="quick-margin-para"]
+権限を付与する場合は、 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["アカウントに資格情報を手動で追加する"]これには、データベースや AI などのワークロード機能の選択や、必要な権限の IAM ポリシーの作成が含まれます。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["クレデンシャルと権限を追加する方法"^]です。

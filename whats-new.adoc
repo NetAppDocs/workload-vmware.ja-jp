@@ -15,6 +15,41 @@ Workload Factory の VMware 移行アドバイザー コンポーネントの新
 
 
 
+== 2025年11月2日
+
+
+
+=== FSx for ONTAPファイルシステムのデプロイメントウィザードに Amazon Elastic VMware Service の設定を導入
+
+Amazon Elastic VMware Service の外部 NFS データストアとして使用する FSx for ONTAPファイル システムをデプロイするときに、データストアが接続される EVS 環境を選択できるようになりました。これにより、デプロイメント ウィザードのいくつかのフィールドが自動的に入力され、デプロイメント プロセスが簡素化されます。
+
+https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["推奨されるFSx for ONTAPファイルシステムを導入"]
+
+
+
+=== VMware ワークロードの権限の変更
+
+VMware ワークロードでは、特定のアクションに必要な権限がより明確に示され、必要な権限のみを詳細に選択できます。資格情報を追加すると、以前の権限モデルである _読み取り専用_ と _読み取り/書き込み_ の代わりに、2 つの権限オプションから選択できるようになります。新しい権限モデルでは、権限ポリシーが次のように分割されます。
+
+* _表示、計画、および分析_: EVS 仮想化環境のインベントリを表示し、システムの Well-Architected 分析を取得して、コスト削減を検討します。
+* _データストアのデプロイと接続_: 推奨される VM レイアウトを Amazon EVS、Amazon EC2、または VMware Cloud on AWS vSphere クラスターにデプロイし、カスタマイズされたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用します。
+
+
+資格情報を追加するときに、VMware ワークロードに提供するアクセス レベルに基づいて、これらの権限ポリシーを 1 つ以上選択できます。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["ワークロードファクトリーの権限リファレンス"^]
+
+
+
+=== Amazon EC2 Migration Advisorの機能強化
+
+NetApp Workload Factory for VMware のこのリリースでは、移行アドバイザーのエクスペリエンスがいくつか改善されています。
+
+* *移行計画の保存またはダウンロード*: 移行計画を PDF または CSV ファイルとして保存またはダウンロードできるようになりました。移行計画を保存すると、その計画は Workload Factory アカウントに保存されます。
+
+
+
+
 == 2025年10月5日
 
 
