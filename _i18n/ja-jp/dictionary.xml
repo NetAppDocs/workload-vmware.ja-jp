@@ -33,9 +33,7 @@
   <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">RVToolsソフトウェアの使用</block>
   <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVToolsは、vCenterおよびESXサーバ（5.x～8.0）と通信してVMware仮想環境に関する情報を取得するWindowsアプリケーションです。VM、CPU、メモリ、ディスク、クラスタ、 ESXホスト、データストアなど。この情報をxlsxファイルにエクスポートして、移行アドバイザで使用できます。</block>
   <block id="344899ab535d99090285d73527e8b852" category="inline-link">RVToolsの詳細</block>
-  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
   <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools Webサイト</block>
-  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">RVTools 4.4.2以降をダウンロードしてからインストールします。<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
   <block id="93768280696f91c787d919221b25e927" category="list-text">RVToolsを起動し、ターゲットのvCenter Serverにログインします。</block>
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">これにより、指定したvCenter Serverに関する情報がキャプチャされます。</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">VMware情報をxlsxまたはxlsファイルにエクスポートします。</block>
@@ -250,7 +248,6 @@
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Amazon FSX for NetApp ONTAP のドキュメント</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">FSx for ONTAPファイルシステムの管理については、で<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> 使用できるバックアップ機能と保護機能を確認してください。</block>
   <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">動作モード</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2つ</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">クレデンシャルと権限を追加する方法</block>
@@ -316,7 +313,6 @@
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Amazon EC2への移行</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「daily」または「hourly」に指定します。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">スクリプトは、現在の作業ディレクトリ内の名前にタイムスタンプを含む圧縮ファイルを出力します。.zipファイルには、すべてのVMとそのプロパティのリスト、およびIOPSデータとスループットデータが格納されます。</block>
-  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>詳細については、『』の「コマンドラインパラメータ」の章を参照してください。</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">移行アドバイザを使用してAmazon EC2導入計画を作成</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>です。</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">VMware Migration Advisorのメインページが表示されます。</block>
@@ -358,7 +354,6 @@
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">どちらの比率を選択するかわからない場合は、*[決定を手伝ってください]*を選択します。Data reduction ratio assistant_dialogが表示されます。VMインベントリとストレージ環境に該当する文を選択してください。アシスタントは適切なデータ削減率を推奨します。推奨比率を使用するには、*適用*を選択します。</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">VMwareのワークロードファクトリでは、VMware Migration Advisorを使用したAmazon EC2への移行がサポートされるようになりました。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link">コンソールエクスペリエンス</block>
-  <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">作業を開始する前に、を理解しておく必要があります<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>。</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>です。</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>です。</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">FSx for ONTAPファイルシステムを接続する方法をご紹介します</block>
@@ -761,4 +756,15 @@
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">アカウントに資格情報を手動で追加する</block>
   <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">権限を付与する場合は、<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>これには、データベースや AI などのワークロード機能の選択や、必要な権限の IAM ポリシーの作成が含まれます。</block>
   <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2025年11月2日</block>
+  <block id="50d2e9de63b2a2c16916c2f1b6818a38" category="paragraph"><block ref="50d2e9de63b2a2c16916c2f1b6818a38" category="inline-link-rx"></block></block>
+  <block id="a64a69c3508f33cfd62281ba53751057" category="list-text">RVTools 4.4.2以降をダウンロードしてインストールします。<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="862ba35dfdf3a7836d71ed579dfca3ec" category="paragraph">「コマンドラインパラメータ」の章を参照してください。<block ref="cb13b358aa71a504b38a0472274f8ec0" category="inline-link-rx"></block> 詳細については。</block>
+  <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">RVTools 4.4.2以降をダウンロードしてインストールします。<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">リソースセクションのRVToolsドキュメント</block>
+  <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">「コマンドラインパラメータ」の章を参照してください。<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> 詳細については。</block>
+  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">始める前に、:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html[ NetApp Workload Factoryの権限 ^] を理解しておく必要があります。</block>
+  <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">の中で<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
+  <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">RVTools 4.4.2以降をダウンロードしてインストールします。<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVToolsのドキュメントはリソースセクションにあります</block>
+  <block id="aab95159d263780315dd964c73eaae67" category="paragraph">「コマンドラインパラメータ」の章を参照してください。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 詳細については。</block>
 </blocks>

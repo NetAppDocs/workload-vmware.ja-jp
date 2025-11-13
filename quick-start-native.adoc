@@ -13,7 +13,7 @@ summary: VMware移行アドバイザを利用して、外部NFSデータスト�
 [role="lead"]
 VMware移行アドバイザを利用して、外部NFSデータストアとしてAmazon FSx for ONTAPを使用し、現在のインフラをAmazon EC2に移行しましょう。
 
-作業を開始する前に、を理解しておく必要があります https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["動作モード"^]。
+始める前に、:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html[ NetApp Workload Factoryの権限 ^] を理解しておく必要があります。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"]ワークロードファクトリーにログイン
 [role="quick-margin-para"]
