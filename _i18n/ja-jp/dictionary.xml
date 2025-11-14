@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">既存の計画を使用して新しい計画を作成する方法を確認する</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">以前にローカルに保存した既存の導入計画に基づいて新しいシステムを導入する場合は、この手順を省略して既存の導入計画を選択できます。<block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>です。</block>
   <block id="c423127be094663f098066c3efa8a37a" category="open-title">Migration Advisor VMコレクタスクリプトを使用する</block>
   <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">NetApp Migration AdvisorのVMコレクタスクリプトは、RVToolsが収集するものと同様にVM構成情報をvCenterから収集しますが、現在のVMパフォーマンスデータをキャプチャして、実際の読み取り/書き込みIOPSとスループットの統計を提供します。</block>
   <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">[コードボックス]ウィンドウからMigration Advisor VMコレクタスクリプトをコピーするには、Migration Advisorを起動する必要があります。</block>
@@ -154,8 +152,6 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*を選択します。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">ここをクリック</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">オンプレミスのvSphere環境を基に導入計画を作成</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">オンプレミスのvSphere環境で現在の仮想マシン構成をVMware Cloud on AWSの仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。</block>
@@ -327,9 +323,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">20%未満の容量を選択すると、保護および長期的なバックアップのためにボリュームSnapshotを作成することはできません。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">* VMスナップショット保護*：スナップショットでVMを保護する場合は、このオプションを有効にします。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">ページの上部には、導入されたすべてのVMとFSx for ONTAPファイルシステムの月額コストが表示されます。各セクションを展開すると、「推奨されるAmazon FSx for ONTAPファイルシステム構成」、「推定コスト内訳」、「ボリューム構成」、「サイジングの前提条件」、技術的な「免責事項」の詳細を確認できます。</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">VMware Cloudに移行する場合は、Migration Advisorを使用して次のシナリオの導入計画を作成できます。</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">をクリックして、現在のオンプレミスのvSphere環境をVMwareクラウドに移行します。</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*平均データ削減比率*：3つの一般的なデータ削減選択値から選択します。「1：1 -削減なし」、「1：1.25 - 20%削減」、または「1：1.5 - 33%削減」を選択します。</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">* VSAN Fault Tolerance *：VMに必要なフォールトトレランスのレベルを選択します。推奨される「自動」を選択するか、さまざまなRAIDレベルから選択できます。</block>
   <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラの一部をAmazon EC2またはVMware Cloud on AWSに移行することには、次のようなメリットがあります。</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">RVTools 4.4.2以降をダウンロードしてインストールします。<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVToolsのドキュメントはリソースセクションにあります</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">「コマンドラインパラメータ」の章を参照してください。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 詳細については。</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">VMware Cloud に移行する場合、移行アドバイザーを使用して、現在のオンプレミスの vSphere 環境を VMWare クラウドに移行できます。</block>
 </blocks>

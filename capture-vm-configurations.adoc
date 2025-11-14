@@ -13,8 +13,6 @@ summary: Migration Advisor VMコレクタスクリプトまたはRVToolsを使�
 [role="lead"]
 Migration Advisor VMコレクタスクリプトまたはRVToolsを使用して、現在のVM構成をキャプチャできます。移行アドバイザVMコレクタスクリプトは、VMの構成データとパフォーマンスデータの両方を収集して最も正確な計画を作成するため、使用することを推奨します。
 
-以前にローカルに保存した既存の導入計画に基づいて新しいシステムを導入する場合は、この手順を省略して既存の導入計画を選択できます。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["既存の計画を使用して新しい計画を作成する方法を確認する"]です。
-
 [role="tabbed-block"]
 ====
 .Migration Advisor VMコレクタスクリプトを使用する

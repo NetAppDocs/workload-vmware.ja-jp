@@ -13,11 +13,7 @@ summary: VMware 移行アドバイザーにアクセスするには、 NetApp Wo
 [role="lead"]
 VMware 移行アドバイザーにアクセスするには、 NetApp Workload Factory にログインします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた展開計画または移行計画を作成します。
 
-VMware Cloudに移行する場合は、Migration Advisorを使用して次のシナリオの導入計画を作成できます。
-
-* <<オンプレミスのvSphere環境を基に導入計画を作成,をクリックして、現在のオンプレミスのvSphere環境をVMwareクラウドに移行します。>>
-* <<Create a deployment plan based on an existing plan,同様の要件を持つ既存の導入計画に基づいて、システムをクラウドに導入すること。>>
-
+VMware Cloud に移行する場合、移行アドバイザーを使用して、現在のオンプレミスの vSphere 環境を VMWare クラウドに移行できます。
 
 Workload Factory にアクセスするには、ユーザー名とパスワードが必要であることに注意してください。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
 
