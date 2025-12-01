@@ -468,14 +468,11 @@
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Amazon EVS 環境への計画的な移行で潜在的な節約を検討するには、次の手順に従ってください。</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">続行する前に、節約計算ツールの下部にある免責事項を確認し、価格見積りの計算方法について詳しく理解してください。</block>
   <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">VMware ワークロード タイルから、*節約を調べる* を選択し、次に *Amazon Elastic VMware Service (EVS)* を選択します。節約計算機が表示されます。</block>
-  <block id="d8307a61b3e78cafe3dd2ba07854d83f" category="paragraph">*環境設定* ペインには、環境のニーズに応じて調整できるスライダーがあります。</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">必要に応じて次のスライダーを調整し、選択した値に対するリアルタイムの節約計算を確認します。キーボードを使用する場合は、矢印キーを使用して微調整を行うことができます。</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*必要な物理CPU（数）*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*必要な物理メモリ（GiB）*</block>
   <block id="739cbbb6eaaeacf2d24f8a62a80b3ffe" category="list-text">*必要なVMストレージ（TiB）*</block>
-  <block id="24bfaef9fff964e64a0151dab805a3f3" category="list-text">*EVS料金プラン*</block>
   <block id="7f2cda45c5fe4fce268e76d710242e93" category="inline-link-macro">展開計画を作成する</block>
-  <block id="daf54dbe224e77cbcdfb24a59c9f9099" category="list-text">移行アドバイザーを使用して<block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block>Amazon EVS 環境の場合は、[詳細な評価を作成する] を選択します。</block>
   <block id="27cecac020f0eb3b6379d7eaa39d9edb" category="list-text">TCO 計算機を閉じるには、[閉じる] を選択します。</block>
   <block id="f38938fbcb9223342e98b8ed0b99af19" category="list-text">「EVS クラスター接続」セクションで、次の情報を入力します。</block>
   <block id="a1a0d005c4592b98541d6f6fb0d51c8e" category="list-text">*EVS クラスター vSphere コンソールの詳細*: Amazon EVS に接続する VMware vCenter サーバーの IP アドレスまたは FQDN を入力します。</block>
@@ -761,4 +758,13 @@
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVToolsのドキュメントはリソースセクションにあります</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">「コマンドラインパラメータ」の章を参照してください。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 詳細については。</block>
   <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">VMware Cloud に移行する場合、移行アドバイザーを使用して、現在のオンプレミスの vSphere 環境を VMWare クラウドに移行できます。</block>
+  <block id="e738192b7a8dc90f6d5e566ceb909da3" category="doc">特定のリージョンにおける Amazon Elastic VMware Service への移行によるコスト削減を計算します</block>
+  <block id="d4a40d01192a627963ffd40503ef4713" category="paragraph">クラウド移行のためのさまざまな展開オプションの価値を調査し、ソリューション評価に投入された労力を最適化し、クラウドで価値と節約をもたらす可能性のあるソリューションを詳細に調査できるようになりました。</block>
+  <block id="de480346f69aff69cc4e4e1e5d52ea98" category="paragraph">また、EVS 展開で FSx for ONTAPを使用することで実現できる vCPU コアの節約を確認することもできます。</block>
+  <block id="389870bd93c88ff4cb5e7f6216054ce2" category="paragraph"><block ref="389870bd93c88ff4cb5e7f6216054ce2" category="inline-link-rx"></block></block>
+  <block id="0031d357ae0128729164b1d7b297533b" category="paragraph">*環境設定* ペインでは、EVS の展開リージョンを選択し、それに応じて TCO と節約の予測を調整できます。</block>
+  <block id="66171c1365145e2d4c36586982cac308" category="list-text">*リージョン* ドロップダウン リストから、節約額を計算する EVS 展開リージョンを選択します。</block>
+  <block id="6706b7bf4c170433cc0ab592c9e594f8" category="list-text">*EVS 課金プラン* で、現在利用しているプランを選択します。</block>
+  <block id="74ce259d0d76a9e0cd46f6300bcc2371" category="list-text">移行アドバイザーを使用して <block ref="9c54a102b37172c71de5c1a9f4ba94d1" category="inline-link-macro-rx"></block> Amazon EVS 環境の場合は、*EVS 移行の計画*を選択します。</block>
+  <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025年11月27日</block>
 </blocks>

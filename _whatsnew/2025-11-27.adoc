@@ -1,0 +1,13 @@
+= 特定のリージョンにおける Amazon Elastic VMware Service への移行によるコスト削減を計算します
+:allow-uri-read: 
+
+
+
+
+=== 特定のリージョンにおける Amazon Elastic VMware Service への移行によるコスト削減を計算します
+
+クラウド移行のためのさまざまな展開オプションの価値を調査し、ソリューション評価に投入された労力を最適化し、クラウドで価値と節約をもたらす可能性のあるソリューションを詳細に調査できるようになりました。
+
+また、EVS 展開で FSx for ONTAPを使用することで実現できる vCPU コアの節約を確認することもできます。
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["NetApp Workload Factory で Amazon Elastic VMware Service の割引価格をご確認ください"]
