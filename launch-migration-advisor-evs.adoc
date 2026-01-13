@@ -28,7 +28,10 @@ VMware プランニング センターから Amazon EVS 移行アドバイザー
 == 手順
 
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. オプションとして、Workload Factory コンソールから Workload Factory にアクセスした場合は、VMware ワークロード タイルから *VMware プランニング センター* を選択し、*VMware プランニング センター* を選択します。  VMware プランニング センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . 展開計画の作成に使用する VM インベントリをリストから選択し、その行で *計画の開始* を選択します。
 . 表示されるドロップダウン メニューから *EVS* を選択します。
 +

@@ -34,10 +34,16 @@ VMから長期統計（日次統計）を取得する場合は、vSphere管理�
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. [VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
+. VMware メニューから、*評価と計画* を選択し、*VMware Cloud on AWS への移行* を選択します。
 +
 VMware Migration Advisorのメインページが表示されます。
 
+. *VMC の計画と作成*を選択します。
+. *始めましょう！*を選択します。チェックボックスを選択すると、このページを再度表示しないようにすることができます。
 . [Create a new deployment plan]*を選択し、*[Use the Migration Advisor VMware data collector]*オプションを選択して*[Next]*を選択します。
 +
 [VMware Cloud on AWSへの移行の準備]*ページが表示されます。

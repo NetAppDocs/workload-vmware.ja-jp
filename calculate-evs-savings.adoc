@@ -26,7 +26,11 @@ NOTE: 続行する前に、節約計算ツールの下部にある免責事項�
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*節約を調べる* を選択し、次に *Amazon Elastic VMware Service (EVS)* を選択します。節約計算機が表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
+. VMware メニューから、*節約の検討*を選択します。節約計算機が表示されます。
 +
 *環境設定* ペインでは、EVS の展開リージョンを選択し、それに応じて TCO と節約の予測を調整できます。
 

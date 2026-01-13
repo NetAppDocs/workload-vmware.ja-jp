@@ -33,7 +33,10 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . 名前を変更するデータセットの [アクション] メニュー (...) を選択し、[名前の変更] を選択します。
 . データセットの新しい名前を入力し、[保存] を選択します。
 
@@ -46,7 +49,10 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . 削除するデータセットの [アクション] メニュー (...) を選択し、[削除] を選択します。
 . 操作を確認するには、[*削除*] を選択します。
 
@@ -65,8 +71,11 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
-. *移行計画*メニューを選択します。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
+. *移行プラン*を選択します。
 . プロビジョニングする移行プランの [アクション] メニュー (...) を選択し、[*プロビジョニング*] を選択します。
 . 移行計画に応じて、ファイル システムを展開するための手順を参照してください。
 +
@@ -85,7 +94,10 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . *移行プラン*を選択します。
 . 編集する移行計画の [アクション] メニュー (...) を選択し、[コメントの編集] を選択します。
 . コメントを入力して「*保存*」を選択します。
@@ -99,7 +111,10 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . *移行プラン*を選択します。
 . PDF または CSV レポートを作成する移行計画の [アクション] メニュー (...) を選択し、*計画のダウンロード (PDF)* または *VM レポートのダウンロード (CSV)* を選択します。
 . レポートの名前を入力し、「*保存*」を選択します。
@@ -113,7 +128,10 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 .手順
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . *移行プラン*を選択します。
 . 削除する移行計画の [アクション] メニュー (...) を選択し、[削除] を選択します。
 . *削除*を選択して操作を確認します。

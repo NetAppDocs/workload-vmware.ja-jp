@@ -28,7 +28,10 @@ Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し�
 == 手順
 
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
-. オプションとして、Workload Factory コンソールから Workload Factory にアクセスした場合は、VMware ワークロード タイルから *VMware プランニング センター* を選択し、*VMware プランニング センター* を選択します。  VMware プランニング センターが表示されます。
+. メニューを選択 image:workloads-menu-icon.png["ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。"] 次に*VMware*を選択します。
++
+プランニングセンターが表示されます。
+
 . *EVS プランを手動で作成*を選択します。
 . VM 環境の要件を入力します。
 +

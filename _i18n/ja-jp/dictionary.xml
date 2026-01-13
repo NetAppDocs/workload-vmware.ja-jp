@@ -378,7 +378,6 @@
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">[Scope]*ページで、AWS移行に含めるVMをリストから選択します。各VMの電源状態、およびVMが配置されているデータセンターとクラスタでリストをフィルタリングできます。</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">次のいずれかを実行します。</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
-  <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">[VMware Workloads]タイルで、*[評価と計画]*を選択し、*[VMware Cloud on AWSへの移行]*を選択します。</block>
   <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">ダウンロードしたデータコレクタスクリプトを実行し、VM統計のデータ収集オプションを「hourly」または「daily」に指定します。</block>
   <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">* LastHour *は、過去1時間のIOPSとスループットのデータを20秒間隔で収集します。</block>
   <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">* LastDay *は、過去24時間のIOPSとスループットのデータを5分間隔で収集します。</block>
@@ -467,7 +466,6 @@
   <block id="b23b05aa1d44c04b2da76aa4c7408d6c" category="section-title">EVS 環境の節約を検討する</block>
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">Amazon EVS 環境への計画的な移行で潜在的な節約を検討するには、次の手順に従ってください。</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">続行する前に、節約計算ツールの下部にある免責事項を確認し、価格見積りの計算方法について詳しく理解してください。</block>
-  <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">VMware ワークロード タイルから、*節約を調べる* を選択し、次に *Amazon Elastic VMware Service (EVS)* を選択します。節約計算機が表示されます。</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">必要に応じて次のスライダーを調整し、選択した値に対するリアルタイムの節約計算を確認します。キーボードを使用する場合は、矢印キーを使用して微調整を行うことができます。</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*必要な物理CPU（数）*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*必要な物理メモリ（GiB）*</block>
@@ -502,8 +500,6 @@
   <block id="81ee9955f68100a5e460b3f794e65e9b" category="paragraph"><block ref="81ee9955f68100a5e460b3f794e65e9b" category="inline-link-rx"></block></block>
   <block id="122a56eb4649431a7f2dbb8886f047cc" category="doc">NetApp Workload Factory で Amazon Elastic VMware Service の割引価格をご確認ください</block>
   <block id="d516e280a366ca18651acbc6e4772bf0" category="list-text">次のいずれかを使用してWorkload Factoryにログインします。<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> 。</block>
-  <block id="a3f54610cbcda64610ceaeba76793123" category="list-text">VMware ワークロード タイルから、*VMware プランニング センター* を選択します。</block>
-  <block id="2ee908dfa7d26403e44e0c3c2ce404f0" category="paragraph">計画センターから、VM インベントリ データをアップロードし、以前のインベントリ データのアップロードを確認し、任意の VM インベントリ データセットを使用して移行を計画できます。次に、[*AWS ネイティブ コンピューティングへの移行*] を選択します。  VMware 移行アドバイザーのスプラッシュ スクリーンが表示されます。</block>
   <block id="d5db9fed5445fd6da0101158bde40fad" category="list-text">Workload Factory 移行アドバイザーで使用するために、このトークンを保存します。</block>
   <block id="c450ceba09f988891c5496ca97845c53" category="summary">推奨される FSx for ONTAPファイルシステム (場合によってはファイルシステム) が要件を正確に満たしていることを確認したら、Workload Factory を使用して AWS 環境にシステムをデプロイできます。</block>
   <block id="5619c23907d6c8e136428b1ffb2d7cbd" category="paragraph">推奨される FSx for ONTAPファイルシステム (場合によっては複数のファイルシステム) が要件を正確に満たしていることを確認したら、Workload Factory を使用して AWS 環境にシステムをデプロイできます。</block>
@@ -523,7 +519,6 @@
   <block id="5aee541b6cca4e5c8849f06d0b79da2d" category="paragraph">Workload Factory を使用して Amazon AWS 環境への移行オプションを検討する準備ができたら、VM インベントリ データをアップロードできます。参照<block ref="31e8e3bc37bd2e1bade95d88393c52bb" category="inline-link-macro-rx"></block>手順についてはこちらをご覧ください。</block>
   <block id="4cfbd8d29274bc983e664e06493a4303" category="section-title">データセットの名前を変更する</block>
   <block id="0705a0d205a3ce08fe1389b4cf5d5aba" category="paragraph">保存したデータセットの名前を変更できます。</block>
-  <block id="7fd30ff482388995a8513cf146671f4e" category="list-text">VMware ワークロード タイルから、*VMware プランニング センター* を選択します。計画センターが表示されます。</block>
   <block id="110fd890f0f123db41f3cef28e294e4d" category="list-text">名前を変更するデータセットの [アクション] メニュー (...) を選択し、[名前の変更] を選択します。</block>
   <block id="2aa2935d11befe5eb053377a67c05f8f" category="list-text">データセットの新しい名前を入力し、[保存] を選択します。</block>
   <block id="58aa021adf712dc0e2813bcdcba181f3" category="section-title">データセットを削除する</block>
@@ -533,7 +528,6 @@
   <block id="f80ba210e2b7f5a6a678422254f971c2" category="section-title">移行計画の管理</block>
   <block id="35114aeb2258e143dcf714ece6d9d294" category="paragraph">移行センターを使用して、移行計画を作成および管理します。</block>
   <block id="3659e24395e47e249a7cb0babacdce89" category="section-title">移行計画をプロビジョニングする</block>
-  <block id="d739eb8fed40a1b32724c4bd454b0f7b" category="list-text">*移行計画*メニューを選択します。</block>
   <block id="956d376b583f5687a7637d9906bf6a8a" category="list-text">プロビジョニングする移行プランの [アクション] メニュー (...) を選択し、[*プロビジョニング*] を選択します。</block>
   <block id="5a71691c5600510f5a4512966f318d3b" category="list-text">移行計画に応じて、ファイル システムを展開するための手順を参照してください。</block>
   <block id="a4534545db06dd96615fb42a8dcdf091" category="inline-link-macro">Amazon VMware Cloud プランのファイルシステムをデプロイする</block>
@@ -544,7 +538,6 @@
   <block id="7e526b4bf6969bafd6a4c35e8b1f6858" category="list-text"><block ref="7e526b4bf6969bafd6a4c35e8b1f6858" category="inline-link-macro-rx"></block></block>
   <block id="47642a7e3c3b5c81c9ae2a3ea6b5b670" category="section-title">移行計画のコメントを編集する</block>
   <block id="b8fcf4bb479081f2ff9078fded9fcbba" category="paragraph">移行計画のコメントの詳細を変更する必要がある場合は、計画センター内からコメントを編集します。</block>
-  <block id="ed977dfdfe1506958cfaf0814d2d88aa" category="list-text">*移行プラン*を選択します。</block>
   <block id="85ff4660d4c9887c8c3642f5b88f5c0f" category="list-text">編集する移行計画の [アクション] メニュー (...) を選択し、[コメントの編集] を選択します。</block>
   <block id="ffba1532f20138af6f125ed0e7922f0c" category="list-text">コメントを入力して「*保存*」を選択します。</block>
   <block id="80150f821562b98f3c468bc4b96f7cfc" category="section-title">移行計画を削除する</block>
@@ -571,7 +564,6 @@
   <block id="47940e0522122bf1e695d6ef8be611b4" category="doc">Amazon EVS のデプロイメントプランを手動で作成する</block>
   <block id="974141ff0d1eb54059bc869fa1e21956" category="paragraph">VMware プランニング センターにアクセスするには、 NetApp Workload Factory にログインします。そこから、ニーズに合わせてカスタマイズされた Amazon EVS のデプロイメントプランまたは移行プランを手動で作成できます。</block>
   <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">Workload Factory にアクセスするには、ユーザー名とパスワードが必要であることに注意してください。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>。</block>
-  <block id="16c4fea5db1b123ee73083a03e23c825" category="list-text">オプションとして、Workload Factory コンソールから Workload Factory にアクセスした場合は、VMware ワークロード タイルから *VMware プランニング センター* を選択し、*VMware プランニング センター* を選択します。  VMware プランニング センターが表示されます。</block>
   <block id="3a24ead84cf153dcdbed17a6f2a5453f" category="list-text">*EVS プランを手動で作成*を選択します。</block>
   <block id="d81d55a8a22e2c2e3489e48eb0ed356b" category="list-text">準備ができたら、「*計画の確認*」を選択して移行計画を確認します。</block>
   <block id="09092a8424b4b288607f4a8069cab241" category="paragraph">デフォルトでは、Workload Factory は移行計画を計画センターに保存します。ページの上部付近でこのオプションの選択を解除できます。</block>
@@ -674,7 +666,6 @@
   <block id="01e556e9ed381ddad48f5f248ea8c853" category="summary">プランニング センターを使用して、現在の VMware 環境に関する情報をアップロードできます。</block>
   <block id="549db19de828407c882fab2f54c0d91b" category="doc">VMインベントリデータをNetApp Workload Factoryにアップロードする</block>
   <block id="549d0e83e0f77a058ecb115d751ef72a" category="paragraph">移行計画を作成する前に、VM インベントリ データをアップロードする必要があります。</block>
-  <block id="d1b898a05a6055416cc6065195fac618" category="paragraph">計画センターから、VM インベントリ データをアップロードしたり、以前のインベントリ データのアップロードを確認したり、任意の VM インベントリ データセットを使用して移行を計画したりできます。</block>
   <block id="6c2c52acb8ece2370c8022ea7c978cb0" category="list-text">*VM インベントリのアップロード*を選択します。</block>
   <block id="d3157fb0911e0c33c9adcedf0e1598ec" category="list-text">使用するデータ収集方法を選択します。</block>
   <block id="56a20a27e57943bc4d91537b0e964977" category="list-text">*RVTools* タイルを選択し、*次へ* を選択します。</block>
@@ -770,4 +761,11 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Ask me AIアシスタントのホームページ統合</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory コンソールのホームページには Ask me AI アシスタントが組み込まれており、独自のストレージ資産について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。コンソールを離れることなく、「Ask me」と対話してワークロードを理解し、問題をトラブルシューティングし、Workload Factory について詳しく知ることができます。</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">ハンバーガー メニュー アイコンは、ストレージ、eda、ai、データベース、vmware、管理などのワークロードに移動するために使用されます。</block>
+  <block id="daba095d05b7fd9d182dec54a6d16128" category="list-text">メニューを選択 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 次に*VMware*を選択します。</block>
+  <block id="68cd9b93debb6e340198a3ce932bf558" category="list-text">VMware メニューから、*節約の検討*を選択します。節約計算機が表示されます。</block>
+  <block id="436af711d4993660c5c38d9cf698cc6e" category="paragraph">プランニングセンターが表示されます。計画センターから、VM インベントリ データをアップロードし、以前のインベントリ データのアップロードを確認し、任意の VM インベントリ データセットを使用して移行を計画できます。次に、[*AWS ネイティブ コンピューティングへの移行*] を選択します。VMware 移行アドバイザーのスプラッシュ スクリーンが表示されます。</block>
+  <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">VMware メニューから、*評価と計画* を選択し、*VMware Cloud on AWS への移行* を選択します。</block>
+  <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">*始めましょう！*を選択します。チェックボックスを選択すると、このページを再度表示しないようにすることができます。</block>
+  <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">プランニングセンターが表示されます。計画センターから、VM インベントリ データをアップロードしたり、以前のインベントリ データのアップロードを確認したり、任意の VM インベントリ データセットを使用して移行を計画したりできます。</block>
 </blocks>
