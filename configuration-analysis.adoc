@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: configuration-analysis.html 
+keywords: evs, well-architected, configuration analysis, best practices, recommendations 
+summary: Workload Factory が Amazon Elastic VMware Service 構成を分析して問題を特定し、ベストプラクティスの推奨事項を提供する方法について説明します。 
+---
+= EVS構成の構成分析
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory は、Amazon Elastic VMware Service (EVS) の構成を定期的に分析し、ベストプラクティスとの不整合を特定します。その結果を活用して、パフォーマンス、コスト効率、コンプライアンスを向上させましょう。
+
+主な機能は次のとおりです：
+
+* 日次構成分析
+* 自動ベストプラクティス検証
+* プロアクティブな可観測性
+* 洞察から行動へ
+
+
+
+
+== Well-Architected ステータス
+
+Workload Factory コンソールでは、検出されたすべての EVS 仮想化環境の Well-Architected ステータスが表示されます。Well-Architected ステータスは、「最適化済み」または「最適化されていない」に分類されます。*Inventory* を選択すると、環境内の Well-Architected ステータスタブに移動し、環境のすべての構成を確認できます。
+
+
+
+== 構成カテゴリ
+
+Workload Factoryは、AWSおよびNetAppベストプラクティスとの整合性を確保するために、複数のカテゴリにわたってEVS構成を評価します。各カテゴリは、EVS環境の特定の側面に焦点を当てています：
+
+可用性:: EVS 構成のアクセス性と操作性がどの程度期待されるか。
+セキュリティ:: EVS 構成がデータを保護し、アクセスを制御する程度（たとえば、EC2 の停止と終了の保護）。
+耐障害性:: EVS 構成が障害や中断から回復する能力。
+
+
+.次の手順
+link:view-evs-well-architected.html["適切に設計された構成を実装する"]

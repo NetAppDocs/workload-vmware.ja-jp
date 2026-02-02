@@ -217,7 +217,6 @@
   <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">ボリュームのサイズの増減に加えて、データスループット、IOPS、ファイルシステムのサイズを変更可能</block>
   <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">複数のアベイラビリティゾーン（AZ）環境をサポートする高可用性</block>
   <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">Transit Gatewayを使用せずにVPCピアリングを使用するシングルAZ構成によるコストとレイテンシの削減</block>
-  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">ライセンス</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法的通知では、著作権に関する声明、商標、特許などにアクセスできます。</block>
@@ -768,4 +767,132 @@
   <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">VMware メニューから、*評価と計画* を選択し、*VMware Cloud on AWS への移行* を選択します。</block>
   <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">*始めましょう！*を選択します。チェックボックスを選択すると、このページを再度表示しないようにすることができます。</block>
   <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">プランニングセンターが表示されます。計画センターから、VM インベントリ データをアップロードしたり、以前のインベントリ データのアップロードを確認したり、任意の VM インベントリ データセットを使用して移行を計画したりできます。</block>
+  <block id="8f1b9e3fbbd44cf22e9f5ac28290aba0" category="doc">Amazon Elastic VMware Service の Well-Architected 分析</block>
+  <block id="f6c8ff445c3db04296fa83d4b2790691" category="paragraph">Workload Factory は、Amazon Elastic VMware Service (EVS) 環境向けに、自動化された Well-Architected 分析機能を提供するようになりました。毎日のスキャンで設定の不整合を特定し、詳細な修復推奨事項を提供することで、最適な運用、セキュリティ、コスト効率の維持を支援します。</block>
+  <block id="7e27d05efe618fad67c0e09d831368c6" category="paragraph">スキャンはAWS APIを使用して実行されます。vSphere認証情報やvCenter接続は必要ありません。結果は、EVS環境の詳細にある新しい*Well-architectedステータス*タブで確認できます。</block>
+  <block id="b49141c08a1be0c2df4a29b08af10e5e" category="paragraph">このリリースには、次の分析情報が含まれています：</block>
+  <block id="eb309475830119de69a172afb7c872e1" category="list-text">*インスタンスの停止/終了保護ステータス*：EC2 の停止または終了保護が適用されていない EVS ノードを識別します。EC2 コンソールから EVS ノードを停止または終了すると、仮想マシンのデータが利用できなくなったり、データが失われたりする可能性があります。</block>
+  <block id="5e10e9fc9dc23fca9bdc4e8b00ae9469" category="list-text">*クラスターノードのパーティション配置アライメント*：AWSアベイラビリティゾーン内のパーティションに障害が発生した場合に、重大な処理能力の低下やダウンタイムにつながる可能性のある、パーティション配置の不整合を検出します。各インサイトには、重大度レベル、影響を受けるリソース情報を含む詳細な検出結果、AWSベストプラクティスに基づく段階的な修復手順が含まれます。</block>
+  <block id="3ac4be70f27829fbadc2c932a5b029e4" category="inline-link-macro">適切に設計された構成を実装する</block>
+  <block id="0f39698d75936e2b93022b9c574c0eb3" category="paragraph"><block ref="0f39698d75936e2b93022b9c574c0eb3" category="inline-link-macro-rx"></block></block>
+  <block id="811182fb87c3ac2818bca780e05e0c5c" category="summary">Workload Factory が Amazon Elastic VMware Service 構成を分析して問題を特定し、ベストプラクティスの推奨事項を提供する方法について説明します。</block>
+  <block id="b998e1ace581318d41cd37b71dfe5cac" category="doc">EVS構成の構成分析</block>
+  <block id="ee876b0ee5fe63fbc90fddc929719edd" category="paragraph">Workload Factory は、Amazon Elastic VMware Service (EVS) の構成を定期的に分析し、ベストプラクティスとの不整合を特定します。その結果を活用して、パフォーマンス、コスト効率、コンプライアンスを向上させましょう。</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">主な機能は次のとおりです：</block>
+  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">日次構成分析</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">自動ベストプラクティス検証</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">プロアクティブな可観測性</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">洞察から行動へ</block>
+  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">Well-Architected ステータス</block>
+  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">Workload Factory コンソールでは、検出されたすべての EVS 仮想化環境の Well-Architected ステータスが表示されます。Well-Architected ステータスは、「最適化済み」または「最適化されていない」に分類されます。*Inventory* を選択すると、環境内の Well-Architected ステータスタブに移動し、環境のすべての構成を確認できます。</block>
+  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">構成カテゴリ</block>
+  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">Workload Factoryは、AWSおよびNetAppベストプラクティスとの整合性を確保するために、複数のカテゴリにわたってEVS構成を評価します。各カテゴリは、EVS環境の特定の側面に焦点を当てています：</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">可用性</block>
+  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">EVS 構成のアクセス性と操作性がどの程度期待されるか。</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">セキュリティ</block>
+  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">EVS 構成がデータを保護し、アクセスを制御する程度（たとえば、EC2 の停止と終了の保護）。</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">耐障害性</block>
+  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">EVS 構成が障害や中断から回復する能力。</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">次の手順</block>
+  <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">EVS環境向けの適切に設計された分析</block>
+  <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">Well-architected タブは、Amazon Elastic VMware Service (EVS) 環境を毎日自動分析し、AWS および NetApp ベストプラクティスとの整合性を確保します。このタブでは、構成上の問題を特定し、最適な運用、セキュリティ、コスト効率を維持するための詳細な修復ガイダンスを提供します。</block>
+  <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">自動スキャンはAWS APIを使用して実行されます。vSphereの認証情報は必要ありません。検出結果は設定領域ごとに整理され、各検出結果にはステータス、重大度レベル、影響を受けるリソースの詳細、および段階的な修復手順が含まれます。</block>
+  <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Workload Factory で適切に設計された EVS 構成を実装する</block>
+  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.== コスト</block>
+  <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> EVS 環境の Well-Architected Insights を確認する</block>
+  <block id="9af4d557947285cd35bace6367e46950" category="paragraph">EVS 環境が検出されると、Workload Factory は毎日自動的に Well-Architected スキャンを実行し、構成の問題を特定して修復の推奨事項を提供します。</block>
+  <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">適切に設計された構成を実装する方法を学ぶ</block>
+  <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>.</block>
+  <block id="fc6485a9112c61e8addae60c9881529a" category="summary">Workload Factory で EVS 構成の well-architected ステータスを確認し、AWS と NetApp のベストプラクティスに基づく修復ガイダンスに従います。</block>
+  <block id="74163cd660daafe169a986c2d540a418" category="doc">適切に設計されたEVS構成を実装する</block>
+  <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">Workload Factory 構成分析を使用して、Amazon Elastic VMware Service（EVS）構成の適切なアーキテクチャの状態を確認し、信頼性、セキュリティ、コストに影響する問題を修正します。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">タスク概要</block>
+  <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">AWS APIを使用して、検出されたすべてのEVS環境を毎日自動スキャンし、EVS設定を分析して、可用性、回復力、セキュリティ、またはコスト最適化に影響を与える可能性のある潜在的な問題を特定します。検出結果は設定領域ごとに整理され、各検出結果にはステータス、重大度レベル、影響を受けるリソースの詳細、および段階的な修復手順が含まれます。</block>
+  <block id="46983665512cec916d21fde7e5cd3c92" category="paragraph">主な機能は次のとおりです：</block>
+  <block id="d5bec1394e46fe7beb3bfc357658dbee" category="list-text">*毎日の自動スキャン*：検出されたすべての EVS 環境は、分析情報が最新の状態に保たれるように、1 日に 1 回自動的にスキャンされます。</block>
+  <block id="7178f1776bec85b1fa0d80ba102bb59c" category="list-text">*AWS API ベースのスキャン*: スキャンでは AWS API が使用され、vSphere 認証情報や vCenter への接続は必要ありません。</block>
+  <block id="8157ddea6dba3cc417056b072b8b80f3" category="list-text">*問題解決に関する詳細なガイダンス*：特定された各問題には、明確な説明、重大度レベル、および段階的な解決手順が含まれています。</block>
+  <block id="1f4af7de884cca1c2591581301dfb2d3" category="list-text">*表示専用の分析情報*：自動化された問題解決オプションなしで、詳細な調査結果と推奨事項を提供します。</block>
+  <block id="8a932e11437d1c455e0309f4576aecfc" category="section-title">適切に設計されたインサイトを理解する</block>
+  <block id="ba3c34291d7a94693a481a33bd15d66a" category="paragraph">Well-architected タブには次の内容が表示されます：</block>
+  <block id="8092529325e1bffb70e26a2f0a96de8c" category="list-text">*Configuration name*：評価対象の構成領域。</block>
+  <block id="fb65a696254587c809d66cfee810bcb9" category="list-text">*タグ*：影響領域を示すラベル（可用性、回復力、セキュリティなど）。</block>
+  <block id="191370a235cb47e01e8bb5d93f56f68e" category="list-text">*Status*：「Optimized」（問題は見つかりません）または「Not optimized」（問題が見つかりました）。</block>
+  <block id="7e06d612ab32ad7e5b276e570d6052db" category="list-text">*重大度*：検出結果の重要度レベル（例：警告）。</block>
+  <block id="8b38d8216b4a9677a6565c6987244bfd" category="list-text">*リソースタイプ*：評価対象の AWS リソースのタイプ。</block>
+  <block id="aed619db5443435ab1909111087c9354" category="list-text">*影響を受けるリソース数*：問題の影響を受けるリソースの数。</block>
+  <block id="d17c25d685d870f3162fd07bd3759e9d" category="section-title">スキャン頻度</block>
+  <block id="ec009bfd9b9d35c799aa225e2210ad5d" category="paragraph">検出されたすべてのEVS構成に対して、Well-Architectedスキャンが自動的に実行されます。スキャンスケジュールに関する主な詳細：</block>
+  <block id="200b6c38eb872375baba819532b25c35" category="list-text">スキャンは、EVS 構成ごとに 1 日に 1 回実行されます。</block>
+  <block id="aac386e06e58e41f07f21274a2ce3cd3" category="list-text">異なる構成のスキャンは、異なる時間に実行される可能性があります。</block>
+  <block id="cbf4a11b9106a765a8d59f5bde22b92b" category="list-text">1 つの構成のスキャンが失敗した場合でも、同じアカウント内の他の構成のスキャンは試行されます。</block>
+  <block id="2e23c7712db264116ae4e9427788e890" category="list-text">Well-architected ステータス タブのタイムスタンプ カードには、現在の構成の最後のスキャンがいつ完了したかが表示されます。</block>
+  <block id="6b263d7d4b1960744986bbf27f19031b" category="admonition">Well-Architectedスキャンのオンデマンド実行は現在サポートされていません。すべてのスキャンは毎日のスケジュールで自動的に実行されます。</block>
+  <block id="6943da56f7bfefaf87bd63fa31f32343" category="inline-link">AWS認証情報を追加しました</block>
+  <block id="de6391d66ba7208735ea026c0163bd82" category="list-text"><block ref="1c3a105d12a49d2155fa535811f69d6c" category="inline-link-rx"></block>VMware ワークロードに対する _表示、計画、および分析_ 権限を持っている必要があります。</block>
+  <block id="7c751b705d8b34dd77f43768750957ae" category="list-text">AWS アカウントには、検出された Amazon Elastic VMware Service 環境が少なくとも 1 つ必要です。</block>
+  <block id="bcfe7032eb38dd46f96fae8e821cb2f5" category="section-title">Well-Architected ステータス タブにアクセスする</block>
+  <block id="9a1e15b3cbcb65c9396541d3f9c5193b" category="list-text">VMware メニューから、*Inventory* を選択します。</block>
+  <block id="744339c5b641ba182ae35bbb4cfc33a4" category="list-text">*仮想化環境*リストから、Well-Architected Insightsを表示する検出されたEVS環境を選択します。</block>
+  <block id="97136f0d9a483a6fdfdfc42b5a59cfe7" category="list-text">*Well-architected status* タブを選択します。</block>
+  <block id="a563ade9a0b771335a4862de1340dc24" category="paragraph">次の要素が表示されます：</block>
+  <block id="4898eb92487a19f75bf5dd69bf5044ca" category="list-text">*自動日次分析タイムスタンプ*：この環境で最後にスキャンが実行された日時を表示します。</block>
+  <block id="327c34fae86c3c2d78f5cfa847ccf61c" category="list-text">*構成*：構成領域ごとに結果を整理し、そのステータスと詳細を表示します。</block>
+  <block id="3cecc2f68d529e2866ede0865952d12e" category="section-title">Well-Architected の評価を表示</block>
+  <block id="dc1feaa4afec46ae71e1b4ce87c52cc9" category="section-title">クラスターノード管理</block>
+  <block id="1bb51698a0663f165dbe5f273c5c5673" category="paragraph">これにより、EVS クラスターノードに適切な EC2 停止および終了保護が設定されているかどうかが評価されます。</block>
+  <block id="5a82da798b8d52a1877e0af59310a695" category="paragraph">*状態*：</block>
+  <block id="2177db57d319d13e0bf2ae908c5ad3fd" category="list-text">*最適化*: すべての EVS ノードに EC2 停止保護と終了保護の両方が設定されています。</block>
+  <block id="645739737a5dbda70addbb1793f629c5" category="list-text">*最適化されていません*：少なくとも 1 つの EVS ノードに EC2 停止保護または終了保護が設定されていません。</block>
+  <block id="813bbde82916c6d5352808ebeccf0b78" category="paragraph">*これが重要な理由*：</block>
+  <block id="47ba39ae7dbe55540d6304890df50c31" category="paragraph">EVS ESXiノードはvCenter、またはその他のVMwareレベルの管理ツールを使用してのみ管理する必要があります。適切なEC2レベルの保護がないと、EC2コンソールからノードが誤って停止または終了される可能性があり、仮想マシンのデータが利用できなくなったり、データが失われたりする可能性があります。</block>
+  <block id="852fec60fb308754480e33bb8725f7d0" category="paragraph">*詳細な調査結果を表示するには*：</block>
+  <block id="5b924baabf30c77d336ab00807a2e592" category="list-text">Well-architected ステータス タブで、*クラスター ノード管理*を見つけます。</block>
+  <block id="2f0a4abe3577a24388d3503c76df1f1e" category="list-text">*表示*を選択して、結果ダイアログを開きます。</block>
+  <block id="f771ae48bfbea0e9bd4510a2944d7c27" category="paragraph">ダイアログには次の内容が表示されます：</block>
+  <block id="beceff88971536474ce183c2c49086a3" category="list-text">*調査結果の概要*：ご使用の環境で発見された問題の詳細な説明。</block>
+  <block id="521b5581051893604e80bc8d9a9b2a47" category="list-text">*リソース グリッド*：すべての EVS ノードとその保護ステータスを表示するテーブル。これには次のものが含まれます：</block>
+  <block id="1e64edfa54c534cdd3eab5eafafdc723" category="list-text">ノード識別子</block>
+  <block id="79a2c7f2446afac26daa7c86e7c7552d" category="list-text">EC2 停止保護ステータス</block>
+  <block id="e26fc7b3b268da15eeb1541c027f3181" category="list-text">EC2 終了保護ステータス</block>
+  <block id="dd3ff4b0d866a1f342fc31bf10649488" category="list-text">*必要なアクション*：問題を解決するための段階的な手順。</block>
+  <block id="2fb2741679a033656b8deb871364d1ba" category="list-text">*推奨事項*：ベスト プラクティス ガイダンス。</block>
+  <block id="801eec1f5aa15441f8563024525f7de2" category="paragraph">*修復*：</block>
+  <block id="0dcf33d70ce0ac99ae40cb18631345ea" category="paragraph">この問題を解決するには、EVS ノードの停止および終了保護を有効にします：</block>
+  <block id="f1f93afb3b5ca94caad02f19d5690631" category="inline-link">停止保護を有効にするための AWS ドキュメント</block>
+  <block id="3de60d42654be51b8431224f33d26e80" category="list-text"><block ref="39a165446f78431d50e534c995c99eb1" category="inline-link-rx"></block>に指定された手順に従ってください。</block>
+  <block id="0ed28b656053bbc9750b2cb527e317cd" category="inline-link">終了保護を有効にするための AWS ドキュメント</block>
+  <block id="ecf75ab49e92be6325b9b3a05088f6a0" category="list-text"><block ref="723a60649762a3af21a294f7843f9b4c" category="inline-link-rx"></block>に指定された手順に従ってください。</block>
+  <block id="ce129dbc888eb33b14b32d1fa034d7b7" category="section-title">EVS環境の回復力</block>
+  <block id="c049b3d231c8b43b1fd719fd9a8215e5" category="paragraph">これは、EVS クラスター ノードがパーティション配置グループ全体に適切に分散されているかどうかを評価します。</block>
+  <block id="30323180fe07f0de31c13be7ab8edff5" category="list-text">*最適化*: すべてのノードは、4つ以上のパーティションで構成された単一のパーティション配置グループのメンバーです。</block>
+  <block id="bb6b44588620725c2fafc527d3a36108" category="list-text">次のいずれかに該当する場合、*最適化されていません*：</block>
+  <block id="5ceff40676061e4d49313b93769e0092" category="list-text">ノードは複数の配置グループのメンバーです。</block>
+  <block id="80e60c8a90e80f84fb5d310b198db129" category="list-text">少なくとも 1 つのノードが、パーティション化されていない配置グループのメンバーです。</block>
+  <block id="0a410fbafeb1762934b94f77af190020" category="list-text">すべてのノードは、4つ未満のパーティションを持つパーティション化された配置グループのメンバーです。</block>
+  <block id="4c9e98121a4fe72e482aafa4e8b548dd" category="paragraph">適切なパーティション配置により、EVS クラスターノードは AWS アベイラビリティゾーン内の障害から分離された複数のハードウェアパーティションに分散されます。配置が不適切な場合、パーティションに障害が発生すると、処理能力の大幅な低下やダウンタイムが発生する可能性があります。</block>
+  <block id="c5b0e174597ee5abfad58c8d92e612ab" category="list-text">Well-architected ステータス タブで、*EVS environment resiliency* を見つけます。</block>
+  <block id="0e3b484d9d0687e5c5b32b8f2ad39c25" category="list-text">*調査結果の概要*：パーティションの不整合の詳細な説明。</block>
+  <block id="ae7e05a26896efe16ac92af493496bfe" category="list-text">*リソース グリッド*：次の EVS 環境ノードを示すテーブル：</block>
+  <block id="9a4247fce420e054bc53b23a77efaa26" category="list-text">配置グループ名</block>
+  <block id="035f6ab94403d611f603c8115478662d" category="list-text">配置グループの種類</block>
+  <block id="3cba1eb347e09ee7cfb864eb01fccac4" category="list-text">配置グループのパーティション数</block>
+  <block id="bb4564e55d348d7a7b7061c258291236" category="list-text">*必要なアクション*：段階的な修復手順</block>
+  <block id="626f65450b25b8256e989a7d96d9dd8c" category="list-text">*推奨事項*：ベストプラクティスガイダンス</block>
+  <block id="1741ef00400e675fccbb26bb1e459a1c" category="paragraph">パーティション配置の問題を修正するには：</block>
+  <block id="190ae6870996db4b351353f26146dfe2" category="list-text">EVS 環境に新しいノードを追加する場合は、少なくとも 4 つのパーティションを持つパーティション分割された配置グループを使用して新しいノードをプロビジョニングします。</block>
+  <block id="9bc8310ff2c5946d58c2c80b2c49c003" category="list-text">クラスター ノードを置き換える場合は、少なくとも4つのパーティションを持つパーティション分割された配置グループを使用して置き換えノードがプロビジョニングされていることを確認します。</block>
+  <block id="b4f5ac9ad226f10eca619b94888a2179" category="list-text">上記の推奨事項に沿って、すべての EVS ノードを単一の配置グループに統合するようにしてください。</block>
+  <block id="ceb2f3b962adcc18ee161b7e14839412" category="paragraph">*ベストプラクティスの推奨事項*：</block>
+  <block id="fe90fa535ae4fff7efe640e795799979" category="paragraph">EVS 環境を作成または拡張する場合は、4 つ以上のパーティションで構成された単一のパーティション化された配置グループを使用して、すべてのクラスター ノードをプロビジョニングします。</block>
+  <block id="f2dd5e328e06e8cf91d1b5390e4cd997" category="paragraph">適切に設計された洞察を確認し、推奨される変更を実装した後：</block>
+  <block id="139deeaf3f0b706655accefb5d2c2384" category="list-text">環境のステータスを常に把握できるように、Well-Architected ステータスタブを毎日監視します。</block>
+  <block id="1a2bd51e6c9820e6b845fcee8b825038" category="list-text">「最適化されていません」という結果が出た場合は、修復手順に従ってください。</block>
+  <block id="84125effdc43235cd3e3b49417a766ea" category="list-text">追加のベストプラクティスについては、AWS とNetAppのドキュメントを確認してください。</block>
+  <block id="0b3b97923e2348ff9e1f39e9effff018" category="list-text">EVS 環境を拡張する前に、推奨事項を実装することを検討してください。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">関連リンク</block>
+  <block id="ab9fa5da04b047baee14c97180c20a08" category="inline-link">AWS プレースメントグループのドキュメント</block>
+  <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
+  <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026年2月1日</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理と監視</block>
 </blocks>

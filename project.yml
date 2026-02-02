@@ -60,6 +60,12 @@ sidebar:
         url: "/connect-sddc-to-fsx.html"
       - title: 新しいインフラへのデータ移行
         url: "/migrate-data.html"
+  - title: 管理と監視
+    entries:
+    - title: EVS構成の構成分析
+      url: "/configuration-analysis.html"
+    - title: 適切に設計されたEVS構成を実装する
+      url: "/view-evs-well-architected.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
