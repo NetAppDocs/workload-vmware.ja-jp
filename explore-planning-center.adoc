@@ -82,6 +82,7 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 ** link:deploy-fsx-file-system.html["Amazon VMware Cloud プランのファイルシステムをデプロイする"]
 ** link:deploy-fsx-file-system-native.html["Amazon EC2 プランのファイルシステムをデプロイする"]
 ** link:deploy-fsx-file-system-evs.html["Amazon Elastic VMware Service プランのファイルシステムをデプロイする"]
+** link:deploy-gcnv-datastores.html["Google Cloud VMware Engine プランに Google Cloud NetApp Volumes データストアをデプロイする"]
 
 
 

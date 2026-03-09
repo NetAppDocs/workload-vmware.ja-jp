@@ -1,0 +1,18 @@
+= Google Cloud VMware Engine の移行アドバイザーサポートの紹介
+:allow-uri-read: 
+
+
+
+
+=== Google Cloud VMware Engine の移行アドバイザーサポートの紹介
+
+NetApp Workload Factory は Google Cloud VMware Engine をサポートするようになりました。Google Cloud NetApp Volumes を外部 NFS データストアとして使用することで、オンプレミスの VMware ワークロードを Google Cloud VMware Engine に移行でき、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わなくても VMware 環境をより細かく制御できるようになります。
+
+Google Cloud VMware Engine 移行アドバイザーは以下を提供します：
+
+* VE1 および VE2 ノードタイプをサポートする、Google Cloud VMware Engine クラスタのサイジングと設計の自動化
+* vSAN 内部データストアと Google Cloud NetApp Volumes 外部 NFS データストア間の VM レイアウトの最適化。
+* vSANのみ構成とGoogle Cloud NetApp Volumes強化構成との詳細なコスト比較およびTCO分析。
+* Standard、Premium、Extreme Google Cloud NetApp Volumes サービスレベルのサポート。
+* 自動プロビジョニングのための Terraform を使用した Infrastructure-as-Code デプロイメント。
+

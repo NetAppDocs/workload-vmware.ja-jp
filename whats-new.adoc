@@ -15,6 +15,39 @@ Workload Factory の VMware 移行アドバイザー コンポーネントの新
 
 
 
+== 2026年3月9日
+
+
+
+=== Google Cloud VMware Engine の移行アドバイザーサポートの紹介
+
+NetApp Workload Factory は Google Cloud VMware Engine をサポートするようになりました。Google Cloud NetApp Volumes を外部 NFS データストアとして使用することで、オンプレミスの VMware ワークロードを Google Cloud VMware Engine に移行でき、コストを最適化し、アプリケーションのリファクタリングや再プラットフォーム化を行わなくても VMware 環境をより細かく制御できるようになります。
+
+Google Cloud VMware Engine 移行アドバイザーは以下を提供します：
+
+* VE1 および VE2 ノードタイプをサポートする、Google Cloud VMware Engine クラスタのサイジングと設計の自動化
+* vSAN 内部データストアと Google Cloud NetApp Volumes 外部 NFS データストア間の VM レイアウトの最適化。
+* vSANのみ構成とGoogle Cloud NetApp Volumes強化構成との詳細なコスト比較およびTCO分析。
+* Standard、Premium、Extreme Google Cloud NetApp Volumes サービスレベルのサポート。
+* 自動プロビジョニングのための Terraform を使用した Infrastructure-as-Code デプロイメント。
+
+
+
+
+== 2026年3月1日
+
+
+
+=== Workload Factory で新しい Ask Me ブックマークが利用可能になりました
+
+Workload Factory コンソールのすべての画面に新しい Ask Me ブックマークを追加しました。この改善により、ヘルプが必要なときにいつでも Ask Me に簡単かつ迅速にアクセスできるようになります。Ask Me は AI アシスタントであり、独自のワークロード環境について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。
+
+新しいブックマークをクリックすると、どのページからでも Ask Me を開くことができます。現在の作業を中断することなく、サイドパネルで Ask Me を起動し、現在行っている作業に関連する簡単な説明と推奨事項を提供します。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Ask Meの詳細"^]
+
+
+
 == 2026年2月1日
 
 

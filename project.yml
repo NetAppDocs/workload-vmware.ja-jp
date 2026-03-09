@@ -28,6 +28,8 @@ sidebar:
       url: "/quick-start-native.html"
     - title: クイックスタートガイド：VMware Cloud on AWSへの移行
       url: "/quick-start.html"
+    - title: Google Cloud VMware Engine への移行のクイックスタート
+      url: "/quick-start-gcve.html"
     - title: VMware プランニング センターをご覧ください
       url: "/explore-planning-center.html"
   - title: VMware プランニング センターを使用する
@@ -44,6 +46,10 @@ sidebar:
         url: "/launch-migration-advisor-evs.html"
       - title: 推奨されるFSx for ONTAPファイルシステムを導入
         url: "/deploy-fsx-file-system-evs.html"
+    - title: Google Cloud VMware Engine への移行
+      entries:
+      - title: 移行アドバイザを使用して導入計画を作成
+        url: "/launch-migration-advisor-gcve.html"
     - title: Amazon EC2への移行
       entries:
       - title: 移行アドバイザを使用して導入計画を作成

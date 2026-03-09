@@ -15,6 +15,8 @@ indexpage:
       url: quick-start.html
     - title: クイックスタート：Amazon EC2への移行
       url: quick-start-native.html
+    - title: クイックスタート：Google Cloud VMware Engine への移行
+      url: quick-start-gcve.html
     - title: VMware プランニング センターをご覧ください
       url: explore-planning-center.html
   - title: Amazon Elastic VMware Service への移行
@@ -27,6 +29,10 @@ indexpage:
       url: launch-migration-advisor-evs.html
     - title: 推奨されるFSx for ONTAPファイルシステムを導入
       url: deploy-fsx-file-system.html
+  - title: Google Cloud VMware Engine への移行
+    links:
+    - title: 移行アドバイザを使用して導入計画を作成
+      url: launch-migration-advisor-gcve.html
   - title: Amazon EC2への移行
     links:
     - title: 移行アドバイザを使用して導入計画を作成
