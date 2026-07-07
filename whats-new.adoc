@@ -15,6 +15,30 @@ Workload Factory の VMware 移行アドバイザー コンポーネントの新
 
 
 
+== 2026年7月6日
+
+
+
+=== EVS TCO 計算ツールにおける i7i.metal-24xl インスタンスのサポート
+
+EVSのTCO計算ツールが、クラスターホストとしてAWS i7i.metal-24xl EC2インスタンスをサポートするようになりました。i4i.metal構成と比較すると、これらのインスタンスはEVSの初期コストをコンピューティングで約33%、vSANストレージで約25%削減します。
+
+この計算ツールは、両方のインスタンスタイプを自動的に比較し、最も費用対効果の高いオプションを選択します。新しい比較セクションでは、EVSホストの構成を並べて表示することで、ニーズに最適な設定を簡単に見つけることができます。
+
+link:calculate-evs-savings.html["EVSの推定節約額を計算する"]
+
+
+
+== 2026年5月31日
+
+
+
+=== NetApp Workload FactoryでのAWS GovCloud（US）のサポート
+
+NetApp Workload FactoryはAWS GovCloud（US）アカウントをサポートしています。GovCloudアカウントを使用すると、AWS GovCloud（US）リージョンでストレージワークロードをデプロイおよび管理できます。
+
+
+
 == 2026年3月9日
 
 

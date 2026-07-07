@@ -623,7 +623,6 @@
   <block id="df3078cbf2344fdc96564c4276d42b3a" category="paragraph">Workload Factory は、FSx for ONTAPがサポートされているすべての商用リージョンでサポートされています。<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">次の AWS リージョンはサポートされていません。</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中国地域</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（米国）リージョン</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">シークレットクラウド</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">トップシークレットクラウド</block>
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">NetApp Workload Factory for VMware に関する法的通知</block>
@@ -778,7 +777,6 @@
   <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">Well-architected タブは、Amazon Elastic VMware Service (EVS) 環境を毎日自動分析し、AWS および NetApp ベストプラクティスとの整合性を確保します。このタブでは、構成上の問題を特定し、最適な運用、セキュリティ、コスト効率を維持するための詳細な修復ガイダンスを提供します。</block>
   <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">自動スキャンはAWS APIを使用して実行されます。vSphereの認証情報は必要ありません。検出結果は設定領域ごとに整理され、各検出結果にはステータス、重大度レベル、影響を受けるリソースの詳細、および段階的な修復手順が含まれます。</block>
   <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">Workload Factory で適切に設計された EVS 構成を実装する</block>
-  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.== コスト</block>
   <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> EVS 環境の Well-Architected Insights を確認する</block>
   <block id="9af4d557947285cd35bace6367e46950" category="paragraph">EVS 環境が検出されると、Workload Factory は毎日自動的に Well-Architected スキャンを実行し、構成の問題を特定して修復の推奨事項を提供します。</block>
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">適切に設計された構成を実装する方法を学ぶ</block>
@@ -1064,4 +1062,15 @@
   <block id="7d7265a6929882bb433fc74e8bee871a" category="paragraph">セキュリティは、リスク評価と軽減戦略を通じて、データ、システム、資産を保護することを重視します。</block>
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*クラスタノード管理*</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">EVS クラスタノードに適切な EC2 停止および終了保護が設定されていることを確認します。EVS ESXi ノードは、vCenter またはその他の VMware レベルの管理ツールを使用してのみ管理する必要があります。適切な EC2 レベルの保護がないと、EC2 コンソールからノードが誤って停止または終了される可能性があり、仮想マシンのデータが使用できなくなったり、データが失われたりする可能性があります。</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="doc">NetApp Workload FactoryでのAWS GovCloud（US）のサポート</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload FactoryはAWS GovCloud（US）アカウントをサポートしています。GovCloudアカウントを使用すると、AWS GovCloud（US）リージョンでストレージワークロードをデプロイおよび管理できます。</block>
+  <block id="caa606c0b1085a846c384cef14c3a17f" category="doc">EVS TCO 計算ツールにおける i7i.metal-24xl インスタンスのサポート</block>
+  <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">EVSのTCO計算ツールが、クラスターホストとしてAWS i7i.metal-24xl EC2インスタンスをサポートするようになりました。i4i.metal構成と比較すると、これらのインスタンスはEVSの初期コストをコンピューティングで約33%、vSANストレージで約25%削減します。</block>
+  <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">この計算ツールは、両方のインスタンスタイプを自動的に比較し、最も費用対効果の高いオプションを選択します。新しい比較セクションでは、EVSホストの構成を並べて表示することで、ニーズに最適な設定を簡単に見つけることができます。</block>
+  <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">EVSの推定節約額を計算する</block>
+  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
+  <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>。</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
+  <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">2026年7月6日</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026年5月31日</block>
 </blocks>

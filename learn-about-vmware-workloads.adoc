@@ -84,7 +84,11 @@ Well-architected タブは、Amazon Elastic VMware Service (EVS) 環境を毎日
 
 自動スキャンはAWS APIを使用して実行されます。vSphereの認証情報は必要ありません。検出結果は設定領域ごとに整理され、各検出結果にはステータス、重大度レベル、影響を受けるリソースの詳細、および段階的な修復手順が含まれます。
 
-link:view-evs-well-architected.html["Workload Factory で適切に設計された EVS 構成を実装する"].== コスト
+link:view-evs-well-architected.html["Workload Factory で適切に設計された EVS 構成を実装する"]。
+
+
+
+== コスト
 
 Workload Factory for VMware の使用には料金はかかりません。
 
@@ -105,7 +109,6 @@ Workload Factory は、FSx for ONTAPがサポートされているすべての�
 次の AWS リージョンはサポートされていません。
 
 * 中国地域
-* GovCloud（米国）リージョン
 * シークレットクラウド
 * トップシークレットクラウド
 
