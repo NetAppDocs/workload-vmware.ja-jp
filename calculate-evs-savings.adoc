@@ -17,6 +17,7 @@ VMware ワークロードを Amazon Elastic VMware Service (EVS) に移行する
 
 
 
+[[explore-savings-for-evs-environments]]
 == EVS 環境の節約を検討する
 
 Amazon EVS 環境への計画的な移行で潜在的な節約を検討するには、次の手順に従ってください。

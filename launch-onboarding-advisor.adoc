@@ -19,6 +19,7 @@ Workload Factory にアクセスするには、ユーザー名とパスワード
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == オンプレミスのvSphere環境を基に導入計画を作成
 
 オンプレミスのvSphere環境で現在の仮想マシン構成をVMware Cloud on AWSの仮想マシンに移行し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用できます。

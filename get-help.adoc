@@ -15,6 +15,7 @@ NetApp は、Workload Factory とそのクラウド サービスをさまざま�
 
 
 
+[[get-support-for-fsx-for-ontap]]
 == FSx for ONTAPのサポートを利用する
 
 FSx for ONTAP、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品の Workload Factory ドキュメントの「ヘルプの取得」を参照してください。
@@ -25,6 +26,7 @@ Workload Factoryおよびそのストレージソリューションおよびサ�
 
 
 
+[[use-self-support-options]]
 == セルフサポートオプションを使用します
 
 次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。
@@ -45,6 +47,7 @@ Workload Factory コミュニティに参加して、進行中のディスカッ
 
 
 
+[[create-a-case-with-netapp-support]]
 == ネットアップサポートと一緒にケースを作成します
 
 上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。
@@ -99,6 +102,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 
+[[manage-your-support-cases-preview]]
 == サポートケースの管理（プレビュー）
 
 アクティブなサポート ケースと解決済みのサポート ケースをNetAppコンソールから直接表示および管理できます。NSS アカウントおよび会社に関連付けられたケースを管理できます。

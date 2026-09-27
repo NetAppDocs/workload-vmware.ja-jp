@@ -17,6 +17,7 @@ Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し�
 
 
 
+[[requirements]]
 == 要件
 
 * Workload Factory にアクセスするには、ユーザー名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
@@ -25,6 +26,7 @@ Amazon Elastic VMware Service で仮想マシンの要件を手動で指定し�
 
 
 
+[[steps]]
 == 手順
 
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。

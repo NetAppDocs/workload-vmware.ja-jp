@@ -4,6 +4,7 @@
 
 
 
+[[migrate-to-amazon-ec2]]
 === Amazon EC2への移行
 
 VMwareのワークロードファクトリでは、VMware Migration Advisorを使用したAmazon EC2への移行がサポートされるようになりました。

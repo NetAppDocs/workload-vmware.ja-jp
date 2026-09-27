@@ -4,6 +4,7 @@
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory で新しい Ask Me ブックマークが利用可能になりました
 
 Workload Factory コンソールのすべての画面に新しい Ask Me ブックマークを追加しました。この改善により、ヘルプが必要なときにいつでも Ask Me に簡単かつ迅速にアクセスできるようになります。Ask Me は AI アシスタントであり、独自のワークロード環境について質問したり、環境から直接パーソナライズされた分析情報を取得したり、以前の会話を参照したりすることができます。

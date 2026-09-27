@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-enhancements]]
 === VMware Migration Advisorの機能拡張
 
 このリリースの Workload Factory for VMware では、機能性と安定性が強化されているほか、VMware 移行アドバイザーを使用する際に移行プランをインポートおよびエクスポートする機能も備わっています。

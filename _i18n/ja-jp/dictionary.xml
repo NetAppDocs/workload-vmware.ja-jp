@@ -614,7 +614,6 @@
   <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*: Workload Factory には、単一のブラウザベースの CLI からアカウント全体の AWS およびNetApp環境を管理および操作するための CloudShell CLI が含まれています。Workload Factory コンソールの上部バーから CloudShell にアクセスします。</block>
   <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*REST API*: Workload Factory REST API を使用して、FSx for ONTAPファイルシステムやその他の AWS リソースをデプロイおよび管理します。</block>
   <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*: AWS CloudFormation コードを使用して、Workload Factory コンソールで定義したアクションを実行し、AWS アカウントの CloudFormation スタックから AWS およびサードパーティのリソースをモデル化、プロビジョニング、管理します。</block>
-  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Terraform NetApp Workload Factory プロバイダー*: Terraform を使用して、Workload Factory コンソールで生成されたインフラストラクチャ ワークフローを構築および管理します。</block>
   <block id="62045227a15437e7b8cd0fed75ae596c" category="paragraph">Workload Factory for VMware の使用には料金はかかりません。</block>
   <block id="e61183d7f582e42cf2a5f9b7d61ac0ee" category="paragraph">移行アドバイザーの推奨に基づいてデプロイする AWS リソースに対して料金を支払う必要があります。</block>
   <block id="63f2f07c0a027b7cde1cfd93d37fcb19" category="paragraph">Workload Factory for VMware を使用するのに、 NetAppからの特別なライセンスは必要ありません。</block>
@@ -1041,7 +1040,6 @@
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">仕組み</block>
   <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory は、Amazon FSx for NetApp ONTAP ファイルシステムの導入環境で実行されているワークロードを毎日分析します。この分析により、適切に設計された状態、インサイト、および推奨事項が提供されます。</block>
   <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">日々の分析が完了すると、デプロイメントのWell-architectedダッシュボードに、構成が「最適化済み」または「最適化されていない」として表示されます。総合的な最適化スコア、カテゴリ別の構成の問題、および構成の問題と推奨事項の一覧が表示されます。構成の問題に関する推奨事項を確認できます。一部の問題はWorkload Factoryによって自動的に修正できますが、その他の問題は手動での介入が必要です。この場合、Workload Factoryは、推奨される変更を実装するのに役立つ詳細な手順を提供します。</block>
-  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">ご使用の環境に適用されない構成の分析を無視することができます。これにより、不要なアラートや不正確な最適化結果を回避できます。特定の構成分析を無視すると、Workload Factory ではその構成が全体の最適化スコアに含められません。</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">重要な理由</block>
   <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factoryは、継続的な評価と推奨事項、および修復策を組み合わせることで、大規模なストレージ、データベース、およびVMware環境にベストプラクティスを適用します。Workload Factoryコンソールで適用される自動修正により、人的ミスが削減され、統一された管理が確保され、ワークロードインフラストラクチャ全体でパフォーマンスと信頼性が維持されます。</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析要件</block>
@@ -1068,9 +1066,13 @@
   <block id="b055674b094a39e8822f5941fd1ddf8d" category="paragraph">EVSのTCO計算ツールが、クラスターホストとしてAWS i7i.metal-24xl EC2インスタンスをサポートするようになりました。i4i.metal構成と比較すると、これらのインスタンスはEVSの初期コストをコンピューティングで約33%、vSANストレージで約25%削減します。</block>
   <block id="bbc7cb1849fc26e314ad21ecd99ca5fe" category="paragraph">この計算ツールは、両方のインスタンスタイプを自動的に比較し、最も費用対効果の高いオプションを選択します。新しい比較セクションでは、EVSホストの構成を並べて表示することで、ニーズに最適な設定を簡単に見つけることができます。</block>
   <block id="0665cdd8950328e06e0db9b1e16938d3" category="inline-link-macro">EVSの推定節約額を計算する</block>
-  <block id="86271c8c1063215a7f1ff0f45240c576" category="paragraph"><block ref="86271c8c1063215a7f1ff0f45240c576" category="inline-link-macro-rx"></block></block>
   <block id="1449013968addffe716f61980587a6e9" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">コスト</block>
   <block id="b2384f97ee5bce1c28f5573e6878c9c1" category="section-title">2026年7月6日</block>
   <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026年5月31日</block>
+  <block id="034feb9138972a75bb0c4407e9663857" category="paragraph"><block ref="034feb9138972a75bb0c4407e9663857" category="inline-link-macro-rx"></block></block>
+  <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">お客様の環境に適用されない構成の分析を無視することができます。これにより、不要なアラートや不正確な最適化結果を回避できます。</block>
+  <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">カスタムルールについて詳しくはこちらをご覧ください</block>
+  <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">また、組織の標準とNetAppのベストプラクティスに照らして環境を検証するために、平易な言葉でカスタムルールを作成することもできます。ドライランでルールをテストし、各環境で実行するようにスケジュールを設定します。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraformプロバイダー*：Terraformを使用して、Workload Factoryコンソールで生成されたインフラストラクチャワークフローを構築および管理します。</block>
 </blocks>

@@ -4,6 +4,7 @@
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service-for-specific-regions]]
 === 特定のリージョンにおける Amazon Elastic VMware Service への移行によるコスト削減を計算します
 
 クラウド移行のためのさまざまな展開オプションの価値を調査し、ソリューション評価に投入された労力を最適化し、クラウドで価値と節約をもたらす可能性のあるソリューションを詳細に調査できるようになりました。

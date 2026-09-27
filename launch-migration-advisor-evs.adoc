@@ -17,6 +17,7 @@ VMware プランニング センターから Amazon EVS 移行アドバイザー
 
 
 
+[[requirements]]
 == 要件
 
 * Workload Factory にアクセスするには、ユーザー名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。説明書をご覧ください https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["ここをクリック"]。
@@ -25,6 +26,7 @@ VMware プランニング センターから Amazon EVS 移行アドバイザー
 
 
 
+[[steps]]
 == 手順
 
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。

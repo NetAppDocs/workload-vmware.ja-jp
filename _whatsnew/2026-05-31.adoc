@@ -4,6 +4,7 @@
 
 
 
+[[support-for-aws-govcloud-us-in-netapp-workload-factory]]
 === NetApp Workload FactoryでのAWS GovCloud（US）のサポート
 
 NetApp Workload FactoryはAWS GovCloud（US）アカウントをサポートしています。GovCloudアカウントを使用すると、AWS GovCloud（US）リージョンでストレージワークロードをデプロイおよび管理できます。

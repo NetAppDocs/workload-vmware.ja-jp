@@ -15,18 +15,21 @@ VMware プランニング センターを使用すると、新しい VM イン�
 
 
 
+[[manage-vm-inventory-data]]
 == VMインベントリデータの管理
 
 計画センターを使用して、VM インベントリ データを作成および管理します。
 
 
 
+[[upload-vm-inventory-data]]
 === VMインベントリデータをアップロードする
 
 Workload Factory を使用して Amazon AWS 環境への移行オプションを検討する準備ができたら、VM インベントリ データをアップロードできます。参照link:upload-vm-inventory.html["VMインベントリデータをアップロードする"]手順についてはこちらをご覧ください。
 
 
 
+[[rename-a-dataset]]
 === データセットの名前を変更する
 
 保存したデータセットの名前を変更できます。
@@ -43,6 +46,7 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 
 
+[[delete-a-dataset]]
 === データセットを削除する
 
 データセットが不要になったら、いつでも削除できます。
@@ -59,12 +63,14 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 
 
+[[manage-migration-plans]]
 == 移行計画の管理
 
 移行センターを使用して、移行計画を作成および管理します。
 
 
 
+[[provision-a-migration-plan]]
 === 移行計画をプロビジョニングする
 
 移行プランを選択してプロビジョニングすることで、VM を任意の Amazon AWS 環境に移行できます。
@@ -88,6 +94,7 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === 移行計画のコメントを編集する
 
 移行計画のコメントの詳細を変更する必要がある場合は、計画センター内からコメントを編集します。
@@ -105,6 +112,7 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === 移行計画の PDF または CSV レポートを作成する
 
 移行計画の詳細の PDF または CSV レポートを作成します。
@@ -122,6 +130,7 @@ Workload Factory を使用して Amazon AWS 環境への移行オプションを
 
 
 
+[[delete-a-migration-plan]]
 === 移行計画を削除する
 
 移行計画が不要になった場合は、いつでも削除できます。

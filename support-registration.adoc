@@ -19,6 +19,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[support-registration-overview]]
 == サポート登録の概要
 
 アカウント ID サポート サブスクリプション ( NetAppコンソールの [サポート リソース] ページにある 20 桁の 960xxxxxxxxx シリアル番号) を登録すると、単一のサポート サブスクリプション ID として機能します。各NetAppアカウント レベルのサポート サブスクリプションを登録する必要があります。
@@ -27,12 +28,14 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[register-your-account-for-netapp-support]]
 == NetAppサポートのアカウントを登録する
 
 サポートに登録し、サポート資格を有効にするには、アカウント内の 1 人のユーザーがNetAppサポート サイト アカウントをNetAppコンソール ログインに関連付ける必要があります。NetAppサポートに登録する方法は、 NetAppサポート サイト (NSS) アカウントをすでにお持ちかどうかによって異なります。
 
 
 
+[[existing-customer-with-an-nss-account]]
 === NSSアカウントをお持ちの既存のお客様
 
 NSS アカウントをお持ちのNetApp のお客様の場合は、 NetAppコンソールからサポートに登録するだけです。
@@ -59,6 +62,7 @@ NetAppコンソール ログインにNetAppサポート サイト アカウン�
 
 
 
+[[existing-customer-but-no-nss-account]]
 === NSSアカウントを持たない既存のお客様
 
 既存のNetApp顧客であり、既存のライセンスとシリアル番号を持っているものの、NSS アカウントを持っていない場合は、NSS アカウントを作成し、それをNetAppコンソール ログインに関連付ける必要があります。
@@ -75,6 +79,7 @@ NetAppコンソール ログインにNetAppサポート サイト アカウン�
 
 
 
+[[brand-new-to-netapp]]
 === ネットアップのソリューションを初めて導入する場合は
 
 ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。

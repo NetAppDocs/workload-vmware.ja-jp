@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2 Migration Advisorの機能強化
 
 NetApp Workload Factory for VMware のこのリリースでは、移行アドバイザーのエクスペリエンスがいくつか改善されています。

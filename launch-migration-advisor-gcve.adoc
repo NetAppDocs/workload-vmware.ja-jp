@@ -17,6 +17,7 @@ VMware プランニングセンターから、Google Cloud VMware Engine 移行�
 
 
 
+[[requirements]]
 == 要件
 
 * あなたにはlink:upload-vm-inventory.html["VMインベントリをアップロードしました"]。
@@ -26,6 +27,7 @@ VMware プランニングセンターから、Google Cloud VMware Engine 移行�
 
 
 
+[[steps]]
 == 手順
 
 . 次のいずれかを使用してWorkload Factoryにログインします。 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["コンソールエクスペリエンス"^] 。
@@ -43,6 +45,7 @@ VMware プランニングセンターから、Google Cloud VMware Engine 移行�
 
 
 
+[[configure-migration-preferences]]
 === 移行設定を構成する
 
 . _VM 構成のアップロード_ セクションで、移行計画の作成に使用しているデータセットに関する情報を確認します。  *VM インベントリ サマリー* セクションは、VM の数と合計ストレージ容量を反映してインベントリ ファイルから入力されます。
@@ -96,6 +99,7 @@ NOTE: 20% 未満のヘッドルームを選択した場合、スナップショ�
 
 
 
+[[select-a-cluster-configuration]]
 === クラスタ構成を選択する
 
 . *優先する Google Cloud VMware Engine クラスタ構成を選択*ページで、Google Cloud VMware Engine クラスタの設定を行い、推奨される構成を確認します。
@@ -128,6 +132,7 @@ NOTE: 20% 未満のヘッドルームを選択した場合、スナップショ�
 
 
 
+[[select-a-vm-layout]]
 === VMレイアウトを選択
 
 . *自動 VM 選択*ページで、必要な外部ストレージ容量と設定に基づいて自動的に選択された最適な仮想マシンレイアウトを確認します。
@@ -172,6 +177,7 @@ NOTE: VM の選択を手動で変更した場合は、* Reset * を選択して�
 
 
 
+[[review-nfs-datastore-assignments]]
 === NFSデータストアの割り当てを確認する
 
 . *インスタンスストアの割り当ての確認*ページで、詳細なデータストアレイアウトとVMの割り当てを確認します。
@@ -231,6 +237,7 @@ NOTE: VM の選択を手動で変更した場合は、* Reset * を選択して�
 
 
 
+[[review-and-save-your-deployment-plan]]
 === 導入計画を確認して保存する
 
 . *移行計画の確認*ページで、展開計画を確認してカスタマイズしてから保存します。

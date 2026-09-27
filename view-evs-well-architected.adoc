@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: view-evs-well-architected.html 
-keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Workload Factory で EVS 構成の well-architected ステータスを確認し、AWS と NetApp のベストプラクティスに基づく修復ガイダンスに従います。 
 ---
 = 適切に設計されたEVS構成を実装する
@@ -15,6 +15,7 @@ Workload Factory 構成分析を使用して、Amazon Elastic VMware Service（E
 
 
 
+[[about-this-task]]
 == タスク概要
 
 AWS APIを使用して、検出されたすべてのEVS環境を毎日自動スキャンし、EVS設定を分析して、可用性、回復力、セキュリティ、またはコスト最適化に影響を与える可能性のある潜在的な問題を特定します。検出結果は設定領域ごとに整理され、各検出結果にはステータス、重大度レベル、影響を受けるリソースの詳細、および段階的な修復手順が含まれます。
@@ -29,6 +30,7 @@ AWS APIを使用して、検出されたすべてのEVS環境を毎日自動ス�
 
 
 
+[[understanding-well-architected-insights]]
 === 適切に設計されたインサイトを理解する
 
 Well-architected タブには次の内容が表示されます：
@@ -43,6 +45,7 @@ Well-architected タブには次の内容が表示されます：
 
 
 
+[[scan-frequency]]
 === スキャン頻度
 
 検出されたすべてのEVS構成に対して、Well-Architectedスキャンが自動的に実行されます。スキャンスケジュールに関する主な詳細：
@@ -58,6 +61,7 @@ NOTE: Well-Architectedスキャンのオンデマンド実行は現在サポー�
 
 
 
+[[before-you-begin]]
 == 開始する前に
 
 *  https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS認証情報を追加しました"^]VMware ワークロードに対する _表示、計画、および分析_ 権限を持っている必要があります。
@@ -66,6 +70,7 @@ NOTE: Well-Architectedスキャンのオンデマンド実行は現在サポー�
 
 
 
+[[access-the-well-architected-status-tab]]
 == Well-Architected ステータス タブにアクセスする
 
 .手順
@@ -89,10 +94,12 @@ NOTE: Well-Architectedスキャンのオンデマンド実行は現在サポー�
 
 
 
+[[view-well-architected-assessments]]
 == Well-Architected の評価を表示
 
 
 
+[[cluster-node-management]]
 === クラスターノード管理
 
 これにより、EVS クラスターノードに適切な EC2 停止および終了保護が設定されているかどうかが評価されます。
@@ -137,6 +144,7 @@ EVS ESXiノードはvCenter、またはその他のVMwareレベルの管理ツ�
 
 
 
+[[evs-environment-resiliency]]
 === EVS環境の回復力
 
 これは、EVS クラスター ノードがパーティション配置グループ全体に適切に分散されているかどうかを評価します。
@@ -193,6 +201,7 @@ EVS 環境を作成または拡張する場合は、4 つ以上のパーティ�
 
 
 
+[[whats-next]]
 == 次の手順
 
 適切に設計された洞察を確認し、推奨される変更を実装した後：
