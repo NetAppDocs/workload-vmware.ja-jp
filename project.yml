@@ -74,6 +74,8 @@ sidebar:
       url: "/view-evs-well-architected.html"
   - title: 知識とサポート
     entries:
+    - title: NetApp Workload Factory for VMwareのよくある質問
+      url: "/faq-workload-factory-vmware.html"
     - title: サポートに登録します
       url: "/support-registration.html"
     - title: ヘルプを表示します

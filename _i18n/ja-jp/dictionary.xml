@@ -42,8 +42,6 @@
   <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。SDDCには、VPCピアリング機能を使用してFSx for ONTAPファイルシステムに接続し、外部NFSストレージボリュームへのネットワーク接続を拡張するためのネットワークオプションが用意されています。</block>
   <block id="07413029412abf4b07d59a7418a48d98" category="doc">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
   <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。Software-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。</block>
-  <block id="36789903991e7a805b64dce62ee3cb41" category="inline-link">詳細については、Amazon VPCピアリングドキュメントを参照</block>
-  <block id="3f44cc30db3785a317875ea3b608f92d" category="paragraph"><block ref="3f44cc30db3785a317875ea3b608f92d" category="inline-link-rx"></block></block>
   <block id="35e4dc1372c9892d7d45c118016255bf" category="paragraph">次の図は、VPCピアリングを使用して、単一のアベイラビリティゾーン（AZ）SDDCクラスタをFSx for ONTAPシングルAZ環境に接続する方法を示しています。</block>
   <block id="40c5156ee08f8bf4b4ba3c18de0844d9" category="inline-image-macro">VPCピアリングを使用して、シングルAZ SDDCクラスタをFSx for ONTAPシングルAZ環境に接続する方法を示す図。</block>
   <block id="9d06593ee15f520ce9a945a1bbad4daf" category="paragraph"><block ref="9d06593ee15f520ce9a945a1bbad4daf" category="inline-image-macro-rx" type="image"></block></block>
@@ -1075,4 +1073,48 @@
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">カスタムルールについて詳しくはこちらをご覧ください</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">また、組織の標準とNetAppのベストプラクティスに照らして環境を検証するために、平易な言葉でカスタムルールを作成することもできます。ドライランでルールをテストし、各環境で実行するようにスケジュールを設定します。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
   <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraformプロバイダー*：Terraformを使用して、Workload Factoryコンソールで生成されたインフラストラクチャワークフローを構築および管理します。</block>
+  <block id="b1980e2ec22c1bd0d98ba755ec8c6e01" category="inline-link">VMware Cloud on AWS環境でのAmazon FSx for NetApp ONTAPのVPCピアリングについて読む</block>
+  <block id="0ced83efbc83d6325bf854e3d9ff902a" category="paragraph"><block ref="0ced83efbc83d6325bf854e3d9ff902a" category="inline-link-rx"></block></block>
+  <block id="38c274fda05ac23bc0c0e3ae43dd64a4" category="summary">VMware移行計画およびWell-Architected分析向けNetApp Workload Factoryに関するよくある質問。</block>
+  <block id="921197c062d49527e44f758465813b42" category="doc">NetApp Workload Factory for VMwareのよくある質問</block>
+  <block id="9c5f05ee10a27623a15b9e8038e413b7" category="paragraph">このFAQでは、VMware向けNetApp Workload Factoryに関するよくある質問にお答えします。本書は、VMwareワークロードの移行を評価または準備する際に役立つ、移行計画の概念、インベントリ、ストレージ、コスト、サポート対象リージョン、およびEVS分析に焦点を当てています。</block>
+  <block id="d437e7d8b6513f91bbd58e0b1e08c90b" category="section-title">移行計画</block>
+  <block id="68a48fbb2af3e6d7bde13f9b79c1c9b7" category="paragraph-title">VMware 向け NetApp Workload Factory はどのようなことに役立ちますか？</block>
+  <block id="7abe51b29673391c62dbf3f8749ad887" category="paragraph">オンプレミスのVMware VM構成を分析し、クラウド環境への移行計画を作成するためのプランニングセンターと移行アドバイザーを提供します。プランニングセンターでは、保存済みのVMインベントリデータセットとプランを管理できます。</block>
+  <block id="22f263390246a9c39cabb176ef631aad" category="paragraph-title">どのような移行先や外部ストレージオプションを想定すればよいでしょうか？</block>
+  <block id="e639c5502f615dfde1d0c499a1d62172" category="paragraph">アドバイザーは以下の計画策定を支援します：</block>
+  <block id="0adfc65f94dcc3f5f21a413837937795" category="list-text">*Amazon EVS、Amazon EC2、およびVMware Cloud on AWS*：Amazon FSx for NetApp ONTAP外部データストア。</block>
+  <block id="814f242de9ef1ad90bde17a1732e1275" category="list-text">*Google Cloud VMware Engine*：Google Cloud NetApp Volumes外部NFSデータストア。</block>
+  <block id="a3f6e39522270495b7ade2db49e36aff" category="inline-link-macro">Amazon EVS</block>
+  <block id="c421d122321bec48d6b30858f4e7b515" category="inline-link-macro">Amazon EC2</block>
+  <block id="4dab2f9796b0af6304d00e21e2b9dfb4" category="inline-link-macro">VMware Cloud on AWS</block>
+  <block id="8cb69aa5b1609d0a39f0fcd576c07df6" category="inline-link-macro">Google Cloud VMware Engine</block>
+  <block id="1c262301540de33d6756655a686ed5b9" category="paragraph">各ターゲットの詳細については、<block ref="9c2b1296fd4e6905a5138236d0b63e57" category="inline-link-macro-rx"></block>、<block ref="b56ba05800e5da500ec14669dcbe24fe" category="inline-link-macro-rx"></block>、<block ref="dbdf5d8b354615c538eac17b1cb7ef66" category="inline-link-macro-rx"></block>、および<block ref="1604998c59575416bb03744d61eab4a1" category="inline-link-macro-rx"></block>の移行アドバイザーのトピックを参照してください。</block>
+  <block id="5ad7d3b807f99b46f69658ed88815e6d" category="paragraph-title">移行アドバイザーは、計画を作成する際にどのような点を考慮しますか？</block>
+  <block id="e2145d872370b5ed7066380746bb8ac4" category="paragraph">アドバイザーは、VM構成を分析し、移行するVMの決定を支援し、クラウドネイティブな外部データストアに必要な容量を見積もり、導入計画を提示します。ターゲット固有のオプションには、VMの選択、容量と保護に関する設定、ストレージの割り当てなどが含まれます。</block>
+  <block id="a0d2df962201e828aaf8c55a8a8fcb4a" category="paragraph-title">Workload Factoryは、すべての移行対象に対して推奨されるリソースをプロビジョニングできますか？</block>
+  <block id="94985dfc0712efb12dc10d8fa2fc5e54" category="paragraph">Workload Factoryは、Amazon EC2、Amazon EVS、およびVMware Cloud on AWSへのデプロイをサポートしています。Google Cloud VMware Engineの場合、このプランでは、Terraform環境にGoogle Cloud NetApp Volumes NFSデータストアをプロビジョニングするためのTerraformコードが生成されます。<block ref="4f67d9858e997a397a4969c6aa8fe655" category="inline-link-macro-rx"></block>、<block ref="6667ebc08e629643a12f3b7485d0395c" category="inline-link-macro-rx"></block>、および<block ref="333d1147dd4e020c07f15b6f692fcc0e" category="inline-link-macro-rx"></block>のデプロイプランのトピックを参照してください。</block>
+  <block id="6318da2d496e169f337afd4ff402526c" category="paragraph-title">外部データストアはVMwareストレージとどのように連携するのでしょうか？</block>
+  <block id="15e3eaa8417738fa9506f66df80fc23b" category="paragraph">FSx for ONTAPまたはGoogle Cloud NetApp Volumesは、vSANストレージを補完できるNFSデータストアを提供します。このストレージはコンピューティングとは独立して拡張できるため、ホストを追加することなくストレージを増やすことができます。</block>
+  <block id="55d66ec039b75fc2759a50f781a06ed7" category="section-title">VMインベントリ</block>
+  <block id="a24d65bece3aee2663d885c0a64e92a7" category="paragraph-title">移行計画に利用できるVMインベントリソースは何ですか？</block>
+  <block id="f9af019e9f1c862aee89fe05ceb9591a" category="paragraph">インベントリは、RVTools、Workload Factory VMコレクタースクリプト、またはNetApp Data Infrastructure Insightsから提供できます。RVToolsはVM構成情報を取得します。コレクターは現在のVMパフォーマンスデータも取得でき、Data Infrastructure InsightsはAPI通信を通じてインフラ情報を提供します。詳細については、<block ref="31e8e3bc37bd2e1bade95d88393c52bb" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="7afee89e1a9e2debd08db073ec3934d9" category="paragraph-title">RVToolsではなくVMコレクターを選択する理由は何でしょうか？</block>
+  <block id="be43335cbb078eb76cc8d740b569e465" category="inline-link-macro">VM構成をキャプチャする</block>
+  <block id="d3e4b204e59f5a98d1ebcceda70307fc" category="paragraph">コレクターは、VM構成に加え、現在の読み取りおよび書き込みIOPSとスループットの統計情報を取得し、より正確な計画策定を支援します。RVToolsは構成情報を取得しますが、パフォーマンス統計情報は提供しません。詳細については、<block ref="adf5172dac9e3bdd5d6cd83ffca17ea5" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="8fed66a0c40dda072c94d458c872ef62" category="section-title">費用と可用性</block>
+  <block id="20fdf4b8688f4afc30202991997b4c2e" category="paragraph-title">Workload Factory for VMwareを使用するには料金がかかりますか？また、NetAppライセンスは必要ですか？</block>
+  <block id="341d2dffce381e61275067753696f7b6" category="paragraph">Workload Factory for VMwareの使用に費用はかからず、特別なNetAppライセンスも必要ありません。アドバイザーの推奨に基づいてデプロイしたAWSリソースに対して料金が発生します。</block>
+  <block id="765b05cb563da6f40d663d2593d0c763" category="paragraph-title">Workload Factory for VMwareでは、どのAWSリージョンを使用できますか？</block>
+  <block id="086cdec2519a73cf27a8a12e453eab47" category="inline-link">サポートされているAmazonリージョン</block>
+  <block id="448e3e4c660376567a40289818c91d91" category="paragraph">Workload Factory は、FSx for ONTAP がサポートされている商用リージョンでサポートされています。中国リージョン、シークレットクラウド、トップシークレットクラウドはサポートされていません。現在の AWS リージョンの利用可能状況については、<block ref="809309708af46b9486c52391ea92f7d9" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="7f68e2bc2b8cbb72e6a5018e54563f19" category="paragraph-title">EVSの節約計算ツールから何がわかりますか？</block>
+  <block id="051af7bcf03c0c0d23d599186c282824" category="inline-link-macro">EVSの節約額を計算する</block>
+  <block id="4277946ad96fa77ee168524d39d3e1f0" category="paragraph">この計算ツールは、FSx for ONTAPを使用した場合と使用しない場合の潜在的なEVSコストを比較します。地域、物理CPU、物理メモリ、VMストレージ、およびEVS課金プランごとに見積もりを調整できます。FSx for ONTAPが最も対費用効果の高いストレージとして特定された場合、詳細な評価を作成できます。<block ref="778cca21f3f5bbf5509fd7145d83f99e" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="ba77922ef9e1baa3033e9b990b664a40" category="section-title">EVSの優れたアーキテクチャ分析</block>
+  <block id="f57cca92e666a3209a8832215b03ddf0" category="paragraph-title">EVSの優れたアーキテクチャ分析では、どのような点をチェックするのですか？</block>
+  <block id="6afd14ee08adf3254ece642e2de1a862" category="paragraph">検出されたEVS環境を分析し、信頼性とセキュリティに関する所見を収集します。文書化されたチェック項目は、クラスタノードの回復力のためのパーティション配置グループの分散と、EC2の停止および終了保護を評価します。調査結果には、状況、深刻度、影響を受けたリソース、および修復に関するガイダンスが含まれます。<block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="92cf0e18866b04760e70a131cb85dfe9" category="paragraph-title">EVSのWell-Architected分析はどのくらいの頻度で実行され、どのようなアクセス権限が必要ですか？</block>
+  <block id="dfd41ab037a25f5c2fce16d5ee27e400" category="inline-link-macro">EVSの優れたアーキテクチャ分析要件</block>
+  <block id="dff9e7d880dfe3330c2697a30f505e01" category="paragraph">検出されたEVS構成は、AWS APIを使用して1日1回自動的にスキャンされます。vSphereの認証情報とvCenterの接続は不要です。VMwareワークロードに対する表示、計画、分析の権限を持つAWS認証情報と、少なくとも1つの検出されたEVS環境が必要です。詳細については、<block ref="49902b356d6c7776da8fe31c598cd788" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>

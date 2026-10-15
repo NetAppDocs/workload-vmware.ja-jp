@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: faq-workload-factory-vmware.html 
+keywords: faq, frequently asked questions, frequently asked questions about netapp workload factory for vmware, workload factory for vmware, vmware migration advisors, amazon evs, amazon ec2, vmware cloud on aws, google cloud vmware engine, fsx for ontap, google cloud netapp volumes, evs well-architected analysis 
+summary: VMware移行計画およびWell-Architected分析向けNetApp Workload Factoryに関するよくある質問。 
+---
+= NetApp Workload Factory for VMwareのよくある質問
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+このFAQでは、VMware向けNetApp Workload Factoryに関するよくある質問にお答えします。本書は、VMwareワークロードの移行を評価または準備する際に役立つ、移行計画の概念、インベントリ、ストレージ、コスト、サポート対象リージョン、およびEVS分析に焦点を当てています。
+
+
+
+[[migration-planning]]
+== 移行計画
+
+.VMware 向け NetApp Workload Factory はどのようなことに役立ちますか？
+オンプレミスのVMware VM構成を分析し、クラウド環境への移行計画を作成するためのプランニングセンターと移行アドバイザーを提供します。プランニングセンターでは、保存済みのVMインベントリデータセットとプランを管理できます。
+
+.どのような移行先や外部ストレージオプションを想定すればよいでしょうか？
+アドバイザーは以下の計画策定を支援します：
+
+* *Amazon EVS、Amazon EC2、およびVMware Cloud on AWS*：Amazon FSx for NetApp ONTAP外部データストア。
+* *Google Cloud VMware Engine*：Google Cloud NetApp Volumes外部NFSデータストア。
+
+
+各ターゲットの詳細については、link:launch-migration-advisor-evs.html["Amazon EVS"]、link:launch-onboarding-advisor-native.html["Amazon EC2"]、link:launch-onboarding-advisor.html["VMware Cloud on AWS"]、およびlink:launch-migration-advisor-gcve.html["Google Cloud VMware Engine"]の移行アドバイザーのトピックを参照してください。
+
+.移行アドバイザーは、計画を作成する際にどのような点を考慮しますか？
+アドバイザーは、VM構成を分析し、移行するVMの決定を支援し、クラウドネイティブな外部データストアに必要な容量を見積もり、導入計画を提示します。ターゲット固有のオプションには、VMの選択、容量と保護に関する設定、ストレージの割り当てなどが含まれます。
+
+.Workload Factoryは、すべての移行対象に対して推奨されるリソースをプロビジョニングできますか？
+Workload Factoryは、Amazon EC2、Amazon EVS、およびVMware Cloud on AWSへのデプロイをサポートしています。Google Cloud VMware Engineの場合、このプランでは、Terraform環境にGoogle Cloud NetApp Volumes NFSデータストアをプロビジョニングするためのTerraformコードが生成されます。link:deploy-fsx-file-system-native.html["Amazon EC2"]、link:deploy-fsx-file-system-evs.html["Amazon EVS"]、およびlink:deploy-fsx-file-system.html["VMware Cloud on AWS"]のデプロイプランのトピックを参照してください。
+
+.外部データストアはVMwareストレージとどのように連携するのでしょうか？
+FSx for ONTAPまたはGoogle Cloud NetApp Volumesは、vSANストレージを補完できるNFSデータストアを提供します。このストレージはコンピューティングとは独立して拡張できるため、ホストを追加することなくストレージを増やすことができます。
+
+
+
+[[vm-inventory]]
+== VMインベントリ
+
+.移行計画に利用できるVMインベントリソースは何ですか？
+インベントリは、RVTools、Workload Factory VMコレクタースクリプト、またはNetApp Data Infrastructure Insightsから提供できます。RVToolsはVM構成情報を取得します。コレクターは現在のVMパフォーマンスデータも取得でき、Data Infrastructure InsightsはAPI通信を通じてインフラ情報を提供します。詳細については、link:upload-vm-inventory.html["VMインベントリデータをアップロードする"]を参照してください。
+
+.RVToolsではなくVMコレクターを選択する理由は何でしょうか？
+コレクターは、VM構成に加え、現在の読み取りおよび書き込みIOPSとスループットの統計情報を取得し、より正確な計画策定を支援します。RVToolsは構成情報を取得しますが、パフォーマンス統計情報は提供しません。詳細については、link:capture-vm-configurations.html["VM構成をキャプチャする"]を参照してください。
+
+
+
+[[costs-and-availability]]
+== 費用と可用性
+
+.Workload Factory for VMwareを使用するには料金がかかりますか？また、NetAppライセンスは必要ですか？
+Workload Factory for VMwareの使用に費用はかからず、特別なNetAppライセンスも必要ありません。アドバイザーの推奨に基づいてデプロイしたAWSリソースに対して料金が発生します。
+
+.Workload Factory for VMwareでは、どのAWSリージョンを使用できますか？
+Workload Factory は、FSx for ONTAP がサポートされている商用リージョンでサポートされています。中国リージョン、シークレットクラウド、トップシークレットクラウドはサポートされていません。現在の AWS リージョンの利用可能状況については、 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["サポートされているAmazonリージョン"^]を参照してください。
+
+.EVSの節約計算ツールから何がわかりますか？
+この計算ツールは、FSx for ONTAPを使用した場合と使用しない場合の潜在的なEVSコストを比較します。地域、物理CPU、物理メモリ、VMストレージ、およびEVS課金プランごとに見積もりを調整できます。FSx for ONTAPが最も対費用効果の高いストレージとして特定された場合、詳細な評価を作成できます。link:calculate-evs-savings.html["EVSの節約額を計算する"]を参照してください。
+
+
+
+[[evs-well-architected-analysis]]
+== EVSの優れたアーキテクチャ分析
+
+.EVSの優れたアーキテクチャ分析では、どのような点をチェックするのですか？
+検出されたEVS環境を分析し、信頼性とセキュリティに関する所見を収集します。文書化されたチェック項目は、クラスタノードの回復力のためのパーティション配置グループの分散と、EC2の停止および終了保護を評価します。調査結果には、状況、深刻度、影響を受けたリソース、および修復に関するガイダンスが含まれます。link:view-evs-well-architected.html["Workload Factory で適切に設計された EVS 構成を実装する"]を参照してください。
+
+.EVSのWell-Architected分析はどのくらいの頻度で実行され、どのようなアクセス権限が必要ですか？
+検出されたEVS構成は、AWS APIを使用して1日1回自動的にスキャンされます。vSphereの認証情報とvCenterの接続は不要です。VMwareワークロードに対する表示、計画、分析の権限を持つAWS認証情報と、少なくとも1つの検出されたEVS環境が必要です。詳細については、link:view-evs-well-architected.html["EVSの優れたアーキテクチャ分析要件"]を参照してください。
