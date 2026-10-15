@@ -4,7 +4,7 @@ permalink: upload-vm-inventory.html
 keywords: vm workloads, capture vm details 
 summary: プランニング センターを使用して、現在の VMware 環境に関する情報をアップロードできます。 
 ---
-= VMインベントリデータをNetApp Workload Factoryにアップロードする
+= VMインベントリデータをWorkload Factory for VMwareにアップロードする
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: view-evs-well-architected.html
 keywords: evs, well-architected, best practices, recommendations, security, resiliency 
 summary: Workload Factory で EVS 構成の well-architected ステータスを確認し、AWS と NetApp のベストプラクティスに基づく修復ガイダンスに従います。 
 ---
-= 適切に設計されたEVS構成を実装する
+= VMware向けWorkload Factoryで、適切に設計されたEVSの調査結果を確認する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

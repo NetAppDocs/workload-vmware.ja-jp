@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: VMware移行アドバイザを利用して、外部NFSデータストアとしてAmazon FSx for ONTAPを使用し、現在のインフラをAmazon EC2に移行しましょう。 
 ---
-= VMware Workloads Migration Advisorを使用してAmazon EC2に移行するためのクイックスタート
+= Amazon EC2移行のクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

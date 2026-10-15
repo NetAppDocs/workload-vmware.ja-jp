@@ -38,7 +38,6 @@
   <block id="1abe5a39abd90cfac9ffa06b90b781c1" category="inline-link">RVToolsのマニュアル</block>
   <block id="67ec8486a529d78b43140379c2ad7aff" category="paragraph">結果を含むxlsxまたはxlsファイルが作業ディレクトリに保存されます。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
-  <block id="a178c2b3af2dda868c902f74b1f1d2a0" category="inline-link-macro">移行アドバイザを使用して導入計画を作成</block>
   <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。SDDCには、VPCピアリング機能を使用してFSx for ONTAPファイルシステムに接続し、外部NFSストレージボリュームへのネットワーク接続を拡張するためのネットワークオプションが用意されています。</block>
   <block id="07413029412abf4b07d59a7418a48d98" category="doc">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
   <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">FSx for ONTAPファイルシステムを導入したら、そのシステムをVMware Cloud on AWSインフラに接続する必要があります。Software-Defined Data Center（SDDC）には、VPCピアリング機能を使用して外部NFSストレージボリュームへのネットワーク接続を拡張し、FSx for ONTAPファイルシステムに接続するためのネットワークオプションが用意されています。</block>
@@ -233,7 +232,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">VMware Hybrid Cloud Extensionなどのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXコア機能を使用すると、オンプレミスのデータセンターからSDDCにワークロードを透過的に移行できます。</block>
-  <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">新しいインフラへのデータ移行</block>
   <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">VMware Hybrid Cloud Extension（HCX）などのツールを使用して、古い仮想マシンストレージから、新しい仮想マシンに接続されているFSx for NetApp ONTAPボリュームにデータを移動できます。VMware HCXのコア機能を使用すると、オンプレミスのデータセンターからSoftware-Defined Data Center（SDDC）にワークロードを透過的に移行できます。</block>
   <block id="5944c69245ff8965d3ea01f690fb5c93" category="paragraph">VMware Cloud on AWSとAmazon FSx for NetApp ONTAPの外部データストアにデータを移行したので、FSx for ONTAPファイルシステム上の重要なデータをバックアップして保護し、データを常に利用できるようにすることができます。</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Amazon FSX for NetApp ONTAP のドキュメント</block>
@@ -294,11 +292,7 @@
   <block id="9bab53a02593423437540c8ac9802fde" category="paragraph">初期リリースには、VMware Migration Advisorを使用してオンプレミスのvSphere環境で現在の仮想マシン構成を分析し、推奨されるVMレイアウトをVMware Cloud on AWSに導入し、カスタマイズしたAmazon FSx for NetApp ONTAPファイルシステムを外部データストアとして使用するための計画を生成する機能が含まれています。</block>
   <block id="1a61f87dd9021f3f5868a4a4418a6116" category="sidebar">オンプレミスのvSphere環境からVMware Cloud on AWSへの移行を合理化し、カスタマイズしたFSx for ONTAPファイルシステムを外部データストアとして実装します。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
-  <block id="1a686aeebb374b70871c49c0a3a9e04d" category="sidebar">FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続</block>
-  <block id="114262d24985ba4272fb41b60a7a9b81" category="sidebar">VMwareワークロードのドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新機能</block>
-  <block id="48b99c17fb09e3417fa2dfdd982e21b8" category="sidebar">FSx for ONTAPをVMware Cloud on AWSに接続</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="b315d9d256afa359134156c4a3ba121a" category="list-text">Migration AdvisorのVMコレクタ（.csvファイル）またはRVTools（.xlsxファイル）を使用して、既存のシステムからインベントリファイルを作成しておく必要があります。</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">Amazon EC2への移行</block>
@@ -326,11 +320,7 @@
   <block id="d645e6b9cc715485914696dcaeed7e40" category="paragraph">VMware Migration Advisorを起動し、Amazon FSx for ONTAPファイルシステムを外部NFSデータストアとして使用して、Amazon EC2インフラに移行するVMを選択します。計画を保存する前に、いくつかの変更を行うことができます。</block>
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>です。</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">Amazon EC2インフラ内のVMにデータストアを提供する新しいFSx for ONTAPファイルシステムを導入します。</block>
-  <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">クイックスタート：VMware Cloud on AWSへの移行</block>
-  <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">クイックスタート：Amazon EC2への移行</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">VMware Cloud on AWSへの移行</block>
-  <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">クイックスタートガイド：VMware Cloud on AWSへの移行</block>
-  <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">Amazon EC2への移行のクイックスタート</block>
   <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware Migration Advisorの機能拡張</block>
   <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
   <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">以下の情報を確認して、Migration Advisorのメリットを確認してください。</block>
@@ -360,13 +350,7 @@
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">[分類]ページで、VM情報、ボリューム分類ルール、ボリュームの割り当て、導入時にマイグレートするボリュームのリストを確認し、*[次へ]*を選択します。</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">[パッケージ]ページで、EC2インスタンスと異なるFSx for ONTAPクラスタに割り当てられているボリュームを確認し、*[次へ]*を選択します。</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">[Review plan（計画の確認）]ページで、移行を計画しているすべてのVMの予測される月単位の削減量とコストの見積もりを確認します。</block>
-  <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">VMwareワークロードを使用してAmazon EC2に移行する前に、VM構成をキャプチャ</block>
-  <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">VMwareワークロードを使用してVMware Cloudに移行する前に、VM構成をキャプチャ</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">VMwareワークロードの導入推奨されるFSx for ONTAPファイルシステム</block>
-  <block id="d426ad1d2770909e76d9ec998753048e" category="doc">VMware Workloads Migration Advisorを使用してAmazon EC2の導入計画を作成</block>
-  <block id="9aed60fda8e95affae05b540b6cbe03a" category="doc">VMware Workloads Migration Advisorを使用して、VMware Cloud on AWSの導入計画を作成</block>
-  <block id="09bf5c9e5640bf75b6e024bb49783cc9" category="doc">VMware Workloads Migration Advisorを使用してAmazon EC2に移行するためのクイックスタート</block>
-  <block id="ecdd552e8f9e5da2a61e6db8b8030056" category="doc">VMware Workloads Migration Advisorを使用してVMware Cloud on AWSに移行するためのクイックスタートガイド</block>
   <block id="246fd576936aa6a7e609ed87c073c207" category="paragraph">「データ収集の詳細」セクションには、Onboarding Advisorデータコレクタを使用して収集されたデータの日付範囲と時間数が表示されます。</block>
   <block id="43edfc2e70d40761eafc22f44f15e60a" category="paragraph">インベントリファイルの*[VM inventory summary]*セクションに、VMの数と合計ストレージ容量が入力されます。</block>
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">[Scope]*ページで、AWS移行に含めるVMをリストから選択します。各VMの電源状態、およびVMが配置されているデータセンターとクラスタでリストをフィルタリングできます。</block>
@@ -444,12 +428,10 @@
   <block id="024245b5e6c75ae114dc398c5ca73ae7" category="list-text">計画をレビューします。各セクションを展開すると、プランの詳細が表示されます。</block>
   <block id="a081cf5b640f454f47679c388f6530d7" category="list-text"><block ref="844d6e67804ecd2d3cf898790362c9e5" category="inline-link-macro-rx"></block>です。</block>
   <block id="c0c3ffedc4190adc07720bcef4541cf4" category="summary">VMware 移行アドバイザーを使用して、Amazon FSx for ONTAP を外部 NFS データストアとして使用し、現在のインフラストラクチャを Amazon EVS に移行しましょう。</block>
-  <block id="97735cf08bc8cd1817cf2dbadd06154d" category="doc">VMware ワークロード移行アドバイザーを使用した Amazon EVS への移行のクイックスタート</block>
   <block id="78522cc7fdf910d1c768be65dab81580" category="paragraph">VMware 移行アドバイザーを起動し、Amazon FSx for ONTAP ファイルシステムを外部 NFS データストアとして使用して、Amazon Elastic VMWare Service インフラストラクチャ上に作成する VM 環境を手動で設定します。</block>
   <block id="c62281747a6b17066b21d48dd60f5008" category="paragraph"><block ref="9e8ee83580ea37ccc569fc72280596e1" category="inline-link-macro-rx"></block>です。</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
-  <block id="e4358de2a09588cec13214adc031a6e1" category="sidebar">Amazon EVS への移行クイックスタート</block>
   <block id="b217f7353b9ad5ed58a9d5b9ee531f78" category="sidebar">Amazon Elastic VMware Service への移行</block>
   <block id="424013c53fd9187a66e051bb44ddaa34" category="doc">Amazon Elastic VMWare Service の移行アドバイザーのサポートが強化されました</block>
   <block id="93c34ab13f70b21f6935de45dacb9ae3" category="section-title">Amazon Elastic VMware Service への移行によるコスト削減額を計算する</block>
@@ -472,8 +454,6 @@
   <block id="83fcfa0f731c9eadc58dd7b0bbe13131" category="paragraph">このリージョンで Amazon EVS が利用できない場合、またはアカウントに利用可能なシークレット ARN のリストを取得する権限がない場合は、シークレット ARN 値を手動で入力できます。</block>
   <block id="a2e98ef8c2ce2e5671fe4097dbf5f4ce" category="section-title">2025年8月3日</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025年3月2日</block>
-  <block id="bb0d319ea44614c003c0a5e9c6e4f1a6" category="sidebar">クイックスタート: Amazon Elastic VMware Service への移行</block>
-  <block id="cf48d7891f28d92c4308fb5debb574b0" category="sidebar">節約方法を見る</block>
   <block id="e34fc91d682ebcf23e9732294872ca80" category="doc">VMware向けWorkload Factoryの初期リリース</block>
   <block id="bdcdfcdfcb9e0d2084c9c9ff58163d0b" category="paragraph">このリリースの Workload Factory for VMware では、機能性と安定性が強化されているほか、VMware 移行アドバイザーを使用する際に移行プランをインポートおよびエクスポートする機能も備わっています。</block>
   <block id="bd926a6dc82c9eb9135d58e6c5a33568" category="paragraph">NetApp Workload Factory for VMware のこのリリースでは、移行アドバイザーのエクスペリエンスがいくつか改善されています。</block>
@@ -625,7 +605,6 @@
   <block id="262fa4a3da671ed4e99add58ab265149" category="doc">NetApp Workload Factory for VMware に関する法的通知</block>
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetAppワークロード ファクトリー</block>
   <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
-  <block id="734e5b74e7595424d4721589d572eda7" category="doc">NetApp Workload Factory for VMware を使用してデータを新しいインフラストラクチャに移行します</block>
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>ワークロードファクトリーにログイン</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">Workload Factoryでアカウントを設定する</block>
   <block id="8af94ef3a55ab31e78f60c3968ecc4e3" category="paragraph">必要となるのは<block ref="c1e10d5d77d21feb199911d5a4450d55" category="inline-link-rx"></block>次のいずれかを使用してログインします<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
@@ -635,7 +614,6 @@
   <block id="527322d1ebf3079ca1f474c5e3c8d4dc" category="paragraph"><block ref="3f004e021dfd1da14c955ee4e1d0ba17" category="inline-link-macro-rx"></block> 。</block>
   <block id="465e05b02c4091132dffd8661fead178" category="paragraph"><block ref="3aea27ccdadee3f33be0c6643a1fec67" category="inline-link-macro-rx"></block> 。</block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">NetAppテクニカル サポートでサポート ケースを開く前に、 NetAppサポート サイト アカウントを Workload Factory に追加し、サポートに登録する必要があります。</block>
-  <block id="321b853ccb62a088abe07117978e5b31" category="doc">NetApp Workload Factory for VMware のサポートに登録する</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">NetApp Workload Factory とそのストレージ ソリューションおよびサービスに固有のテクニカル サポートを受けるには、サポート登録が必要です。Workload Factory とは別の Web ベースのコンソールであるNetAppコンソールからサポートに登録する必要があります。</block>
   <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">サポートに登録しても、クラウド プロバイダー ファイル サービスに対するNetAppサポートは有効になりません。クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品の Workload Factory ドキュメントの「ヘルプの取得」を参照してください。</block>
   <block id="eb803e55617f13b716b5e56642cce2b0" category="paragraph">アカウント ID サポート サブスクリプション ( NetAppコンソールの [サポート リソース] ページにある 20 桁の 960xxxxxxxxx シリアル番号) を登録すると、単一のサポート サブスクリプション ID として機能します。各NetAppアカウント レベルのサポート サブスクリプションを登録する必要があります。</block>
@@ -649,7 +627,6 @@
   <block id="40eff8559acd41057187b6cb11fa1919" category="list-text">以下の手順を実行して、新しいNSSアカウントをNetAppコンソールログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">NetAppサポートサイトのアカウントを取得したら、以下の手順を実行して、アカウントをNetAppコンソールのログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
   <block id="01e556e9ed381ddad48f5f248ea8c853" category="summary">プランニング センターを使用して、現在の VMware 環境に関する情報をアップロードできます。</block>
-  <block id="549db19de828407c882fab2f54c0d91b" category="doc">VMインベントリデータをNetApp Workload Factoryにアップロードする</block>
   <block id="549d0e83e0f77a058ecb115d751ef72a" category="paragraph">移行計画を作成する前に、VM インベントリ データをアップロードする必要があります。</block>
   <block id="6c2c52acb8ece2370c8022ea7c978cb0" category="list-text">*VM インベントリのアップロード*を選択します。</block>
   <block id="d3157fb0911e0c33c9adcedf0e1598ec" category="list-text">使用するデータ収集方法を選択します。</block>
@@ -779,7 +756,6 @@
   <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">適切に設計された構成を実装する方法を学ぶ</block>
   <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>.</block>
   <block id="fc6485a9112c61e8addae60c9881529a" category="summary">Workload Factory で EVS 構成の well-architected ステータスを確認し、AWS と NetApp のベストプラクティスに基づく修復ガイダンスに従います。</block>
-  <block id="74163cd660daafe169a986c2d540a418" category="doc">適切に設計されたEVS構成を実装する</block>
   <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">Workload Factory 構成分析を使用して、Amazon Elastic VMware Service（EVS）構成の適切なアーキテクチャの状態を確認し、信頼性、セキュリティ、コストに影響する問題を修正します。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">タスク概要</block>
   <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">AWS APIを使用して、検出されたすべてのEVS環境を毎日自動スキャンし、EVS設定を分析して、可用性、回復力、セキュリティ、またはコスト最適化に影響を与える可能性のある潜在的な問題を特定します。検出結果は設定領域ごとに整理され、各検出結果にはステータス、重大度レベル、影響を受けるリソースの詳細、および段階的な修復手順が含まれます。</block>
@@ -884,7 +860,6 @@
   <block id="1711c42c1c1d16547f3fc604cd9af939" category="list-text">Standard、Premium、Extreme Google Cloud NetApp Volumes サービスレベルのサポート。</block>
   <block id="d5adbe8ffd84800d108bc7ddf1451b8a" category="list-text">自動プロビジョニングのための Terraform を使用した Infrastructure-as-Code デプロイメント。</block>
   <block id="7f23e40eb3340fde04d9926b7462c830" category="summary">VMware プランニングセンターから、Google Cloud VMware Engine 移行アドバイザーを起動して、ニーズに合わせてカスタマイズされた移行計画を作成できます。</block>
-  <block id="5e50f9be4f1e626bb755e71b6ef9feec" category="doc">移行アドバイザーを使用して Google Cloud VMware Engine の導入計画を作成する</block>
   <block id="bdef3354bb4b315740e7e8854254495b" category="paragraph">仮想マシンをGoogle Cloud VMware Engineに移行し、カスタマイズされたGoogle Cloud NetApp Volumesを外部NFSデータストアとして使用するための導入計画を作成できます。移行アドバイザーのオプションは、VMインベントリデータを収集するために使用されるツールによって異なる場合があります。</block>
   <block id="68da13bad217e0063074ca65ab1746c6" category="list-text">Workload Factory にアクセスするには、ユーザー名とパスワードが必要です。アクセス権がない場合は、今すぐアカウントを作成してください。手順<block ref="8199fecf84297ce97d3f6270595de419" category="inline-link-rx"></block>を参照してください。</block>
   <block id="5a4d83a02bb188eb7ca1f7e786e22e1d" category="list-text">Google Cloud VMware Engine と Google Cloud NetApp Volumes サービスの両方が利用可能なリージョンで、Google Cloud VMware Engine サブスクリプションが必要です。</block>
@@ -1023,7 +998,6 @@
   <block id="546393155194873f3731142e84a340fd" category="inline-link">NetApp Workload Factoryの権限</block>
   <block id="6bc7794709563656174e241f32f0298a" category="paragraph">開始する前に、<block ref="aae0d4009285116ff23f9a7f74c1f54b" category="inline-link-rx"></block>について理解しておく必要があります。</block>
   <block id="2556da08e11585b605626929beefd4ce" category="summary">VMware 移行アドバイザーを利用して、Google Cloud NetApp Volumes を外部 NFS データストアとして使用し、現在のインフラストラクチャを Google Cloud VMware Engine に移行しましょう。</block>
-  <block id="9e8284342c75f48a25dde90d2f2d0588" category="doc">VMware ワークロード移行アドバイザーを使用した Google Cloud VMware Engine への移行のクイックスタート</block>
   <block id="b53d94934411cf1f04ae399b5c11817c" category="paragraph">権限を付与しない場合は、Workload Factory for VMware を使用して、部分的に完了したコードサンプルをコピーできます。</block>
   <block id="50e7018c936f9967bef9aaaca1d14b1d" category="paragraph">権限を付与する場合は、<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>これには、Google Cloud NetApp Volumes リソース、VPC 構成、Google Cloud VMware Engine データストアの接続を表示および管理するために必要な権限を GCP サービスアカウントに付与することが含まれます。</block>
   <block id="175be206f8668945b45511179609ebe3" category="paragraph">VMware 移行アドバイザーを起動し、Google Cloud NetApp Volumes を外部 NFS データストアとして使用して Google Cloud VMware Engine インフラストラクチャ上に作成する VM 環境を構成します。</block>
@@ -1032,9 +1006,7 @@
   <block id="fc32330336b033235d02cb9ee4ecb7f8" category="list-text"><block ref="fc32330336b033235d02cb9ee4ecb7f8" category="inline-link-macro-rx"></block></block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
   <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">2026年3月1日</block>
-  <block id="cd201b013ee4f8ae149bb4ba1d9c3ab3" category="sidebar">クイックスタート：Google Cloud VMware Engine への移行</block>
   <block id="26786f5592c89fd387f588f17079366d" category="sidebar">Google Cloud VMware Engine への移行</block>
-  <block id="ef1fc06261bcd9214fd9546ba1a3d6f6" category="sidebar">Google Cloud VMware Engine への移行のクイックスタート</block>
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">仕組み</block>
   <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory は、Amazon FSx for NetApp ONTAP ファイルシステムの導入環境で実行されているワークロードを毎日分析します。この分析により、適切に設計された状態、インサイト、および推奨事項が提供されます。</block>
   <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">日々の分析が完了すると、デプロイメントのWell-architectedダッシュボードに、構成が「最適化済み」または「最適化されていない」として表示されます。総合的な最適化スコア、カテゴリ別の構成の問題、および構成の問題と推奨事項の一覧が表示されます。構成の問題に関する推奨事項を確認できます。一部の問題はWorkload Factoryによって自動的に修正できますが、その他の問題は手動での介入が必要です。この場合、Workload Factoryは、推奨される変更を実装するのに役立つ詳細な手順を提供します。</block>
@@ -1117,4 +1089,22 @@
   <block id="92cf0e18866b04760e70a131cb85dfe9" category="paragraph-title">EVSのWell-Architected分析はどのくらいの頻度で実行され、どのようなアクセス権限が必要ですか？</block>
   <block id="dfd41ab037a25f5c2fce16d5ee27e400" category="inline-link-macro">EVSの優れたアーキテクチャ分析要件</block>
   <block id="dff9e7d880dfe3330c2697a30f505e01" category="paragraph">検出されたEVS構成は、AWS APIを使用して1日1回自動的にスキャンされます。vSphereの認証情報とvCenterの接続は不要です。VMwareワークロードに対する表示、計画、分析の権限を持つAWS認証情報と、少なくとも1つの検出されたEVS環境が必要です。詳細については、<block ref="49902b356d6c7776da8fe31c598cd788" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="07f5c2034d44eea983ae24e8a3e62629" category="doc">Workload Factory for VMwareでAmazon EVSのコスト削減を検討する</block>
+  <block id="e1b7641d7064a40c5bbdee2b40540b74" category="doc">Amazon EC2 の VM 構成をキャプチャする</block>
+  <block id="7b3bc3990d7543aaf66980f87335767a" category="doc">VMware Cloud on AWS の VM 構成をキャプチャします</block>
+  <block id="3f8584ff413956319742ef138ff950bf" category="doc">Amazon EVS 向けに FSx for ONTAP をデプロイする</block>
+  <block id="2fbb7c9787ea3032a156a07d1f132418" category="doc">Amazon EC2 向けに FSx for ONTAP をデプロイする</block>
+  <block id="a559ec50a8770c8e1d80a75962409463" category="doc">VMware Cloud on AWS 向けに FSx for ONTAP をデプロイする</block>
+  <block id="4adccbbed5a316b4a1a113e8e0d5ba4b" category="doc">Google Cloud VMware Engine のデプロイプランを作成します</block>
+  <block id="138dc8298502101ab4b1dab76473550a" category="doc">Amazon EC2 のデプロイプランを作成する</block>
+  <block id="098db62d0eacef295355b49bfd3f685d" category="doc">VMware Cloud on AWS のデプロイメント計画を作成する</block>
+  <block id="e139e2a548f33074a05788b33d073ed1" category="doc">VMデータをVMware Cloud on AWSに移行する</block>
+  <block id="7f2dbecda0f9bd37e40d03689b14c2fa" category="doc">Amazon EVS移行のクイックスタート</block>
+  <block id="0fcf95e364a521f58f982192fa0a45e6" category="doc">Google Cloud VMware Engine 移行のクイックスタート</block>
+  <block id="ea627ccca5e145e4ce43781ebdf2e6f4" category="doc">Amazon EC2移行のクイックスタート</block>
+  <block id="38641132a022c702ed8584dd18675ff9" category="doc">VMware Cloud on AWS移行のクイックスタート</block>
+  <block id="f8ba0fa9860c87100328f9357c1c224f" category="doc">NetApp Workload Factory for VMware のサポートに登録する</block>
+  <block id="53d93e9fac55ddfe7c501887d49a96ea" category="doc">VMインベントリデータをWorkload Factory for VMwareにアップロードする</block>
+  <block id="ddff52126e082848348039b980fd1e5c" category="doc">VMware向けWorkload Factoryで、適切に設計されたEVSの調査結果を確認する</block>
+  <block id="8ecb1fa68ebd7661685ea0dc78ce9cea" category="sidebar">VMware向けNetApp Workload Factoryの最新情報</block>
 </blocks>

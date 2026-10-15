@@ -4,7 +4,7 @@ permalink: quick-start-evs.html
 keywords: quick start 
 summary: VMware 移行アドバイザーを使用して、Amazon FSx for ONTAP を外部 NFS データストアとして使用し、現在のインフラストラクチャを Amazon EVS に移行しましょう。 
 ---
-= VMware ワークロード移行アドバイザーを使用した Amazon EVS への移行のクイックスタート
+= Amazon EVS移行のクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

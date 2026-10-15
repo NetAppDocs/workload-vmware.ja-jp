@@ -4,7 +4,7 @@ permalink: quick-start-gcve.html
 keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes 
 summary: VMware 移行アドバイザーを利用して、Google Cloud NetApp Volumes を外部 NFS データストアとして使用し、現在のインフラストラクチャを Google Cloud VMware Engine に移行しましょう。 
 ---
-= VMware ワークロード移行アドバイザーを使用した Google Cloud VMware Engine への移行のクイックスタート
+= Google Cloud VMware Engine 移行のクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

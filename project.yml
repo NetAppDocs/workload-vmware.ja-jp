@@ -12,65 +12,65 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: VMwareワークロードのドキュメント
+  - title: NetApp Workload Factory for VMware ドキュメント
     url: "/index.html"
   - title: リリースノート
     entries:
-    - title: 新機能
+    - title: VMware向けNetApp Workload Factoryの最新情報
       url: "/whats-new.html"
   - title: はじめに
     entries:
     - title: VMware向けNetAppワークロードファクトリーの詳細
       url: "/learn-about-vmware-workloads.html"
-    - title: Amazon EVS への移行クイックスタート
+    - title: Amazon EVS移行のクイックスタート
       url: "/quick-start-evs.html"
-    - title: Amazon EC2への移行のクイックスタート
+    - title: Amazon EC2移行のクイックスタート
       url: "/quick-start-native.html"
-    - title: クイックスタートガイド：VMware Cloud on AWSへの移行
+    - title: VMware Cloud on AWS移行のクイックスタート
       url: "/quick-start.html"
-    - title: Google Cloud VMware Engine への移行のクイックスタート
+    - title: Google Cloud VMware Engine 移行のクイックスタート
       url: "/quick-start-gcve.html"
     - title: VMware プランニング センターをご覧ください
       url: "/explore-planning-center.html"
   - title: VMware プランニング センターを使用する
     entries:
-    - title: VMインベントリデータをアップロードする
+    - title: VMインベントリデータをWorkload Factory for VMwareにアップロードする
       url: "/upload-vm-inventory.html"
     - title: Amazon Elastic VMware Service への移行
       entries:
-      - title: 節約方法を見る
+      - title: Workload Factory for VMwareでAmazon EVSのコスト削減を検討する
         url: "/calculate-evs-savings.html"
       - title: 手動で展開計画を作成する
         url: "/launch-migration-advisor-evs-manual.html"
-      - title: 移行アドバイザを使用して導入計画を作成
+      - title: 移行アドバイザーを使用して Amazon EVS のデプロイメント計画を作成する
         url: "/launch-migration-advisor-evs.html"
-      - title: 推奨されるFSx for ONTAPファイルシステムを導入
+      - title: Amazon EVS 向けに FSx for ONTAP をデプロイする
         url: "/deploy-fsx-file-system-evs.html"
     - title: Google Cloud VMware Engine への移行
       entries:
-      - title: 移行アドバイザを使用して導入計画を作成
+      - title: Google Cloud VMware Engine のデプロイプランを作成します
         url: "/launch-migration-advisor-gcve.html"
     - title: Amazon EC2への移行
       entries:
-      - title: 移行アドバイザを使用して導入計画を作成
+      - title: Amazon EC2 のデプロイプランを作成する
         url: "/launch-onboarding-advisor-native.html"
-      - title: 推奨されるFSx for ONTAPファイルシステムを導入
+      - title: Amazon EC2 向けに FSx for ONTAP をデプロイする
         url: "/deploy-fsx-file-system-native.html"
     - title: VMware Cloud on AWSへの移行
       entries:
-      - title: 移行アドバイザを使用して導入計画を作成
+      - title: VMware Cloud on AWS のデプロイメント計画を作成する
         url: "/launch-onboarding-advisor.html"
-      - title: 推奨されるFSx for ONTAPファイルシステムを導入
+      - title: VMware Cloud on AWS 向けに FSx for ONTAP をデプロイする
         url: "/deploy-fsx-file-system.html"
-      - title: FSx for ONTAPをVMware Cloud on AWSに接続
+      - title: FSx for ONTAPファイルシステムをVMware Cloud on AWSに接続
         url: "/connect-sddc-to-fsx.html"
-      - title: 新しいインフラへのデータ移行
+      - title: VMデータをVMware Cloud on AWSに移行する
         url: "/migrate-data.html"
   - title: 管理と監視
     entries:
     - title: EVS構成の構成分析
       url: "/configuration-analysis.html"
-    - title: 適切に設計されたEVS構成を実装する
+    - title: VMware向けWorkload Factoryで、適切に設計されたEVSの調査結果を確認する
       url: "/view-evs-well-architected.html"
   - title: 知識とサポート
     entries:

@@ -4,7 +4,7 @@ permalink: quick-start.html
 keywords: quick start 
 summary: VMware移行アドバイザを利用して、Amazon FSx for ONTAPを外部NFSデータストアとして使用し、現在のインフラをVMware Cloud on AWSに移行しましょう。 
 ---
-= VMware Workloads Migration Advisorを使用してVMware Cloud on AWSに移行するためのクイックスタートガイド
+= VMware Cloud on AWS移行のクイックスタート
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor-native.html
 keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
 summary: VMware 移行アドバイザーにアクセスするには、 NetApp Workload Factory にログインします。ウィザードの手順に従って、ニーズに合わせてカスタマイズされた展開計画または移行計画を作成します。 
 ---
-= VMware Workloads Migration Advisorを使用してAmazon EC2の導入計画を作成
+= Amazon EC2 のデプロイプランを作成する
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
