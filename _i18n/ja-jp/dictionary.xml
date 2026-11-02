@@ -1107,4 +1107,8 @@
   <block id="53d93e9fac55ddfe7c501887d49a96ea" category="doc">VMインベントリデータをWorkload Factory for VMwareにアップロードする</block>
   <block id="ddff52126e082848348039b980fd1e5c" category="doc">VMware向けWorkload Factoryで、適切に設計されたEVSの調査結果を確認する</block>
   <block id="8ecb1fa68ebd7661685ea0dc78ce9cea" category="sidebar">VMware向けNetApp Workload Factoryの最新情報</block>
+  <block id="d6ed55c5fa0490be9e9d07719ba741ce" category="doc">EVS TCO 計算ツールにおける i7i.metal-24xl および i7i.metal-48xl インスタンスのサポート</block>
+  <block id="b6c3bb340d0b13e009a53c6c8a2b9219" category="paragraph">EVSのTCO計算ツールが、クラスターホストとしてAWS i7i.metal-24xlおよびi7i.metal-48xl EC2インスタンスをサポートするようになりました。i4i.metal構成と比較して、i7i.metal-24xlインスタンスは、コンピューティングのEVS初期コストを約33%、vSANストレージのEVS初期コストを約25%削減します。</block>
+  <block id="e50148793a31ae443693925cfda40d91" category="paragraph">この計算ツールは、すべてのインスタンスタイプを比較し、最もコストの低いオプションを自動的に選択します。新しい比較セクションでは、EVSホストの構成を並べて表示することで、ニーズに最適な設定をより簡単に選択できます。</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">2026年11月1日</block>
 </blocks>
